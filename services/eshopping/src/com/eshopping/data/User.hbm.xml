@@ -1,0 +1,51 @@
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.eshopping.data.User" table="USER" schema="PUBLIC" dynamic-insert="false" dynamic-update="false">
+        <id name="id" type="integer">
+            <column name="ID"/>
+            <generator class="identity"/>
+        </id>
+        <property name="phone" type="integer">
+            <column name="PHONE" not-null="true"/>
+        </property>
+        <property name="street" type="string">
+            <column name="STREET" not-null="true"/>
+        </property>
+        <property name="state" type="string">
+            <column name="STATE" not-null="true"/>
+        </property>
+        <property name="productBought" type="string">
+            <column name="PRODUCT_BOUGHT" not-null="true"/>
+        </property>
+        <property name="password" type="string">
+            <column name="PASSWORD" not-null="true"/>
+        </property>
+        <property name="city" type="string">
+            <column name="CITY" not-null="true"/>
+        </property>
+        <property name="country" type="string">
+            <column name="COUNTRY" not-null="true"/>
+        </property>
+        <property name="houseNo" type="string">
+            <column name="HOUSE_NO" not-null="true"/>
+        </property>
+        <property name="landmark" type="string">
+            <column name="LANDMARK" not-null="true"/>
+        </property>
+        <property name="pin" type="string">
+            <column name="PIN" not-null="true"/>
+        </property>
+        <property name="email" type="string">
+            <column name="EMAIL" not-null="true"/>
+        </property>
+        <property name="name" type="string">
+            <column name="NAME" not-null="true"/>
+        </property>
+        <set name="itemorders" inverse="true" cascade="">
+            <key>
+                <column name="USER_ID" not-null="true"/>
+            </key>
+            <one-to-many class="com.eshopping.data.Itemorder"/>
+        </set>
+    </class>
+</hibernate-mapping>

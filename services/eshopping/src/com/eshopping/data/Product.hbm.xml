@@ -1,0 +1,33 @@
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.eshopping.data.Product" table="PRODUCT" schema="PUBLIC" dynamic-insert="false" dynamic-update="false">
+        <id name="id" type="integer">
+            <column name="ID"/>
+            <generator class="identity"/>
+        </id>
+        <property name="imgUrl" type="string">
+            <column name="IMG_URL" not-null="true"/>
+        </property>
+        <property name="category" type="string">
+            <column name="CATEGORY" not-null="true"/>
+        </property>
+        <property name="price" type="double">
+            <column name="PRICE" not-null="true"/>
+        </property>
+        <property name="description" type="string">
+            <column name="DESCRIPTION" not-null="true"/>
+        </property>
+        <property name="name" type="string">
+            <column name="NAME" not-null="true"/>
+        </property>
+        <property name="availability" type="boolean">
+            <column name="AVAILABILITY" not-null="true"/>
+        </property>
+        <set name="itemorders" inverse="true" cascade="">
+            <key>
+                <column name="PRODUCT_ID" not-null="true"/>
+            </key>
+            <one-to-many class="com.eshopping.data.Itemorder"/>
+        </set>
+    </class>
+</hibernate-mapping>

@@ -5,7 +5,7 @@ Application.$controller("MainPageController", ['$scope', 'Widgets', 'Variables',
         var views = ['view1', 'view2', 'view3'],
             viewName,
             index,
-            bannerTimeout = 1000;
+            bannerTimeout = 3000;
 
         var toggleViews = function(index) {
             if (index > views.length - 1) {

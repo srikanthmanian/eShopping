@@ -1,4 +1,4 @@
-<wm-page layouttype="one-column" columns="1" data-ng-controller="MainPageController" name="page1" on-click="logout">
+<wm-page layouttype="one-column" columns="1" data-ng-controller="MainPageController" name="page1" on-click="liveVariable1">
     <wm-header height="auto" name="header">
 
 
@@ -27,7 +27,7 @@
     <wm-top-nav name="top-nav">
         <wm-list name="topLinks" horizontalalign="left">
             <wm-list-item name="topLink1">
-                <wm-anchor caption="bind:Variables.smartphones.dataSet.dataValue" name="smartphonelink" on-click="goToPage-Category"></wm-anchor>
+                <wm-anchor caption="bind:Variables.smartphones.dataSet.dataValue" name="smartphonelink"></wm-anchor>
             </wm-list-item>
             <wm-list-item name="topLink2">
                 <wm-anchor caption="bind:Variables.cameras.dataSet.dataValue" name="cameraslink" on-click="goToPage-Category"></wm-anchor>
@@ -53,7 +53,7 @@
         <wm-row name="row1">
             <wm-column class="app-content-column" columnwidth="12" paddingleft="15" paddingright="15" name="mainContent">
                 <wm-label caption="Deals of the Day" fontsize="20" name="Heading" width="209"></wm-label>
-                <wm-layoutgrid rows="3" columns="1" name="layoutgrid2" width="48%" height="185">
+                <wm-layoutgrid rows="3" columns="1" name="layoutgrid2" width="48%" height="200">
                     <wm-gridrow name="gridrow2">
                         <wm-gridcolumn name="gridcolumn4" class="dealsBanner">
                             <wm-view id="view1" name="view1" backgroundimage="resources/images/imagelists/Cameras.png" backgroundrepeat="no-repeat"></wm-view>

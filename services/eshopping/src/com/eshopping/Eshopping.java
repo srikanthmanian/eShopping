@@ -2,7 +2,6 @@
 package com.eshopping;
 
 import java.util.List;
-import com.eshopping.data.Product;
 import com.wavemaker.json.type.TypeDefinition;
 import com.wavemaker.runtime.data.DataServiceManager;
 import com.wavemaker.runtime.data.DataServiceManagerAccess;
@@ -15,7 +14,7 @@ import com.wavemaker.runtime.service.TypedServiceReturn;
 
 /**
  *  Operations for service "eshopping"
- *  03/12/2014 20:26:16
+ *  03/13/2014 11:08:06
  * 
  */
 @SuppressWarnings("unchecked")
@@ -26,8 +25,8 @@ public class Eshopping
     private DataServiceManager dsMgr;
     private TaskManager taskMgr;
 
-    public Product getProductById(Integer id) {
-        List<Product> rtn = ((List<Product> ) dsMgr.invoke(taskMgr.getQueryTask(), (EshoppingConstants.getProductByIdQueryName), id));
+    public com.eshopping.data.Product getProductById(Integer id, PagingOptions pagingOptions) {
+        List<com.eshopping.data.Product> rtn = ((List<com.eshopping.data.Product> ) dsMgr.invoke(taskMgr.getQueryTask(), (EshoppingConstants.getProductByIdQueryName), id, pagingOptions));
         if (rtn.isEmpty()) {
             return null;
         } else {

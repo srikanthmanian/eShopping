@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><application id="Application_ID" version="1.4" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/application_1_4.xsd">
-    <display-name>WM2c908a1644b5d2f30144b6591041000a</display-name>
+    <display-name>WM2c908a1644b693460144b6938a410001</display-name>
     <module>
         <web>
-            <web-uri>WM2c908a1644b5d2f30144b6591041000a.war</web-uri>
-            <context-root>/WM2c908a1644b5d2f30144b6591041000a</context-root>
+            <web-uri>WM2c908a1644b693460144b6938a410001.war</web-uri>
+            <context-root>/WM2c908a1644b693460144b6938a410001</context-root>
         </web>
     </module>
 </application>

@@ -115,7 +115,7 @@ INSERT INTO USER VALUES(6, 'Hollywood Boulevard', 789523, '78952', 'mark@xyz.com
 INSERT INTO USER VALUES(7, 'Near Kodak Theater', 7989223, '454653', 'mike@abc.com', '4', 'Mike', 23, 'CA', '77, 23', 'mike123!', 'USA', 'LA')
 INSERT INTO USER VALUES(8, 'Near Joy Gardens', 1235989, '85563', 'alex@abc.com', '56', 'Alex', 12, 'CA', '12', 'alex123!', 'USA', 'BA')
 INSERT INTO USER VALUES(9, 'Near ABC Corporation', 154623, '456896', 'tina@xyz.com', '2', 'Tina', 23, 'CA', '89, 69', 'tin@!23', 'USA', 'LA')
-INSERT INTO USER VALUES(9, 'Abraham Lincoln High School', 548779823, '98081', 'joe@abc.com', '83', 'Joseph', 89, 'CA', '54, 93', 'joe123!', 'USA', 'BA')
+INSERT INTO USER VALUES(10, 'Abraham Lincoln High School', 548779823, '98081', 'joe@abc.com', '83', 'Joseph', 89, 'CA', '54, 93', 'joe123!', 'USA', 'BA')
 INSERT INTO ITEMORDER VALUES(1, 1, 'Delivered', 1)
 INSERT INTO ITEMORDER VALUES(2, 54, 'Delivered', 2)
 INSERT INTO ITEMORDER VALUES(3, 45, 'Delivered', 1)

@@ -29,10 +29,5 @@ Application.$controller("MainPageController", ['$rootScope', '$scope', 'Widgets'
             });
 
         }();
-
-        function navigateToCategory(category) {
-            Utils.browserStorage.storeItem("wm.activeCategory", category);
-        }
-
     }
 ]);

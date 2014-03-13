@@ -1,4 +1,4 @@
-<wm-page layouttype="one-column" columns="1" data-ng-controller="CategoryPageController" name="page1" on-click="products">
+<wm-page layouttype="two-column" columns="2" data-ng-controller="CategoryPageController" name="page1">
     <wm-header height="auto" name="header">
         <wm-layoutgrid rows="1" columns="3" name="layoutgrid23" height="70">
             <wm-gridrow name="gridrow28">
@@ -18,38 +18,34 @@
     <wm-top-nav name="top-nav">
         <wm-list name="topLinks" horizontalalign="left">
             <wm-list-item name="topLink1">
-                <wm-anchor caption="Home" name="homelink" hyperlink="#/Main"></wm-anchor>
+                <wm-anchor caption="bind:Variables.homeMenu.dataSet.dataValue" name="homelink" hyperlink="#/Main"></wm-anchor>
             </wm-list-item>
             <wm-list-item name="topLink2">
-                <wm-anchor caption="bind:Variables.smartphones.dataSet.dataValue" name="smartphonelink" on-click="navigateToCategory('Smart Phones')" hyperlink="#/Category"></wm-anchor>
+                <wm-anchor caption="bind:Variables.productsMenu.dataSet.dataValue" name="dashboardlink" hyperlink="#/Category"></wm-anchor>
             </wm-list-item>
             <wm-list-item name="topLink3">
-                <wm-anchor caption="bind:Variables.cameras.dataSet.dataValue" name="cameraslink" on-click="navigateToCategory('Cameras')" hyperlink="#/Category"></wm-anchor>
+                <wm-anchor caption="bind:Variables.dashboardMenu.dataSet.dataValue" name="dashboardlink" hyperlink="#/Dashboard"></wm-anchor>
             </wm-list-item>
             <wm-list-item name="topLink4">
-                <wm-anchor caption="bind:Variables.laptops.dataSet.dataValue" name="laptopslink" on-click="navigateToCategory('Laptops')" hyperlink="#/Category"></wm-anchor>
-            </wm-list-item>
-            <wm-list-item name="topLink5">
-                <wm-anchor caption="bind:Variables.peripherals.dataSet.dataValue" name="peripheralslink" on-click="navigateToCategory('Peripherals')" hyperlink="#/Category"></wm-anchor>
-            </wm-list-item>
-            <wm-list-item name="topLink6">
-                <wm-anchor caption="bind:Variables.accessories.dataSet.dataValue" name="accessorieslink" on-click="navigateToCategory('Accessories')" hyperlink="#/Category"></wm-anchor>
-            </wm-list-item>
-            <wm-list-item name="topLink7">
-                <wm-anchor caption="bind:Variables.dashboard.dataSet.dataValue" name="dashboardlink" hyperlink="#/Category"></wm-anchor>
-            </wm-list-item>
-            <wm-list-item name="topLink8">
-                <wm-anchor caption="bind:Variables.logout.dataSet.dataValue" name="logoutlink" hyperlink="#/Category"></wm-anchor>
+                <wm-anchor caption="bind:Variables.logoutMenu.dataSet.dataValue" name="logoutlink" hyperlink="#/Logout"></wm-anchor>
             </wm-list-item>
         </wm-list>
     </wm-top-nav>
-    <wm-content name="pageContent">
-        <wm-row name="contentRow">
-            <wm-column class="app-content-column" columnwidth="12" paddingleft="15" paddingright="15" name="mainContent">
+    <wm-content name="content1">
+        <wm-row name="row1">
+            <wm-left-panel contentwidth="2" name="left-panel1">
+                <wm-list name="categoryMenuList" class="category-menu-list">
+                    <wm-list-item name="list-item5" data-ng-repeat="product in productsList" data-ng-click="navigateCallback(product.dataValue)">
+                        <wm-anchor name="anchor5" caption="{{product.dataValue}}" href="#/Category"></wm-anchor>
+                    </wm-list-item>
+                </wm-list>
+            </wm-left-panel>
+            <wm-column class="app-content-column" columnwidth="10" paddingleft="15" paddingright="15" name="mainContent">
+                <wm-label name="label5" caption="bind:Variables.selectedCategory.dataSet.dataValue"></wm-label>
                 <wm-livelist name="productList" dataset="bind:Variables.products.dataSet" class="products">
                     <wm-listtemplate name="productsTemplate">
                         <wm-picture name="product_thumb" picturesource="{{item.imgUrl}}" pictureaspect="None" class="product-thumb"></wm-picture>
-                        <wm-label name="product_name" marginright="15" caption="{{item.name}}" fontweight="bold" width="100%"></wm-label>
+                        <wm-label name="product_name" marginright="15" caption="{{item.name}}" fontweight="bold" width="100%" hint="{{item.name}}"></wm-label>
                         <wm-label name="product_price" marginright="15" caption="{{item.price}}" width="100%"></wm-label>
                         <wm-label name="product_desc" caption="{{item.description}}" width="100%"></wm-label>
                     </wm-listtemplate>
@@ -57,4 +53,5 @@
             </wm-column>
         </wm-row>
     </wm-content>
+    <wm-footer name="footer1"></wm-footer>
 </wm-page>

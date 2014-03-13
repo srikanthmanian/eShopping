@@ -1,5 +1,13 @@
 .product-thumb {
-    max-width: 100px;
-    max-height: 100px;
-    margin: 10px;
+    max-width: 8em;
+    max-height: 4em;
+    padding: 0.25em;
+}
+.products .livelist-item {
+    float: left;
+    width: 12em;
+    height: 12em;
+    border: 1px #eee solid;
+    margin: 0.25em;
+    padding: 0.25em;
 }

@@ -27,25 +27,25 @@
     <wm-top-nav name="top-nav">
         <wm-list name="topLinks" horizontalalign="left">
             <wm-list-item name="topLink1">
-                <wm-anchor caption="bind:Variables.smartphones.dataSet.dataValue" name="smartphonelink" on-click="smartphonelinkClick($event, $scope)"></wm-anchor>
+                <wm-anchor caption="bind:Variables.smartphones.dataSet.dataValue" name="smartphonelink" on-click="navigateToCategory('Smart Phones')" hyperlink="#/Category"></wm-anchor>
             </wm-list-item>
             <wm-list-item name="topLink2">
-                <wm-anchor caption="bind:Variables.cameras.dataSet.dataValue" name="cameraslink" on-click="goToPage-Category"></wm-anchor>
+                <wm-anchor caption="bind:Variables.cameras.dataSet.dataValue" name="cameraslink" on-click="navigateToCategory('Cameras')" hyperlink="#/Category"></wm-anchor>
             </wm-list-item>
             <wm-list-item name="topLink3">
-                <wm-anchor caption="bind:Variables.laptops.dataSet.dataValue" name="laptopslink" on-click="goToPage-Category"></wm-anchor>
+                <wm-anchor caption="bind:Variables.laptops.dataSet.dataValue" name="laptopslink" on-click="navigateToCategory('Laptops')" hyperlink="#/Category"></wm-anchor>
             </wm-list-item>
             <wm-list-item name="topLink4">
-                <wm-anchor caption="bind:Variables.peripherals.dataSet.dataValue" name="peripheralslink" on-click="goToPage-Category"></wm-anchor>
+                <wm-anchor caption="bind:Variables.peripherals.dataSet.dataValue" name="peripheralslink" on-click="navigateToCategory('Peripherals')" hyperlink="#/Category"></wm-anchor>
             </wm-list-item>
             <wm-list-item name="topLink5">
-                <wm-anchor caption="bind:Variables.accessories.dataSet.dataValue" name="accessorieslink" on-click="goToPage-Category"></wm-anchor>
+                <wm-anchor caption="bind:Variables.accessories.dataSet.dataValue" name="accessorieslink" on-click="navigateToCategory('Accessories')" hyperlink="#/Category"></wm-anchor>
             </wm-list-item>
             <wm-list-item name="topLink6">
-                <wm-anchor caption="bind:Variables.dashboard.dataSet.dataValue" name="dashboardlink"></wm-anchor>
+                <wm-anchor caption="bind:Variables.dashboard.dataSet.dataValue" name="dashboardlink" hyperlink="#/Category"></wm-anchor>
             </wm-list-item>
             <wm-list-item name="topLink7">
-                <wm-anchor caption="bind:Variables.logout.dataSet.dataValue" name="logoutlink"></wm-anchor>
+                <wm-anchor caption="bind:Variables.logout.dataSet.dataValue" name="logoutlink" hyperlink="#/Category"></wm-anchor>
             </wm-list-item>
         </wm-list>
     </wm-top-nav>

@@ -2,22 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0c0e5332-6123-4c24-9c96-6be58bb57d10" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapproot/app.variables.json" afterPath="$PROJECT_DIR$/webapproot/app.variables.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapproot/data/eshopping.properties" afterPath="$PROJECT_DIR$/webapproot/data/eshopping.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapproot/pages/Cart/Cart.html" afterPath="$PROJECT_DIR$/webapproot/pages/Cart/Cart.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapproot/pages/Cart/Cart.js" afterPath="$PROJECT_DIR$/webapproot/pages/Cart/Cart.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapproot/pages/Cart/Cart.variables.json" afterPath="$PROJECT_DIR$/webapproot/pages/Cart/Cart.variables.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapproot/pages/Category/Category.css" afterPath="$PROJECT_DIR$/webapproot/pages/Category/Category.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapproot/pages/Category/Category.html" afterPath="$PROJECT_DIR$/webapproot/pages/Category/Category.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapproot/pages/Category/Category.js" afterPath="$PROJECT_DIR$/webapproot/pages/Category/Category.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapproot/pages/Main/Main.html" afterPath="$PROJECT_DIR$/webapproot/pages/Main/Main.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapproot/pages/Main/Main.js" afterPath="$PROJECT_DIR$/webapproot/pages/Main/Main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapproot/pages/Main/Main.variables.json" afterPath="$PROJECT_DIR$/webapproot/pages/Main/Main.variables.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapproot/pages/Product/Product.html" afterPath="$PROJECT_DIR$/webapproot/pages/Product/Product.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapproot/pages/Product/Product.js" afterPath="$PROJECT_DIR$/webapproot/pages/Product/Product.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapproot/pages/Product/Product.variables.json" afterPath="$PROJECT_DIR$/webapproot/pages/Product/Product.variables.json" />
     </list>
     <ignored path="eShopping.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -79,7 +72,7 @@
       <file leaf-file-name="Main.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/webapproot/pages/Main/Main.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="84" selection-start="945" selection-end="945" vertical-scroll-proportion="0.6447106">
+            <state line="18" column="37" selection-start="1110" selection-end="1110" vertical-scroll-proportion="0.54291415">
               <folding />
             </state>
           </provider>
@@ -177,7 +170,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32897863" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32897863" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -265,7 +258,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/webapproot/pages/Main/Main.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="84" selection-start="945" selection-end="945" vertical-scroll-proportion="0.6447106">
+        <state line="18" column="37" selection-start="1110" selection-end="1110" vertical-scroll-proportion="0.54291415">
           <folding />
         </state>
       </provider>

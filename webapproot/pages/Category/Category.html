@@ -18,7 +18,7 @@
     <wm-top-nav name="top-nav">
         <wm-list name="topLinks" horizontalalign="left">
             <wm-list-item name="topLink1">
-                <wm-anchor caption="Home" name="homelink" hyperlink="#/Main"></wm-anchor>
+                <wm-anchor caption="HOME" name="homelink" hyperlink="#/Main"></wm-anchor>
             </wm-list-item>
             <wm-list-item name="topLink2">
                 <wm-anchor caption="bind:Variables.smartphones.dataSet.dataValue" name="smartphonelink" on-click="navigateToCategory('Smart Phones')" hyperlink="#/Category"></wm-anchor>
@@ -46,7 +46,7 @@
     <wm-content name="pageContent">
         <wm-row name="contentRow">
             <wm-column class="app-content-column" columnwidth="12" paddingleft="15" paddingright="15" name="mainContent">
-                <wm-livelist name="productList" dataset="bind:Variables.products.dataSet" class="products">
+                <wm-livelist name="productList" dataset="bind:Variables.products.dataSet" class="products" pagesize="2">
                     <wm-listtemplate name="productsTemplate">
                         <wm-picture name="product_thumb" picturesource="{{item.imgUrl}}" pictureaspect="None" class="product-thumb"></wm-picture>
                         <wm-label name="product_name" marginright="15" caption="{{item.name}}" fontweight="bold" width="100%"></wm-label>

@@ -1,5 +1,5 @@
-Application.$controller("MainPageController", ['$scope', 'Widgets', 'Variables', '$timeout',
-    function($scope, Widgets, Variables, $timeout) {
+Application.$controller("MainPageController", ['$rootScope', '$scope', 'Widgets', 'Variables', '$timeout', 'Utils',
+    function($rootScope, $scope, Widgets, Variables, $timeout, Utils) {
         "use strict";
 
         var views = ['view1', 'view2', 'view3'],
@@ -29,6 +29,14 @@ Application.$controller("MainPageController", ['$scope', 'Widgets', 'Variables',
             });
 
         }();
+
+        function beforeNavigate(category) {
+            Utils.browserStorage.storeItem('activeCategory', category);
+        }
+
+        $scope.smartphonelinkClick = function($event, $scope) {
+            beforeNavigate("Smart Phones");
+        };
 
     }
 ]);

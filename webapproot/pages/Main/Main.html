@@ -27,7 +27,7 @@
     <wm-top-nav name="top-nav">
         <wm-list name="topLinks" horizontalalign="left">
             <wm-list-item name="topLink1">
-                <wm-anchor caption="bind:Variables.smartphones.dataSet.dataValue" name="smartphonelink"></wm-anchor>
+                <wm-anchor caption="bind:Variables.smartphones.dataSet.dataValue" name="smartphonelink" on-click="smartphonelinkClick($event, $scope)"></wm-anchor>
             </wm-list-item>
             <wm-list-item name="topLink2">
                 <wm-anchor caption="bind:Variables.cameras.dataSet.dataValue" name="cameraslink" on-click="goToPage-Category"></wm-anchor>

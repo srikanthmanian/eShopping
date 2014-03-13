@@ -2,9 +2,5 @@ Application.$controller("ProductPageController", ["$scope", "Widgets", "Variable
     function($scope, Widgets, Variables, Utils) {
         "use strict";
 
-        function navigateToCategory(category) {
-            Utils.browserStorage.storeItem("wm.activeCategory", category);
-        }
-
     }
 ]);

@@ -11,3 +11,10 @@
     margin: 0.25em;
     padding: 0.25em;
 }
+ul.category-menu-list {
+    padding: 0.5em;
+}
+.category-menu-list li {
+    text-align: center;
+    padding: 0.25em;
+}

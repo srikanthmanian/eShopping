@@ -15,7 +15,6 @@ Application.$controller("CategoryPageController", ['$rootScope', '$scope', 'Widg
         })();
 
         $scope.navigateCallback = function(category) {
-            debugger;
             $rootScope.navigateToCategory(category);
             filterVariable(category);
         }

@@ -1,5 +1,5 @@
-Application.$controller("MainPageController", ['$rootScope', '$scope', 'Widgets', 'Variables', '$timeout', 'Utils',
-    function($rootScope, $scope, Widgets, Variables, $timeout, Utils) {
+Application.$controller("MainPageController", ['$rootScope', '$scope', 'Widgets', 'Variables', '$timeout', 'Utils', '$location',
+    function($rootScope, $scope, Widgets, Variables, $timeout, Utils, $location) {
         "use strict";
 
         var views = ['view1', 'view2', 'view3'],
@@ -30,13 +30,9 @@ Application.$controller("MainPageController", ['$rootScope', '$scope', 'Widgets'
 
         }();
 
-        function beforeNavigate(category) {
-            Utils.browserStorage.storeItem('activeCategory', category);
+        function navigateToCategory(category) {
+            Utils.browserStorage.storeItem("wm.activeCategory", category);
         }
-
-        $scope.smartphonelinkClick = function($event, $scope) {
-            beforeNavigate("Smart Phones");
-        };
 
     }
 ]);

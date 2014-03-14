@@ -3,13 +3,13 @@
 		"name": "delete",
 		"operationType": null,
 		"parameters": [{
-			"name": "arg0",
+			"name": "serviceName",
 			"type": "java.lang.String"
 		}, {
-			"name": "arg1",
+			"name": "typeName",
 			"type": "java.lang.String"
 		}, {
-			"name": "arg2",
+			"name": "objectToDelete",
 			"type": "java.lang.Object"
 		}],
 		"returnType": null
@@ -41,13 +41,13 @@
 		"name": "getProperty",
 		"operationType": null,
 		"parameters": [{
-			"name": "arg0",
+			"name": "instance",
 			"type": "java.lang.Object"
 		}, {
-			"name": "arg1",
+			"name": "type",
 			"type": "java.lang.String"
 		}, {
-			"name": "arg2",
+			"name": "propertyName",
 			"type": "java.lang.String"
 		}],
 		"returnType": "java.lang.Object"
@@ -86,13 +86,13 @@
 		"name": "insert",
 		"operationType": null,
 		"parameters": [{
-			"name": "arg0",
+			"name": "serviceName",
 			"type": "java.lang.String"
 		}, {
-			"name": "arg1",
+			"name": "typeName",
 			"type": "java.lang.String"
 		}, {
-			"name": "arg2",
+			"name": "objectToInsert",
 			"type": "java.lang.Object"
 		}],
 		"returnType": "com.wavemaker.runtime.service.TypedServiceReturn"
@@ -100,19 +100,19 @@
 		"name": "read",
 		"operationType": null,
 		"parameters": [{
-			"name": "arg0",
+			"name": "serviceName",
 			"type": "java.lang.String"
 		}, {
-			"name": "arg1",
+			"name": "typeName",
 			"type": "java.lang.String"
 		}, {
-			"name": "arg2",
+			"name": "instance",
 			"type": "java.lang.Object"
 		}, {
-			"name": "arg3",
+			"name": "propertyOptions",
 			"type": "com.wavemaker.runtime.service.PropertyOptions"
 		}, {
-			"name": "arg4",
+			"name": "pagingOptions",
 			"type": "com.wavemaker.runtime.service.PagingOptions"
 		}],
 		"returnType": "com.wavemaker.runtime.service.TypedServiceReturn"
@@ -160,13 +160,13 @@
 		"name": "update",
 		"operationType": null,
 		"parameters": [{
-			"name": "arg0",
+			"name": "serviceName",
 			"type": "java.lang.String"
 		}, {
-			"name": "arg1",
+			"name": "typeName",
 			"type": "java.lang.String"
 		}, {
-			"name": "arg2",
+			"name": "objectToUpdate",
 			"type": "java.lang.Object"
 		}],
 		"returnType": "com.wavemaker.runtime.service.TypedServiceReturn"

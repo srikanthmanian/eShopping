@@ -3,4 +3,6 @@ Application.run(function ($rootScope) {
 	$rootScope.navigateToCategory = function (category) {
         localStorage.setItem("wm.activeCategory", category);
     }
+
+    $rootScope.selectedItem = {};
 });

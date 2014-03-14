@@ -1,5 +1,5 @@
-Application.$controller("CategoryPageController", ['$rootScope', '$scope', 'Widgets', 'Variables', 'Utils',
-    function($rootScope, $scope, Widgets, Variables, Utils) {
+Application.$controller("CategoryPageController", ['$rootScope', '$scope', 'Widgets', 'Variables', 'Utils', '$location',
+    function($rootScope, $scope, Widgets, Variables, Utils, $location) {
         "use strict";
 
         var category;
@@ -18,6 +18,13 @@ Application.$controller("CategoryPageController", ['$rootScope', '$scope', 'Widg
             $rootScope.navigateToCategory(category);
             filterVariable(category);
         }
+
+
+        $scope.productListClick = function($event, $scope) {
+            $rootScope.selectedItem = $scope.$parent.item;
+            console.log("item", $rootScope.selectedItem);
+            $location.path("Product");
+        };
 
     }
 ]);

@@ -1,0 +1,97 @@
+<wm-page layouttype="one-column" columns="1" data-ng-controller="DashboardPageController" name="page1">
+    <wm-header name="header1">
+        <wm-layoutgrid rows="1" columns="3" name="layoutgrid23" height="70">
+            <wm-gridrow name="gridrow28">
+                <wm-gridcolumn name="gridcolumn68">
+                    <wm-picture name="picture1" picturesource="resources/images/logos/Android/wavemaker_72x72.png"></wm-picture>
+                    <wm-label name="ApplicationName" on-click="appName" caption="bind:Variables.appName.dataSet.dataValue" fontweight="bold" fontsize="24" color="#ffffff"></wm-label>
+                </wm-gridcolumn>
+                <wm-gridcolumn name="gridcolumn69" horizontalalign="right">
+                </wm-gridcolumn>
+                <wm-gridcolumn name="gridcolumn70" horizontalalign="right" on-click="username">
+                    <wm-search name="search1" width="353" height="75"></wm-search>
+                </wm-gridcolumn>
+            </wm-gridrow>
+        </wm-layoutgrid>
+    </wm-header>
+    <wm-top-nav name="top-nav">
+        <wm-list name="topLinks" horizontalalign="left">
+            <wm-list-item name="topLink1">
+                <wm-anchor caption="bind:Variables.homeMenu.dataSet.dataValue" name="homelink" hyperlink="#/Main"></wm-anchor>
+            </wm-list-item>
+            <wm-list-item name="topLink2">
+                <wm-anchor caption="bind:Variables.productsMenu.dataSet.dataValue" name="dashboardlink" hyperlink="#/Category"></wm-anchor>
+            </wm-list-item>
+            <wm-list-item name="topLink3">
+                <wm-anchor caption="bind:Variables.dashboardMenu.dataSet.dataValue" name="dashboardlink" hyperlink="#/Dashboard"></wm-anchor>
+            </wm-list-item>
+            <wm-list-item name="topLink4">
+                <wm-anchor caption="bind:Variables.logoutMenu.dataSet.dataValue" name="logoutlink" hyperlink="#/Logout"></wm-anchor>
+            </wm-list-item>
+        </wm-list>
+    </wm-top-nav>
+    <wm-content name="content1">
+        <wm-row name="row1">
+            <wm-column class="app-content-column" columnwidth="12" name="column1">
+                <wm-tabs name="Profile" paddingright="" paddingleft="">
+                    <wm-tabpane name="tabpane1">
+                        <wm-tabheader name="orderhistory" on-click="orderHistory" heading="bind:Variables.orderHistory.dataSet.dataValue"></wm-tabheader>
+                        <wm-tabcontent name="tabcontent1">
+                            <wm-grid name="grid1" dataset="bind:Variables.ItemorderLiveVariable1.dataSet">
+                                <wm-grid-column binding="product.imgUrl" caption="product.imgUrl" type="string" pcdisplay="true" mobiledisplay="true"></wm-grid-column>
+                                <wm-grid-column binding="product.id" caption="product.id" type="integer" primary-key="true" generator="identity" pcdisplay="true" mobiledisplay="true"></wm-grid-column>
+                                <wm-grid-column binding="product.category" caption="product.category" type="string" pcdisplay="true" mobiledisplay="true"></wm-grid-column>
+                                <wm-grid-column binding="product.price" caption="product.price" type="double" pcdisplay="true" mobiledisplay="true"></wm-grid-column>
+                                <wm-grid-column binding="product.description" caption="product.description" type="string" pcdisplay="true" mobiledisplay="true"></wm-grid-column>
+                                <wm-grid-column binding="product.name" caption="product.name" type="string" pcdisplay="true" mobiledisplay="true"></wm-grid-column>
+                                <wm-grid-column binding="product.availability" caption="product.availability" type="boolean" pcdisplay="true" mobiledisplay="true"></wm-grid-column>
+                                <wm-grid-column binding="id" caption="id" type="integer" primary-key="true" generator="identity" pcdisplay="true" mobiledisplay="true"></wm-grid-column>
+                                <wm-grid-column binding="status" caption="status" type="string" pcdisplay="true" mobiledisplay="true"></wm-grid-column>
+                                <wm-grid-column binding="user.phone" caption="user.phone" type="integer" pcdisplay="true" mobiledisplay="true"></wm-grid-column>
+                            </wm-grid>
+                        </wm-tabcontent>
+                    </wm-tabpane>
+                    <wm-tabpane name="tabpane2">
+                        <wm-tabheader name="address" on-click="billingAddress" heading="bind:Variables.billingAddress.dataSet.dataValue"></wm-tabheader>
+                        <wm-tabcontent name="tabcontent2">
+                            <wm-layoutgrid rows="3" columns="2" name="layoutgrid2" height="200">
+                                <wm-gridrow name="gridrow2">
+                                    <wm-gridcolumn name="gridcolumn4">
+                                        <wm-composite widget="textarea" name="composite4">
+                                            <wm-label name="label5" caption="Billing Address" fontweight="bold" width="150"></wm-label>
+                                            <wm-textarea name="textarea1" height="112" width="209" placeholder="where you want the invoice to be sent"></wm-textarea>
+                                        </wm-composite>
+                                    </wm-gridcolumn>
+                                    <wm-gridcolumn name="gridcolumn5">
+                                        <wm-composite widget="textarea" name="composite5">
+                                            <wm-label name="label6" caption="Shipping Address" fontweight="bold" width="150"></wm-label>
+                                            <wm-textarea name="textarea2" width="209" height="112" placeholder="where you want to recieve the order"></wm-textarea>
+                                        </wm-composite>
+                                    </wm-gridcolumn>
+                                </wm-gridrow>
+                            </wm-layoutgrid>
+                        </wm-tabcontent>
+                    </wm-tabpane>
+                    <wm-tabpane name="tabpane3">
+                        <wm-tabheader name="accountsettings" heading="Account Settings"></wm-tabheader>
+                        <wm-tabcontent name="tabcontent3">
+                            <wm-composite widget="text" name="composite1">
+                                <wm-label name="oldpassword" caption="Old Password" width="200" fontweight="bold"></wm-label>
+                                <wm-text name="text1"></wm-text>
+                            </wm-composite>
+                            <wm-composite widget="text" name="composite2">
+                                <wm-label name="newpassword" caption="New Password" width="200" fontweight="bold"></wm-label>
+                                <wm-text name="text2"></wm-text>
+                            </wm-composite>
+                            <wm-composite widget="text" name="composite3">
+                                <wm-label name="confirmpassword" caption="Confirm New Password" width="200" fontweight="bold"></wm-label>
+                                <wm-text name="text3"></wm-text>
+                            </wm-composite>
+                        </wm-tabcontent>
+                    </wm-tabpane>
+                </wm-tabs>
+            </wm-column>
+        </wm-row>
+    </wm-content>
+    <wm-footer name="footer1"></wm-footer>
+</wm-page>

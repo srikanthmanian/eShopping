@@ -3,3 +3,23 @@
     max-height: 4em;
     padding: 0.25em;
 }
+.dealsBanner {
+    border: 1px #ccc solid;
+    background: #f7f7f7;
+    vertical-align: middle;
+    text-align: center;
+    height: 11em;
+}
+.dealsBanner img {
+    width: 100%;
+}
+.productCategoryListing {
+    background: #eee;
+    margin-bottom: 0.5em;
+}
+.prodcategory {
+    border: 1px #ccc solid;
+}
+.prodCategoryBanner {
+    width: 100%;
+}

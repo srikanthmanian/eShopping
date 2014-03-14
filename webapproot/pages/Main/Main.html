@@ -10,11 +10,13 @@
                     <wm-search name="search1" width="353" height="75" dataset="bind:Variables.products.dataSet.data" searchkey="name" displaylabel="name" displayimagesrc="imgUrl"></wm-search>
                 </wm-gridcolumn>
             </wm-gridrow>
-
         </wm-layoutgrid>
     </wm-header>
     <wm-top-nav name="top-nav">
         <wm-list name="topLinks" horizontalalign="left">
+            <wm-list-item name="topLink1">
+                <wm-anchor caption="bind:Variables.homeMenu.dataSet.dataValue" name="homelink" hyperlink="#/Main"></wm-anchor>
+            </wm-list-item>
             <wm-list-item name="topLink2">
                 <wm-anchor caption="bind:Variables.productsMenu.dataSet.dataValue" name="dashboardlink" hyperlink="#/Category"></wm-anchor>
             </wm-list-item>
@@ -29,16 +31,17 @@
     <wm-content name="content1">
         <wm-row name="row1">
             <wm-column class="app-content-column" columnwidth="12" paddingleft="15" paddingright="15" name="mainContent">
-                <wm-label caption="Deals of the Day" fontsize="20" name="Heading" width="209"></wm-label>
-                <wm-panel height="200" name="dealsBanner" class="dealsBanner" backgroundcolor="#e0e0e0" marginbottom="2" marginunit="em">
+                <wm-label caption="Deals of the Day" fontsize="20" name="Heading" width="100%"></wm-label>
+                <wm-panel name="dealsBanner" class="dealsBanner" marginbottom="0.5" marginunit="em">
                     <wm-view id="view1" name="promo-camera" backgroundimage="resources/images/imagelists/cameras_banner.png" backgroundrepeat="no-repeat" show="true"></wm-view>
                     <wm-view id="view2" name="promo-mobile" backgroundimage="resources/images/imagelists/phones_banner.png" backgroundrepeat="no-repeat" show="false"></wm-view>
                     <wm-view id="view3" name="promo-peripheral" backgroundimage="resources/images/imagelists/peripherals_banner.png" backgroundrepeat="no-repeat" horizontalalign="center" show="false"></wm-view>
                 </wm-panel>
-                <wm-layoutgrid columns="3" name="layoutgrid3" rows="1" height="300">
+                <wm-label caption="Hot Picks" fontsize="20" name="Heading" width="100%"></wm-label>
+                <wm-layoutgrid columns="3" class="productCategoryListing" name="productCategoryListing" rows="1" height="300">
                     <wm-gridrow name="gridrow3">
-                        <wm-gridcolumn name="gridcolumn5">
-                            <wm-picture name="Smart Phones" picturesource="resources/images/imagelists/smartphones_category.png" on-click="onCategoryClick('Smart Phones')" width="90%" cursor="pointer"></wm-picture>
+                        <wm-gridcolumn name="gridcolumn5" class="prodcategory">
+                            <wm-picture name="Smart Phones" class="prodCategoryBanner" picturesource="resources/images/imagelists/smartphones_category.png" on-click="onCategoryClick('Smart Phones')" width="90%" cursor="pointer"></wm-picture>
                             <wm-livelist name="smartphoneslist" dataset="bind:Variables.smartphones_list.dataSet" on-click="categorylistClick($event, $scope)" cursor="pointer">
                                 <wm-listtemplate name="listtemplate1" on-click="cameras_list">
                                     <wm-picture name="picture5" class="product-thumb" picturesource="bind:Variables.smartphones_list.dataSet.imgUrl"></wm-picture>
@@ -48,7 +51,7 @@
                             </wm-livelist>
                         </wm-gridcolumn>
 
-                        <wm-gridcolumn name="gridcolumn6">
+                        <wm-gridcolumn name="gridcolumn6" class="prodcategory">
                             <wm-picture name="Cameras" picturesource="resources/images/imagelists/cameras_category.png" on-click="onCategoryClick('Cameras')" width="90%" cursor="pointer"></wm-picture>
                             <wm-livelist name="cameraslist" dataset="bind:Variables.cameras_list.dataSet" on-click="categorylistClick($event, $scope)" cursor="pointer">
                                 <wm-listtemplate name="listtemplate2">
@@ -59,7 +62,7 @@
                             </wm-livelist>
                         </wm-gridcolumn>
 
-                        <wm-gridcolumn name="gridcolumn7">
+                        <wm-gridcolumn name="gridcolumn7" class="prodcategory">
                             <wm-picture name="Laptops" picturesource="resources/images/imagelists/laptops_category.png" on-click="onCategoryClick('Laptops')" width="90%" cursor="pointer"></wm-picture>
                             <wm-livelist name="laptopslist" dataset="bind:Variables.laptops_list.dataSet" on-click="categorylistClick($event, $scope)" cursor="pointer">
                                 <wm-listtemplate name="listtemplate3">
@@ -71,7 +74,8 @@
                         </wm-gridcolumn>
                     </wm-gridrow>
                 </wm-layoutgrid>
-                <wm-layoutgrid rows="3" columns="2" name="layoutgrid3" height="100">
+                <wm-label caption="Deals" fontsize="20" name="Heading" width="100%"></wm-label>
+                <wm-layoutgrid rows="1" columns="2" name="layoutgrid3" height="100">
                     <wm-gridrow name="gridrow3">
                         <wm-gridcolumn name="gridcolumn6">
                             <wm-picture name="Accessories" picturesource="resources/images/imagelists/accessories__category.png" on-click="onCategoryClick('Accessories')" width="80%" cursor="pointer"></wm-picture>

@@ -1,15 +1,13 @@
-<wm-page layouttype="one-column" columns="1" data-ng-controller="MainPageController" name="page1" on-click="products">
+<wm-page layouttype="one-column" columns="1" data-ng-controller="MainPageController" name="page1" on-click="liveVariable1">
     <wm-header height="auto" name="header">
-        <wm-layoutgrid rows="1" columns="3" name="layoutgrid23" height="70">
+        <wm-layoutgrid rows="1" columns="2" name="layoutgrid23" height="70">
             <wm-gridrow name="gridrow28">
                 <wm-gridcolumn name="gridcolumn68">
                     <wm-picture name="picture1" picturesource="resources/images/logos/Android/wavemaker_72x72.png"></wm-picture>
                     <wm-label name="ApplicationName" on-click="appName" caption="bind:Variables.appName.dataSet.dataValue" fontweight="bold" fontsize="24" color="#ffffff"></wm-label>
                 </wm-gridcolumn>
-                <wm-gridcolumn name="gridcolumn69" horizontalalign="right">
-                </wm-gridcolumn>
                 <wm-gridcolumn name="gridcolumn70" horizontalalign="right" on-click="username">
-                    <wm-search name="search1" width="353" height="75"></wm-search>
+                    <wm-search name="search1"></wm-search>
                 </wm-gridcolumn>
             </wm-gridrow>
 
@@ -17,9 +15,6 @@
     </wm-header>
     <wm-top-nav name="top-nav">
         <wm-list name="topLinks" horizontalalign="left">
-            <wm-list-item name="topLink1">
-                <wm-anchor caption="bind:Variables.homeMenu.dataSet.dataValue" name="homelink" hyperlink="#/Main"></wm-anchor>
-            </wm-list-item>
             <wm-list-item name="topLink2">
                 <wm-anchor caption="bind:Variables.productsMenu.dataSet.dataValue" name="dashboardlink" hyperlink="#/Category"></wm-anchor>
             </wm-list-item>
@@ -35,12 +30,52 @@
         <wm-row name="row1">
             <wm-column class="app-content-column" columnwidth="12" paddingleft="15" paddingright="15" name="mainContent">
                 <wm-label caption="Deals of the Day" fontsize="20" name="Heading" width="209"></wm-label>
-                <wm-layoutgrid rows="3" columns="1" name="layoutgrid2" width="48%" height="200">
-                    <wm-gridrow name="gridrow2">
-                        <wm-gridcolumn name="gridcolumn4" class="dealsBanner">
-                            <wm-view id="view1" name="view1" backgroundimage="resources/images/imagelists/Cameras.png" backgroundrepeat="no-repeat"></wm-view>
-                            <wm-view id="view2" name="view2" backgroundimage="resources/images/imagelists/MobilePhones.png" backgroundrepeat="no-repeat"></wm-view>
-                            <wm-view id="view3" name="view3" backgroundimage="resources/images/imagelists/Peripherals.png" backgroundrepeat="no-repeat"></wm-view>
+                <wm-panel height="200" name="dealsBanner" class="dealsBanner" backgroundcolor="#e0e0e0" marginbottom="1" marginunit="em">
+                    <wm-view id="view1" name="promo-camera" backgroundimage="resources/images/imagelists/Cameras.png" backgroundrepeat="no-repeat" show="true"></wm-view>
+                    <wm-view id="view2" name="promo-mobile" backgroundimage="resources/images/imagelists/MobilePhones.png" backgroundrepeat="no-repeat" show="false"></wm-view>
+                    <wm-view id="view3" name="promo-peripheral" backgroundimage="resources/images/imagelists/Peripherals.png" backgroundrepeat="no-repeat" horizontalalign="center" show="false"></wm-view>
+                </wm-panel>
+                <wm-layoutgrid columns="3" name="layoutgrid3" rows="1" height="300">
+                    <wm-gridrow name="gridrow3">
+                        <wm-gridcolumn name="gridcolumn5">
+                            <wm-picture name="picture2" picturesource="resources/images/imagelists/Cameras.png"></wm-picture>
+                            <wm-livelist name="livelist1" dataset="bind:Variables.smartphones_list.dataSet">
+                                <wm-listtemplate name="listtemplate1" on-click="cameras_list">
+                                    <wm-picture name="picture5" class="product-thumb" picturesource="{{item.imgUrl}}"></wm-picture>
+                                    <wm-label name="label3" caption="{{item.name}}" on-click="smartphones_list"></wm-label>
+                                    <wm-label name="label4" caption="{{item.description}}"></wm-label>
+                                </wm-listtemplate>
+                            </wm-livelist>
+                        </wm-gridcolumn>
+                        <wm-gridcolumn name="gridcolumn6">
+                            <wm-picture name="picture3" picturesource="resources/images/imagelists/Cameras.png" backgroundimage="resources/images/imagelists/default-image.png"></wm-picture>
+                            <wm-livelist name="livelist2" dataset="bind:Variables.laptops_list.dataSet">
+                                <wm-listtemplate name="listtemplate2">
+                                    <wm-picture name="picture6" class="product-thumb" picturesource="{{item.imgUrl}}"></wm-picture>
+                                    <wm-label name="label5" caption="{{item.name}}"></wm-label>
+                                    <wm-label name="label6" caption="{{item.description}}"></wm-label>
+                                </wm-listtemplate>
+                            </wm-livelist>
+                        </wm-gridcolumn>
+                        <wm-gridcolumn name="gridcolumn7">
+                            <wm-picture name="picture4" picturesource="resources/images/imagelists/laptops.png"></wm-picture>
+                            <wm-livelist name="livelist3" dataset="bind:Variables.cameras_list.dataSet">
+                                <wm-listtemplate name="listtemplate3">
+                                    <wm-picture name="picture7" class="product-thumb" picturesource="{{item.imgUrl}}"></wm-picture>
+                                    <wm-label name="label7" caption="{{item.name}}"></wm-label>
+                                    <wm-label name="label8" caption="{{item.description}}"></wm-label>
+                                </wm-listtemplate>
+                            </wm-livelist>
+                        </wm-gridcolumn>
+                    </wm-gridrow>
+                </wm-layoutgrid>
+                <wm-layoutgrid rows="3" columns="2" name="layoutgrid3" height="100">
+                    <wm-gridrow name="gridrow3">
+                        <wm-gridcolumn name="gridcolumn6">
+                            <wm-picture name="picture8" backgroundimage="resources/images/imagelists/accessories.png" picturesource="resources/images/imagelists/accessories.png"></wm-picture>
+                        </wm-gridcolumn>
+                        <wm-gridcolumn name="gridcolumn15">
+                            <wm-picture name="picture9" picturesource="resources/images/imagelists/Peripherals.png"></wm-picture>
                         </wm-gridcolumn>
                     </wm-gridrow>
                 </wm-layoutgrid>

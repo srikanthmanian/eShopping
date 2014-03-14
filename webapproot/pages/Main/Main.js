@@ -2,32 +2,35 @@ Application.$controller("MainPageController", ['$rootScope', '$scope', 'Widgets'
     function($rootScope, $scope, Widgets, Variables, $timeout, Utils, $location) {
         "use strict";
 
-        var views = ['view1', 'view2', 'view3'],
+        var views = ['promo-camera', 'promo-mobile', 'promo-peripheral'],
             viewName,
             index,
-            bannerTimeout = 3000;
+            bannerTimeout = 2000;
 
-        var toggleViews = function(index) {
-            if (index > views.length - 1) {
-                index = 0;
+        var displayBannerImage = function(index) {
+            for (var i = 0; i < views.length; i++) {
+                var viewName = views[i];
+                if (index == i) {
+                    Widgets[viewName].show = true;
+                } else {
+                    Widgets[viewName].show = false;
+                }
             }
-            viewName = views[index];
-            $('.dealsBanner .app-view').hide();
-            $('#' + viewName).show();
+
             $timeout(function() {
-                toggleViews(index + 1);
+                var n = index + 1;
+                if (index == views.length) {
+                    n = 0;
+                }
+                displayBannerImage(n);
             }, bannerTimeout);
 
+        };
+
+        $scope.onPageload = function() {
+            displayBannerImage(0);
         }
 
-        var displayViews = function() {
-            index = 0;
-            $('.dealsBanner .app-view').hide();
-            $("#" + views[index]).show();
-            $timeout(function() {
-                toggleViews(index + 1);
-            });
 
-        }();
     }
 ]);

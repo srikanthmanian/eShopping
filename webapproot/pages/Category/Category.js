@@ -22,8 +22,7 @@ Application.$controller("CategoryPageController", ['$rootScope', '$scope', 'Widg
 
         $scope.productListClick = function($event, $scope) {
             $rootScope.selectedItem = $scope.$parent.item;
-            console.log("item", $rootScope.selectedItem);
-            $location.path("Product");
+            $location.path("Products");
         };
 
     }

@@ -36,6 +36,10 @@ Application.$controller("MainPageController", ['$rootScope', '$scope', 'Widgets'
             $location.path('Category');
         }
 
+        $scope.categorylistClick = function($event, $scope) {
+            $rootScope.selectedItem = $scope.$parent.item;
+            $location.path("Products");
+        };
 
     }
 ]);

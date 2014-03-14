@@ -2,30 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc0af6ec-6c07-4249-97a6-6eb7f752d282" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapproot/resources/images/imagelists/cameras_banner.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webapproot/resources/images/imagelists/peripherals_banner.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MOVED" beforePath="C:\Users\jananij\AppData\WaveMaker\projects\eShopping\webapproot\resources\images\imagelists\Cameras.png" afterPath="$PROJECT_DIR$/webapproot/resources/images/imagelists/cameras_category.png" />
-      <change type="MOVED" beforePath="C:\Users\jananij\AppData\WaveMaker\projects\eShopping\webapproot\resources\images\imagelists\MobilePhones.png" afterPath="$PROJECT_DIR$/webapproot/resources/images/imagelists/phones_banner.png" />
-      <change type="MOVED" beforePath="C:\Users\jananij\AppData\WaveMaker\projects\eShopping\webapproot\resources\images\imagelists\Peripherals.png" afterPath="$PROJECT_DIR$/webapproot/resources/images/imagelists/peripherals_category.png" />
-      <change type="MOVED" beforePath="C:\Users\jananij\AppData\WaveMaker\projects\eShopping\webapproot\resources\images\imagelists\accessories.png" afterPath="$PROJECT_DIR$/webapproot/resources/images/imagelists/accessories__category.png" />
-      <change type="MOVED" beforePath="C:\Users\jananij\AppData\WaveMaker\projects\eShopping\webapproot\resources\images\imagelists\laptops.png" afterPath="$PROJECT_DIR$/webapproot/resources/images/imagelists/laptops_category.png" />
-      <change type="MOVED" beforePath="C:\Users\jananij\AppData\WaveMaker\projects\eShopping\webapproot\resources\images\imagelists\smartphone.png" afterPath="$PROJECT_DIR$/webapproot/resources/images/imagelists/smartphones_category.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapproot/services/runtimeService.smd" afterPath="$PROJECT_DIR$/webapproot/services/runtimeService.smd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.wmproject.properties" afterPath="$PROJECT_DIR$/.wmproject.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/services/eshopping/src/com/eshopping/Eshopping.java" afterPath="$PROJECT_DIR$/services/eshopping/src/com/eshopping/Eshopping.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/services/eshopping/src/com/eshopping/EshoppingConstants.java" afterPath="$PROJECT_DIR$/services/eshopping/src/com/eshopping/EshoppingConstants.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapproot/WEB-INF/application.xml" afterPath="$PROJECT_DIR$/webapproot/WEB-INF/application.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapproot/WEB-INF/classes/runtimeService.spring.xml" afterPath="$PROJECT_DIR$/webapproot/WEB-INF/classes/runtimeService.spring.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapproot/WEB-INF/classes/securityService.spring.xml" afterPath="$PROJECT_DIR$/webapproot/WEB-INF/classes/securityService.spring.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapproot/WEB-INF/classes/waveMakerService.spring.xml" afterPath="$PROJECT_DIR$/webapproot/WEB-INF/classes/waveMakerService.spring.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapproot/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/webapproot/WEB-INF/web.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapproot/app.variables.json" afterPath="$PROJECT_DIR$/webapproot/app.variables.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapproot/data/eshopping.properties" afterPath="$PROJECT_DIR$/webapproot/data/eshopping.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapproot/pages/Category/Category.css" afterPath="$PROJECT_DIR$/webapproot/pages/Category/Category.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapproot/pages/Cart/Cart.html" afterPath="$PROJECT_DIR$/webapproot/pages/Cart/Cart.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapproot/pages/Category/Category.html" afterPath="$PROJECT_DIR$/webapproot/pages/Category/Category.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapproot/pages/Main/Main.html" afterPath="$PROJECT_DIR$/webapproot/pages/Main/Main.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapproot/pages/Main/Main.variables.json" afterPath="$PROJECT_DIR$/webapproot/pages/Main/Main.variables.json" />
@@ -283,10 +268,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32897863" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.42042756" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -299,7 +284,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24959481" sideWeight="0.6710214" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24959481" sideWeight="0.57957244" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />

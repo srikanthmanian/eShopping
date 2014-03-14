@@ -42,7 +42,7 @@
                     <wm-gridrow name="gridrow3">
                         <wm-gridcolumn name="gridcolumn5">
                             <wm-picture name="Smart Phones" picturesource="resources/images/imagelists/smartphones_category.png" on-click="onCategoryClick('Smart Phones')" width="90%" cursor="pointer"></wm-picture>
-                            <wm-livelist name="livelist1" dataset="bind:Variables.smartphones_list.dataSet">
+                            <wm-livelist name="smartphoneslist" dataset="bind:Variables.smartphones_list.dataSet" on-click="categorylistClick($event, $scope)" cursor="pointer">
                                 <wm-listtemplate name="listtemplate1" on-click="cameras_list">
                                     <wm-picture name="picture5" class="product-thumb" picturesource="bind:Variables.smartphones_list.dataSet.imgUrl"></wm-picture>
                                     <wm-label name="label3" caption="bind:Variables.smartphones_list.dataSet.name" on-click="smartphones_list"></wm-label>
@@ -53,7 +53,7 @@
 
                         <wm-gridcolumn name="gridcolumn6">
                             <wm-picture name="Cameras" picturesource="resources/images/imagelists/cameras_category.png" on-click="onCategoryClick('Cameras')" width="90%" cursor="pointer"></wm-picture>
-                            <wm-livelist name="livelist2" dataset="bind:Variables.cameras_list.dataSet">
+                            <wm-livelist name="cameraslist" dataset="bind:Variables.cameras_list.dataSet" on-click="categorylistClick($event, $scope)" cursor="pointer">
                                 <wm-listtemplate name="listtemplate2">
                                     <wm-picture name="picture6" class="product-thumb" picturesource="bind:Variables.cameras_list.dataSet.imgUrl"></wm-picture>
                                     <wm-label name="label5" caption="bind:Variables.cameras_list.dataSet.name"></wm-label>
@@ -64,7 +64,7 @@
 
                         <wm-gridcolumn name="gridcolumn7">
                             <wm-picture name="Laptops" picturesource="resources/images/imagelists/laptops_category.png" on-click="onCategoryClick('Laptops')" width="90%" cursor="pointer"></wm-picture>
-                            <wm-livelist name="livelist3" dataset="bind:Variables.laptops_list.dataSet">
+                            <wm-livelist name="laptopslist" dataset="bind:Variables.laptops_list.dataSet" on-click="categorylistClick($event, $scope)" cursor="pointer">
                                 <wm-listtemplate name="listtemplate3">
                                     <wm-picture name="picture7" class="product-thumb" picturesource="bind:Variables.laptops_list.dataSet.imgUrl"></wm-picture>
                                     <wm-label name="label7" caption="bind:Variables.laptops_list.dataSet.name"></wm-label>

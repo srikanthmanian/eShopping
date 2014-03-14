@@ -1,0 +1,56 @@
+<wm-page layouttype="one-column" columns="1" data-ng-controller="ProductsPageController" name="page1">
+    <wm-header height="auto" name="header">
+        <wm-layoutgrid rows="1" columns="2" name="layoutgrid23" height="70">
+            <wm-gridrow name="gridrow28">
+                <wm-gridcolumn name="gridcolumn68">
+                    <wm-picture name="picture1" picturesource="resources/images/logos/Android/wavemaker_72x72.png"></wm-picture>
+                    <wm-label name="ApplicationName" on-click="appName" caption="bind:Variables.appName.dataSet.dataValue" fontweight="bold" fontsize="24" color="#ffffff"></wm-label>
+                </wm-gridcolumn>
+                <wm-gridcolumn name="gridcolumn70" horizontalalign="right" on-click="username">
+                    <wm-search name="search1" width="353" height="75" dataset="bind:Variables.products.dataSet.data" searchkey="name" displaylabel="name" displayimagesrc="imgUrl"></wm-search>
+                </wm-gridcolumn>
+            </wm-gridrow>
+
+        </wm-layoutgrid>
+    </wm-header>
+    <wm-top-nav name="top-nav">
+        <wm-list name="topLinks" horizontalalign="left">
+            <wm-list-item name="topLink1">
+                <wm-anchor caption="bind:Variables.homeMenu.dataSet.dataValue" name="homelink" hyperlink="#/Main"></wm-anchor>
+            </wm-list-item>
+            <wm-list-item name="topLink2">
+                <wm-anchor caption="bind:Variables.productsMenu.dataSet.dataValue" name="dashboardlink" hyperlink="#/Category"></wm-anchor>
+            </wm-list-item>
+            <wm-list-item name="topLink3">
+                <wm-anchor caption="bind:Variables.dashboardMenu.dataSet.dataValue" name="dashboardlink" hyperlink="#/Dashboard"></wm-anchor>
+            </wm-list-item>
+            <wm-list-item name="topLink4">
+                <wm-anchor caption="bind:Variables.logoutMenu.dataSet.dataValue" name="logoutlink" hyperlink="#/Logout"></wm-anchor>
+            </wm-list-item>
+        </wm-list>
+    </wm-top-nav>
+    <wm-content name="content1">
+        <wm-row name="row1">
+            <wm-column class="app-content-column" columnwidth="12" name="column1">
+                <wm-layoutgrid rows="3" columns="3" name="layoutgrid3">
+                    <wm-gridrow name="gridrow2">
+                        <wm-gridcolumn name="gridcolumn4" width="45%" on-click="selectedItem">
+                            <wm-picture name="picture2" maxwidth="100%" picturesource="bind:Variables.selectedItem.dataSet.imgUrl"></wm-picture>
+                        </wm-gridcolumn>
+                        <wm-gridcolumn name="gridcolumn5" width="5%"></wm-gridcolumn>
+                        <wm-gridcolumn name="gridcolumn6" width="50%">
+                            <wm-label name="ProductName" caption="bind:Variables.selectedItem.dataSet.name" width="100%" fontweight="bold" fontsize="24"></wm-label>
+                            <wm-label name="ProductDescription" caption="bind:Variables.selectedItem.dataSet.description" paddingtop="5" paddingleft="5" paddingbottom="5" paddingright="5" fontsize="16" whitespace="nowrap"></wm-label>
+                            <wm-label name="Availability" caption="Available" show="bind:Variables.selectedItem.dataSet.availability" paddingtop="5" paddingleft="5" paddingbottom="5" paddingright="5" fontsize="18" color="#00ff1a"></wm-label>
+                            <wm-label name="Unavailable" caption="Out of Stock" show="bind:!Variables.selectedItem.dataSet.availability" paddingtop="5" paddingleft="5" paddingbottom="5" paddingright="5" fontsize="18" color="#ff0000"></wm-label>
+                            <wm-label name="ProductPrice" caption="bind:Variables.selectedItem.dataSet.price" paddingtop="5" paddingleft="5" paddingbottom="5" paddingright="5" fontsize="18"></wm-label>
+                            <wm-button name="buttonBuy" caption="Add to Cart" paddingleft="10" paddingright="10" paddingtop="7" paddingbottom="7" margintop="10" marginbottom="10" marginright="5" fontsize="20" width="140"></wm-button>
+                        </wm-gridcolumn>
+                    </wm-gridrow>
+
+                </wm-layoutgrid>
+            </wm-column>
+        </wm-row>
+    </wm-content>
+    <wm-footer name="footer1"></wm-footer>
+</wm-page>

@@ -44,10 +44,10 @@
                 <wm-label name="label5" caption="bind:Variables.selectedCategory.dataSet.dataValue"></wm-label>
                 <wm-livelist name="productList" dataset="bind:Variables.products.dataSet" class="products">
                     <wm-listtemplate name="productsTemplate">
-                        <wm-picture name="product_thumb" picturesource="{{item.imgUrl}}" pictureaspect="None" class="product-thumb"></wm-picture>
-                        <wm-label name="product_name" marginright="15" caption="{{item.name}}" fontweight="bold" width="100%" hint="{{item.name}}"></wm-label>
-                        <wm-label name="product_price" marginright="15" caption="{{item.price}}" width="100%"></wm-label>
-                        <wm-label name="product_desc" caption="{{item.description}}" width="100%"></wm-label>
+                        <wm-picture name="product_thumb" picturesource="bind:Variables.products.dataSet.imgUrl" pictureaspect="None" class="product-thumb"></wm-picture>
+                        <wm-label name="product_name" marginright="15" caption="bind:Variables.products.dataSet.name" fontweight="bold" width="100%" hint="{{item.name}}"></wm-label>
+                        <wm-label name="product_price" marginright="15" caption="bind:Variables.products.dataSet.price" width="100%"></wm-label>
+                        <wm-label name="product_desc" caption="bind:Variables.products.dataSet.description" width="100%"></wm-label>
                     </wm-listtemplate>
                 </wm-livelist>
             </wm-column>

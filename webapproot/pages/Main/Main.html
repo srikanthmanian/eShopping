@@ -48,14 +48,16 @@
                             </wm-livelist>
                         </wm-gridcolumn>
 
-                        <wm-picture name="picture3" picturesource="resources/images/imagelists/cameras_category.png" backgroundimage="resources/images/imagelists/default-image.png" width="90%"></wm-picture>
-                        <wm-livelist name="livelist2" dataset="bind:Variables.cameras_list.dataSet">
-                            <wm-listtemplate name="listtemplate2">
-                                <wm-picture name="picture6" class="product-thumb" picturesource="bind:Variables.cameras_list.dataSet.imgUrl"></wm-picture>
-                                <wm-label name="label5" caption="bind:Variables.cameras_list.dataSet.name"></wm-label>
-                                <wm-label name="label6" caption="bind:Variables.cameras_list.dataSet.price"></wm-label>
-                            </wm-listtemplate>
-                        </wm-livelist>
+                        <wm-gridcolumn name="gridcolumn6">
+                            <wm-picture name="picture3" picturesource="resources/images/imagelists/cameras_category.png" backgroundimage="resources/images/imagelists/default-image.png" width="90%"></wm-picture>
+                            <wm-livelist name="livelist2" dataset="bind:Variables.cameras_list.dataSet">
+                                <wm-listtemplate name="listtemplate2">
+                                    <wm-picture name="picture6" class="product-thumb" picturesource="bind:Variables.cameras_list.dataSet.imgUrl"></wm-picture>
+                                    <wm-label name="label5" caption="bind:Variables.cameras_list.dataSet.name"></wm-label>
+                                    <wm-label name="label6" caption="bind:Variables.cameras_list.dataSet.price"></wm-label>
+                                </wm-listtemplate>
+                            </wm-livelist>
+                        </wm-gridcolumn>
 
                         <wm-gridcolumn name="gridcolumn7">
                             <wm-picture name="picture4" picturesource="resources/images/imagelists/laptops_category.png" width="90%"></wm-picture>

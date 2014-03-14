@@ -14,7 +14,7 @@ import com.wavemaker.runtime.service.TypedServiceReturn;
 
 /**
  *  Operations for service "eshopping"
- *  03/14/2014 11:03:49
+ *  03/14/2014 12:01:10
  * 
  */
 @SuppressWarnings("unchecked")

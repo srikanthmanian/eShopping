@@ -5,7 +5,7 @@ Application.$controller("MainPageController", ['$rootScope', '$scope', 'Widgets'
         var views = ['promo-camera', 'promo-mobile', 'promo-peripheral'],
             viewName,
             index,
-            bannerTimeout = 2000;
+            bannerTimeout = 3000;
 
         var displayBannerImage = function(index) {
             for (var i = 0; i < views.length; i++) {
@@ -19,7 +19,7 @@ Application.$controller("MainPageController", ['$rootScope', '$scope', 'Widgets'
 
             $timeout(function() {
                 var n = index + 1;
-                if (index == views.length) {
+                if (n == views.length) {
                     n = 0;
                 }
                 displayBannerImage(n);
@@ -29,6 +29,11 @@ Application.$controller("MainPageController", ['$rootScope', '$scope', 'Widgets'
 
         $scope.onPageload = function() {
             displayBannerImage(0);
+        }
+
+        $scope.onCategoryClick = function(category) {
+            Utils.browserStorage.storeItem('wm.activeCategory', category);
+            $location.path('Category');
         }
 
 

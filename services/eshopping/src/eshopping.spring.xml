@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 
-<!-- Generated 03/12/2014 20:26:16
+<!-- Generated 03/18/2014 14:53:15
 
 Configuration for 'eshopping' database service
 
@@ -90,11 +90,12 @@ Configuration for 'eshopping' database service
         <property name="mappingResources">
             <list>
 
+<value>com/eshopping/data/Cartitem.hbm.xml</value>
 <value>com/eshopping/data/Product.hbm.xml</value>
 <value>com/eshopping/data/User.hbm.xml</value>
 <value>com/eshopping/data/Itemorder.hbm.xml</value>
 
-<value>com/eshopping/data/Product.ql.xml</value>
+<value>com/eshopping/data/Cartitem.ql.xml</value>
 <value>com/eshopping/data/app-queries.ql.xml</value>
 
             </list>

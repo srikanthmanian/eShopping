@@ -33,7 +33,7 @@
     <wm-content name="content1">
         <wm-row name="row1">
             <wm-column class="app-content-column" columnwidth="12" name="column1">
-                <wm-tabs name="Profile" paddingright="" paddingleft="">
+                <wm-tabs name="Profile">
                     <wm-tabpane name="tabpane1">
                         <wm-tabheader name="orderhistory" on-click="orderHistory" heading="bind:Variables.orderHistory.dataSet.dataValue"></wm-tabheader>
                         <wm-tabcontent name="tabcontent1">
@@ -47,29 +47,25 @@
                                 <wm-grid-column binding="product.availability" caption="product.availability" type="boolean" pcdisplay="true" mobiledisplay="true"></wm-grid-column>
                                 <wm-grid-column binding="id" caption="id" type="integer" primary-key="true" generator="identity" pcdisplay="true" mobiledisplay="true"></wm-grid-column>
                                 <wm-grid-column binding="status" caption="status" type="string" pcdisplay="true" mobiledisplay="true"></wm-grid-column>
-                                <wm-grid-column binding="user.phone" caption="user.phone" type="integer" pcdisplay="true" mobiledisplay="true"></wm-grid-column>
+                                <wm-grid-column binding="quantity" caption="quantity" type="integer" pcdisplay="true" mobiledisplay="true"></wm-grid-column>
                             </wm-grid>
                         </wm-tabcontent>
                     </wm-tabpane>
                     <wm-tabpane name="tabpane2">
                         <wm-tabheader name="address" on-click="billingAddress" heading="bind:Variables.billingAddress.dataSet.dataValue"></wm-tabheader>
                         <wm-tabcontent name="tabcontent2">
-                            <wm-layoutgrid rows="3" columns="2" name="layoutgrid2" height="200">
-                                <wm-gridrow name="gridrow2">
-                                    <wm-gridcolumn name="gridcolumn4">
-                                        <wm-composite widget="textarea" name="composite4">
-                                            <wm-label name="label5" caption="Billing Address" fontweight="bold" width="150"></wm-label>
-                                            <wm-textarea name="textarea1" height="112" width="209" placeholder="where you want the invoice to be sent"></wm-textarea>
-                                        </wm-composite>
-                                    </wm-gridcolumn>
-                                    <wm-gridcolumn name="gridcolumn5">
-                                        <wm-composite widget="textarea" name="composite5">
-                                            <wm-label name="label6" caption="Shipping Address" fontweight="bold" width="150"></wm-label>
-                                            <wm-textarea name="textarea2" width="209" height="112" placeholder="where you want to recieve the order"></wm-textarea>
-                                        </wm-composite>
-                                    </wm-gridcolumn>
-                                </wm-gridrow>
-                            </wm-layoutgrid>
+
+
+                            <wm-form name="form1">
+                                <wm-composite widget="textarea" name="composite5" class="address">
+                                    <wm-label caption="Billing Address" fontweight="bold" width="150" name="label6"></wm-label>
+                                    <wm-textarea name="textarea2" height="60" width="175" placeholder="where you want the invoice to be sent"></wm-textarea>
+                                </wm-composite>
+                                <wm-composite widget="textarea" name="composite6">
+                                    <wm-label name="label7" caption="Shipping Address" fontweight="bold" width="150"></wm-label>
+                                    <wm-textarea name="textarea3" width="175" height="60" placeholder="where you want to recieve the order"></wm-textarea>
+                                </wm-composite>
+                            </wm-form>
                         </wm-tabcontent>
                     </wm-tabpane>
                     <wm-tabpane name="tabpane3">

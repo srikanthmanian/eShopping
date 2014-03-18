@@ -5,7 +5,7 @@ package com.eshopping.data;
 
 /**
  *  eshopping.Itemorder
- *  03/12/2014 20:26:17
+ *  03/18/2014 14:53:16
  * 
  */
 public class Itemorder {
@@ -13,6 +13,7 @@ public class Itemorder {
     private Integer id;
     private Product product;
     private String status;
+    private Integer quantity;
     private User user;
 
     public Integer getId() {
@@ -37,6 +38,14 @@ public class Itemorder {
 
     public void setStatus(String status) {
         this.status = status;
+    }
+
+    public Integer getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(Integer quantity) {
+        this.quantity = quantity;
     }
 
     public User getUser() {

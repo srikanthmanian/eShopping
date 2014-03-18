@@ -23,6 +23,12 @@
         <property name="availability" type="boolean">
             <column name="AVAILABILITY" not-null="true"/>
         </property>
+        <set name="cartitems" inverse="true" cascade="">
+            <key>
+                <column name="PRODUCT_ID" not-null="true"/>
+            </key>
+            <one-to-many class="com.eshopping.data.Cartitem"/>
+        </set>
         <set name="itemorders" inverse="true" cascade="">
             <key>
                 <column name="PRODUCT_ID" not-null="true"/>

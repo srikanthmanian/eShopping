@@ -1,6 +1,6 @@
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
-    <class name="com.eshopping.data.Itemorder" table="ITEMORDER" schema="PUBLIC" dynamic-insert="false" dynamic-update="false">
+    <class name="com.eshopping.data.Cartitem" table="CARTITEM" schema="PUBLIC" dynamic-insert="false" dynamic-update="false">
         <id name="id" type="integer">
             <column name="ID"/>
             <generator class="identity"/>

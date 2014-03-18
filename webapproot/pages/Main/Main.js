@@ -5,7 +5,7 @@ Application.$controller("MainPageController", ['$rootScope', '$scope', 'Widgets'
         var views = ['promo-camera', 'promo-mobile', 'promo-peripheral'],
             viewName,
             index,
-            bannerTimeout = 3000;
+            bannerTimeout = 2000;
 
         var displayBannerImage = function(index) {
             for (var i = 0; i < views.length; i++) {
@@ -41,5 +41,11 @@ Application.$controller("MainPageController", ['$rootScope', '$scope', 'Widgets'
             $location.path("Products");
         };
 
+    }
+]);
+
+Application.$controller("grid1Controller", ["$scope",
+    function($scope) {
+        "use strict";
     }
 ]);

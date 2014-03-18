@@ -8,6 +8,9 @@
         <property name="status" type="string">
             <column name="STATUS" not-null="true"/>
         </property>
+        <property name="quantity" type="integer">
+            <column name="QUANTITY" not-null="true"/>
+        </property>
         <many-to-one name="product" class="com.eshopping.data.Product">
             <column name="PRODUCT_ID" not-null="true"/>
         </many-to-one>

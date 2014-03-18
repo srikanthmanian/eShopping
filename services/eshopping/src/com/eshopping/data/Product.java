@@ -7,7 +7,7 @@ import java.util.Set;
 
 /**
  *  eshopping.Product
- *  03/12/2014 20:26:17
+ *  03/18/2014 14:53:16
  * 
  */
 public class Product {
@@ -19,6 +19,7 @@ public class Product {
     private String description;
     private String name;
     private Boolean availability;
+    private Set<com.eshopping.data.Cartitem> cartitems = new HashSet<com.eshopping.data.Cartitem>();
     private Set<com.eshopping.data.Itemorder> itemorders = new HashSet<com.eshopping.data.Itemorder>();
 
     public Integer getId() {
@@ -75,6 +76,14 @@ public class Product {
 
     public void setAvailability(Boolean availability) {
         this.availability = availability;
+    }
+
+    public Set<com.eshopping.data.Cartitem> getCartitems() {
+        return cartitems;
+    }
+
+    public void setCartitems(Set<com.eshopping.data.Cartitem> cartitems) {
+        this.cartitems = cartitems;
     }
 
     public Set<com.eshopping.data.Itemorder> getItemorders() {

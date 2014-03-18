@@ -14,7 +14,7 @@ import com.wavemaker.runtime.service.TypedServiceReturn;
 
 /**
  *  Operations for service "eshopping"
- *  03/14/2014 15:52:40
+ *  03/18/2014 14:53:43
  * 
  */
 @SuppressWarnings("unchecked")
@@ -25,8 +25,8 @@ public class Eshopping
     private DataServiceManager dsMgr;
     private TaskManager taskMgr;
 
-    public com.eshopping.data.Product getProductById(Integer id, PagingOptions pagingOptions) {
-        List<com.eshopping.data.Product> rtn = ((List<com.eshopping.data.Product> ) dsMgr.invoke(taskMgr.getQueryTask(), (EshoppingConstants.getProductByIdQueryName), id, pagingOptions));
+    public com.eshopping.data.Cartitem getCartitemById(Integer id, PagingOptions pagingOptions) {
+        List<com.eshopping.data.Cartitem> rtn = ((List<com.eshopping.data.Cartitem> ) dsMgr.invoke(taskMgr.getQueryTask(), (EshoppingConstants.getCartitemByIdQueryName), id, pagingOptions));
         if (rtn.isEmpty()) {
             return null;
         } else {

@@ -5,6 +5,7 @@
             <map merge="true">
                 <entry key="eshopping">
                     <list>
+                        <value>com.eshopping.data.Cartitem</value>
                         <value>com.eshopping.data.Itemorder</value>
                         <value>com.eshopping.data.Product</value>
                         <value>com.eshopping.data.User</value>

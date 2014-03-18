@@ -1,9 +1,19 @@
-Application.$controller("ProductsPageController", ["$rootScope", "$scope", "Widgets", "Variables",
-
-    function($rootScope, $scope, Widgets, Variables) {
+Application.$controller("ProductsPageController", ["$rootScope", "$scope", "Widgets", "Variables", "$location",
+    function($rootScope, $scope, Widgets, Variables, $location) {
         "use strict";
         (function() {
             Variables.selectedItem.dataSet = $rootScope.selectedItem;
         })();
+
+        $scope.buttonBuyClick = function($event, $scope) {
+            WM.forEach(Variables.products.dataSet.data, function(product) {
+                if ($rootScope.selectedItem.name === product.name) {
+                    Variables.currentProduct.dataSet = product;
+                }
+            });
+            $location.path("Cart");
+            console.log("currentProduct", Variables.currentProduct.dataSet);
+        };
+
     }
 ]);

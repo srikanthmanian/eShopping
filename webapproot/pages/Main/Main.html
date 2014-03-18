@@ -20,10 +20,13 @@
             <wm-list-item name="topLink2">
                 <wm-anchor caption="bind:Variables.productsMenu.dataSet.dataValue" name="dashboardlink" hyperlink="#/Category"></wm-anchor>
             </wm-list-item>
-            <wm-list-item name="topLink3">
+            <wm-list-item ng-if="userLoggedin" name="topLink3">
                 <wm-anchor caption="bind:Variables.dashboardMenu.dataSet.dataValue" name="dashboardlink" hyperlink="#/Dashboard"></wm-anchor>
             </wm-list-item>
-            <wm-list-item name="topLink4">
+            <wm-list-item ng-if="!userLoggedin" name="topLink4">
+                <wm-anchor caption="LOGIN" name="loginlink" on-click="loginDialog.show"></wm-anchor>
+            </wm-list-item>
+            <wm-list-item ng-if="userLoggedin" name="topLink5">
                 <wm-anchor caption="bind:Variables.logoutMenu.dataSet.dataValue" name="logoutlink" hyperlink="#/Logout"></wm-anchor>
             </wm-list-item>
         </wm-list>
@@ -41,7 +44,7 @@
                 <wm-layoutgrid columns="3" class="productCategoryListing" name="productCategoryListing" rows="1" height="300">
                     <wm-gridrow name="gridrow3">
                         <wm-gridcolumn name="gridcolumn5" class="prodcategory">
-                            <wm-picture name="Smart Phones" class="prodCategoryBanner" picturesource="resources/images/imagelists/smartphones_category.png" on-click="onCategoryClick('Smart Phones')" width="90%" cursor="pointer"></wm-picture>
+                            <wm-picture name="Smart Phones" class="prodCategoryBanner" picturesource="resources/images/imagelists/smartphones_category.png" on-click="onCategoryClick('Smart Phones')" width="100%" cursor="pointer"></wm-picture>
                             <wm-livelist name="smartphoneslist" dataset="bind:Variables.smartphones_list.dataSet" on-click="categorylistClick($event, $scope)" cursor="pointer">
                                 <wm-listtemplate name="listtemplate1">
                                     <wm-picture name="picture5" class="product-thumb" picturesource="bind:Variables.smartphones_list.dataSet.imgUrl"></wm-picture>
@@ -52,7 +55,7 @@
                         </wm-gridcolumn>
 
                         <wm-gridcolumn name="gridcolumn6" class="prodcategory">
-                            <wm-picture name="Cameras" picturesource="resources/images/imagelists/cameras_category.png" on-click="onCategoryClick('Cameras')" width="90%" cursor="pointer"></wm-picture>
+                            <wm-picture name="Cameras" picturesource="resources/images/imagelists/cameras_category.png" on-click="onCategoryClick('Cameras')" width="100%" cursor="pointer"></wm-picture>
                             <wm-livelist name="cameraslist" dataset="bind:Variables.cameras_list.dataSet" on-click="categorylistClick($event, $scope)" cursor="pointer">
                                 <wm-listtemplate name="listtemplate2">
                                     <wm-picture name="picture6" class="product-thumb" picturesource="bind:Variables.cameras_list.dataSet.imgUrl"></wm-picture>
@@ -63,7 +66,7 @@
                         </wm-gridcolumn>
 
                         <wm-gridcolumn name="gridcolumn7" class="prodcategory">
-                            <wm-picture name="Laptops" picturesource="resources/images/imagelists/laptops_category.png" on-click="onCategoryClick('Laptops')" width="90%" cursor="pointer"></wm-picture>
+                            <wm-picture name="Laptops" picturesource="resources/images/imagelists/laptops_category.png" on-click="onCategoryClick('Laptops')" width="100%" cursor="pointer"></wm-picture>
                             <wm-livelist name="laptopslist" dataset="bind:Variables.laptops_list.dataSet" on-click="categorylistClick($event, $scope)" cursor="pointer">
                                 <wm-listtemplate name="listtemplate3">
                                     <wm-picture name="picture7" class="product-thumb" picturesource="bind:Variables.laptops_list.dataSet.imgUrl"></wm-picture>
@@ -88,4 +91,46 @@
             </wm-column>
         </wm-row>
     </wm-content>
+    <wm-view name="view4" class="dialog-view" on-click="currentUser">
+        <wm-dialog dialogtype="design-dialog" modal="true" name="loginDialog" height="300">
+            <wm-dialogheader name="dialogheader1"></wm-dialogheader>
+            <wm-dialogcontent name="dialogcontent1">
+                <wm-tabs name="tabs1">
+                    <wm-tabpane name="tabpane1">
+                        <wm-tabheader name="tabheader1" heading="Login"></wm-tabheader>
+                        <wm-tabcontent name="tabcontent1">
+                            <wm-composite widget="text" name="composite2">
+                                <wm-label name="label12" caption="Username"></wm-label>
+                                <wm-text name="username_val"></wm-text>
+                            </wm-composite>
+                            <wm-composite widget="text" name="composite3">
+                                <wm-label name="label13" caption="Password"></wm-label>
+                                <wm-text name="password_val"></wm-text>
+                            </wm-composite>
+                            <wm-button name="button3" caption="Login" on-click="button3Click($event, $scope)"></wm-button>
+                        </wm-tabcontent>
+                    </wm-tabpane>
+                    <wm-tabpane name="tabpane2">
+                        <wm-tabheader name="tabheader2" heading="Signup"></wm-tabheader>
+                        <wm-tabcontent name="tabcontent2">
+                            <wm-composite widget="text" name="composite4">
+                                <wm-label name="label14" caption="Email Address"></wm-label>
+                                <wm-text name="text4"></wm-text>
+                            </wm-composite>
+                            <wm-composite widget="text" name="composite5">
+                                <wm-label name="label15" caption="Password"></wm-label>
+                                <wm-text name="text5"></wm-text>
+                            </wm-composite>
+                            <wm-composite widget="text" name="composite6">
+                                <wm-label name="label16" caption="Confirm Password"></wm-label>
+                                <wm-text name="text6"></wm-text>
+                            </wm-composite>
+                            <wm-button name="button4" caption="SIGN UP NOW!"></wm-button>
+                        </wm-tabcontent>
+                    </wm-tabpane>
+                </wm-tabs>
+            </wm-dialogcontent>
+            <wm-dialogactions name="dialogactions1"></wm-dialogactions>
+        </wm-dialog>
+    </wm-view>
 </wm-page>

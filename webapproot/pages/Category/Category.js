@@ -27,3 +27,9 @@ Application.$controller("CategoryPageController", ['$rootScope', '$scope', 'Widg
 
     }
 ]);
+
+Application.$controller("loginDialogController", ["$scope",
+    function($scope) {
+        "use strict";
+    }
+]);

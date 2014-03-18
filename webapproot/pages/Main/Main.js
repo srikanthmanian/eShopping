@@ -5,7 +5,7 @@ Application.$controller("MainPageController", ['$rootScope', '$scope', 'Widgets'
         var views = ['promo-camera', 'promo-mobile', 'promo-peripheral'],
             viewName,
             index,
-            bannerTimeout = 2000;
+            bannerTimeout = 3000;
 
         var displayBannerImage = function(index) {
             for (var i = 0; i < views.length; i++) {
@@ -39,6 +39,29 @@ Application.$controller("MainPageController", ['$rootScope', '$scope', 'Widgets'
         $scope.categorylistClick = function($event, $scope) {
             $rootScope.selectedItem = $scope.$parent.item;
             $location.path("Products");
+        };
+
+    }
+]);
+
+Application.$controller("loginDialogController", ["$rootScope", "$scope", "Variables", "Widgets",
+    function($rootScope, $scope, Variables, Widgets) {
+        "use strict";
+
+        $scope.button3Click = function($event, $scope) {
+            /** Check the live variable if the credentials are right*/
+            WM.forEach(Variables.users.dataSet.data, function(userObj) {
+                if (userObj.name === Widgets.username_val.datavalue && userObj.password === Widgets.password_val.datavalue) {
+                    Variables.currentUser.dataSet = userObj;
+                    $rootScope.userLoggedin = true;
+                } else {
+
+                }
+            });
+            if ($rootScope.userLoggedin) {
+                // Close  the  dialog
+            }
+
         };
 
     }

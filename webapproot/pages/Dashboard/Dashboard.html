@@ -33,11 +33,12 @@
     <wm-content name="content1">
         <wm-row name="row1">
             <wm-column class="app-content-column" columnwidth="12" name="column1">
-                <wm-tabs name="Profile" paddingright="" paddingleft="">
+                <wm-tabs name="Profile">
                     <wm-tabpane name="tabpane1">
-                        <wm-tabheader name="orderhistory" on-click="orderHistory" heading="bind:Variables.orderHistory.dataSet.dataValue"></wm-tabheader>
+                        <wm-tabheader name="orderhistory" on-click="orders" heading="bind:Variables.orderHistory.dataSet.dataValue"></wm-tabheader>
                         <wm-tabcontent name="tabcontent1">
-                            <wm-grid name="grid1" dataset="bind:Variables.ItemorderLiveVariable1.dataSet">
+
+                            <wm-grid name="grid1" dataset="bind:Variables.orders.dataSet" on-click="orders">
                                 <wm-grid-column binding="product.imgUrl" caption="product.imgUrl" type="string" pcdisplay="true" mobiledisplay="true"></wm-grid-column>
                                 <wm-grid-column binding="product.id" caption="product.id" type="integer" primary-key="true" generator="identity" pcdisplay="true" mobiledisplay="true"></wm-grid-column>
                                 <wm-grid-column binding="product.category" caption="product.category" type="string" pcdisplay="true" mobiledisplay="true"></wm-grid-column>

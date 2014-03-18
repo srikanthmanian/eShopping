@@ -8,3 +8,9 @@ Application.$controller("grid1Controller", ["$scope",
 		"use strict";
 	}
 ]);
+
+Application.$controller("loginDialogController", ["$scope",
+	function($scope) {
+		"use strict";
+	}
+]);

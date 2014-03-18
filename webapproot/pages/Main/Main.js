@@ -43,3 +43,32 @@ Application.$controller("MainPageController", ['$rootScope', '$scope', 'Widgets'
 
     }
 ]);
+
+Application.$controller("loginDialogController", ["$rootScope", "$scope", "Variables", "Widgets",
+    function($rootScope, $scope, Variables, Widgets) {
+        "use strict";
+
+        $scope.button3Click = function($event, $scope) {
+            /** Check the live variable if the credentials are right*/
+            WM.forEach(Variables.users.dataSet.data, function(userObj) {
+                if (userObj.name === Widgets.username_val.datavalue && userObj.password === Widgets.password_val.datavalue) {
+                    Variables.currentUser.dataSet = userObj;
+                    $rootScope.userLoggedin = true;
+                } else {
+
+                }
+            });
+            if ($rootScope.userLoggedin) {
+                // Close  the  dialog
+            }
+
+        };
+
+    }
+]);
+
+Application.$controller("grid1Controller", ["$scope",
+    function($scope) {
+        "use strict";
+    }
+]);

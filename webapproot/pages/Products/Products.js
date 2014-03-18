@@ -5,14 +5,13 @@ Application.$controller("ProductsPageController", ["$rootScope", "$scope", "Widg
             Variables.selectedItem.dataSet = $rootScope.selectedItem;
         })();
 
-        $scope.buttonBuyClick = function($event, $scope) {
+        $scope.addToCartClick = function($event, $scope) {
             WM.forEach(Variables.products.dataSet.data, function(product) {
                 if ($rootScope.selectedItem.name === product.name) {
                     Variables.currentProduct.dataSet = product;
                 }
             });
             $location.path("Cart");
-            console.log("currentProduct", Variables.currentProduct.dataSet);
         };
 
     }

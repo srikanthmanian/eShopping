@@ -47,7 +47,7 @@
                 </wm-list>
             </wm-left-panel>
             <wm-column class="app-content-column" columnwidth="10" paddingleft="15" paddingright="15" name="mainContent">
-                <wm-label name="label5" caption="bind:Variables.selectedCategory.dataSet.dataValue"></wm-label>
+                <wm-label name="label5" caption="bind:Variables.selectedCategory.dataSet.dataValue" fontsize="1.3" fontunit="em"></wm-label>
                 <wm-livelist name="productList" dataset="bind:Variables.products.dataSet" class="products" on-click="productListClick($event, $scope)">
                     <wm-listtemplate name="productsTemplate">
                         <wm-picture name="product_thumb" picturesource="bind:Variables.products.dataSet.imgUrl" pictureaspect="None" class="product-thumb"></wm-picture>

@@ -58,6 +58,7 @@ Application.$controller("loginDialogController", ["$rootScope", "$scope", "Varia
                     Variables.currentUser.dataSet = userObj;
                     $rootScope.userLoggedin = true;
                     Utils.browserStorage.storeItem('wm.isUserLoggedIn', $rootScope.userLoggedin);
+                    Utils.browserStorage.storeItem('wm.currentUserObj', JSON.stringify(userObj));
                 } else {
 
                 }

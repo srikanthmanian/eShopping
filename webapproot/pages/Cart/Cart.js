@@ -4,6 +4,10 @@ Application.$controller("CartPageController", ["$scope", "$rootScope", "Widgets"
         (function () {
             $rootScope.userLoggedin = Utils.browserStorage.getItem('wm.isUserLoggedIn');
         })();
+
+        $scope.onPageReady = function() {
+            Variables.currentUser.dataSet = JSON.parse(Utils.browserStorage.getItem('wm.currentUserObj'));
+        }
     }
 ]);
 

@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f190069a-e832-4a68-a3fe-735282d8a856" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapproot/pages/Cart/Cart.html" afterPath="$PROJECT_DIR$/webapproot/pages/Cart/Cart.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapproot/pages/Cart/Cart.variables.json" afterPath="$PROJECT_DIR$/webapproot/pages/Cart/Cart.variables.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapproot/pages/Category/Category.html" afterPath="$PROJECT_DIR$/webapproot/pages/Category/Category.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapproot/pages/Category/Category.variables.json" afterPath="$PROJECT_DIR$/webapproot/pages/Category/Category.variables.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapproot/pages/Main/Main.html" afterPath="$PROJECT_DIR$/webapproot/pages/Main/Main.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapproot/pages/Main/Main.variables.json" afterPath="$PROJECT_DIR$/webapproot/pages/Main/Main.variables.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapproot/pages/Products/Products.html" afterPath="$PROJECT_DIR$/webapproot/pages/Products/Products.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapproot/app.variables.json" afterPath="$PROJECT_DIR$/webapproot/app.variables.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapproot/data/eshopping.properties" afterPath="$PROJECT_DIR$/webapproot/data/eshopping.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="f190069a-e832-4a68-a3fe-735282d8a856" name="Default" comment="" />
     <ignored path="eShopping.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -73,7 +62,7 @@
       <file leaf-file-name="eshopping.script" pinned="false" current="true" current-in-tab="true">
         <entry file="file://E:/Workspace/Backups/eshopping/eshopping.script">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="82" column="56" selection-start="19131" selection-end="19131" vertical-scroll-proportion="0.5254545" vertical-offset="1105" max-vertical-offset="2499">
+            <state line="91" column="31" selection-start="21645" selection-end="21645" vertical-scroll-proportion="0.15454546" vertical-offset="1462" max-vertical-offset="2499">
               <folding />
             </state>
           </provider>
@@ -612,7 +601,7 @@
     </entry>
     <entry file="file://E:/Workspace/Backups/eshopping/eshopping.script">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="82" column="56" selection-start="19131" selection-end="19131" vertical-scroll-proportion="0.5254545" vertical-offset="1105" max-vertical-offset="2499">
+        <state line="91" column="31" selection-start="21645" selection-end="21645" vertical-scroll-proportion="0.15454546" vertical-offset="1462" max-vertical-offset="2499">
           <folding />
         </state>
       </provider>

@@ -1,21 +1,18 @@
 <wm-page layouttype="two-column" columns="2" data-ng-controller="CategoryPageController" name="page1">
-    <wm-header height="auto" name="header">
-        <wm-layoutgrid rows="1" columns="3" name="layoutgrid23" height="70">
+    <wm-header height="auto" name="header" backgroundcolor="#015b7f">
+        <wm-layoutgrid rows="1" columns="2" name="layoutgrid23" height="70">
             <wm-gridrow name="gridrow28">
                 <wm-gridcolumn name="gridcolumn68">
-                    <wm-picture name="picture1" picturesource="resources/images/logos/Android/wavemaker_72x72.png"></wm-picture>
-                    <wm-label name="ApplicationName" on-click="liveVariable1" caption="bind:Variables.appName.dataSet.dataValue" fontweight="bold" fontsize="24" color="#ffffff" cursor="pointer"></wm-label>
-                </wm-gridcolumn>
-                <wm-gridcolumn name="gridcolumn69" horizontalalign="right">
+                    <wm-picture name="picture1" picturesource="bind:Variables.eshopIcon.dataSet.dataValue"></wm-picture>
+                    <wm-label name="ApplicationName" on-click="appName" caption="bind:Variables.appName.dataSet.dataValue" fontweight="bold" fontsize="24" color="#d1d039" class="app-name"></wm-label>
                 </wm-gridcolumn>
                 <wm-gridcolumn name="gridcolumn70" horizontalalign="right" on-click="username">
-                    <wm-search name="search1" width="353" height="75"></wm-search>
+                    <wm-search name="search1" width="353" height="75" class="product-search"></wm-search>
                 </wm-gridcolumn>
             </wm-gridrow>
-
         </wm-layoutgrid>
     </wm-header>
-    <wm-top-nav name="top-nav">
+    <wm-top-nav name="top-nav" backgroundcolor="#015b7f">
         <wm-list name="topLinks" horizontalalign="left">
             <wm-list-item name="topLink1">
                 <wm-anchor caption="bind:Variables.homeMenu.dataSet.dataValue" name="homelink" hyperlink="#/Main"></wm-anchor>
@@ -54,9 +51,12 @@
                 <wm-livelist name="productList" dataset="bind:Variables.products.dataSet" class="products" on-click="productListClick($event, $scope)">
                     <wm-listtemplate name="productsTemplate">
                         <wm-picture name="product_thumb" picturesource="bind:Variables.products.dataSet.imgUrl" pictureaspect="None" class="product-thumb"></wm-picture>
-                        <wm-label name="product_name" marginright="15" caption="bind:Variables.products.dataSet.name" fontweight="bold" width="100%" hint="{{item.name}}"></wm-label>
-                        <wm-label name="product_price" marginright="15" caption="bind:Variables.products.dataSet.price" width="100%"></wm-label>
-                        <wm-label name="product_desc" caption="bind:Variables.products.dataSet.description" width="100%"></wm-label>
+                        <wm-row name="row2">
+                            <wm-label caption="Rs" fontweight="bold" name="label3" color="#000000" width="1.5em"></wm-label>
+                            <wm-label name="product_price" caption="bind:Variables.products.dataSet.price" fontweight="bold" width="4.5em" color="#000000" margintop="10"></wm-label>
+                        </wm-row>
+                        <wm-label name="product_name" class="product-name" marginright="15" caption="bind:Variables.products.dataSet.name" width="100%" fontsize="0.8" hint="{{item.name}}" fontunit="em" color="#464646"></wm-label>
+
                     </wm-listtemplate>
                 </wm-livelist>
             </wm-column>

@@ -1,4 +1,15 @@
-.product-thumb {
+.app-name {
+    vertical-align: bottom;
+}
+.products-list .app-list-item {
+    background: white;
+}
+
+.products-list .app-list-item:hover {
+    border: 2px solid #ffd926;
+}
+
+.list-product-thumb {
     max-width: 8em;
     max-height: 4em;
     padding: 0.25em;
@@ -23,6 +34,11 @@
 .prodCategoryBanner {
     width: 100%;
 }
+
+.prodCategoryBanner:hover{
+    border: 2px solid #ffd926;
+}
+
 .productCategoryListing .app-list-item {
     border: 1px dotted #e3e3e3;
 }

@@ -28,8 +28,6 @@ Application.$controller("MainPageController", ['$rootScope', '$scope', 'Widgets'
         };
 
         $scope.onPageReady = function() {
-            debugger;
-            console.log(Utils.browserStorage.getItem('wm.isUserLoggedIn'));
             $rootScope.userLoggedin = Utils.browserStorage.getItem('wm.isUserLoggedIn') + "";
             displayBannerImage(0);
         }

@@ -1,8 +1,13 @@
 .product-thumb {
-    max-width: 8em;
-    max-height: 4em;
+    max-width: 10em;
+    max-height: 6em;
     padding: 0.25em;
 }
+
+.product-name:hover {
+    text-decoration: underline;
+}
+
 .products {
     cursor: pointer;
 }
@@ -14,9 +19,17 @@
     margin: 0.25em;
     padding: 0.25em;
 }
+
+.products .app-list-item:hover {
+    border: 2px solid #ffd926;
+}
+
 ul.category-menu-list {
     padding: 0.5em;
 }
 .category-menu-list li {
     padding: 0.25em;
+}
+.product-price .product-name {
+    text-align: center;
 }

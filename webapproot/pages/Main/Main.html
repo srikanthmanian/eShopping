@@ -1,19 +1,19 @@
 <wm-page layouttype="one-column" columns="1" data-ng-controller="MainPageController" name="page1" on-click="liveVariable1">
-    <wm-header height="auto" name="header">
+    <wm-header height="auto" name="header" backgroundcolor="#015b7f">
         <wm-layoutgrid rows="1" columns="2" name="layoutgrid23" height="70">
             <wm-gridrow name="gridrow28">
                 <wm-gridcolumn name="gridcolumn68">
-                    <wm-picture name="picture1" picturesource="resources/images/logos/Android/wavemaker_72x72.png"></wm-picture>
-                    <wm-label name="ApplicationName" on-click="appName" caption="bind:Variables.appName.dataSet.dataValue" fontweight="bold" fontsize="24" color="#ffffff"></wm-label>
+                    <wm-picture name="picture1" picturesource="bind:Variables.eshopIcon.dataSet.dataValue"></wm-picture>
+                    <wm-label name="ApplicationName" on-click="appName" caption="bind:Variables.appName.dataSet.dataValue" fontweight="bold" fontsize="24" color="#d1d039" class="app-name"></wm-label>
                 </wm-gridcolumn>
                 <wm-gridcolumn name="gridcolumn70" horizontalalign="right" on-click="username">
-                    <wm-search name="search1" width="353" height="75"></wm-search>
+                    <wm-search name="search1" width="353" height="75" class="product-search"></wm-search>
                 </wm-gridcolumn>
             </wm-gridrow>
         </wm-layoutgrid>
     </wm-header>
-    <wm-top-nav name="top-nav">
-        <wm-list name="topLinks" horizontalalign="left">
+    <wm-top-nav name="top-nav" backgroundcolor="#015b7f">
+        <wm-list name="topLinks" horizontalalign="left" class="top-nav">
             <wm-list-item name="topLink1">
                 <wm-anchor caption="bind:Variables.homeMenu.dataSet.dataValue" name="homelink" hyperlink="#/Main"></wm-anchor>
             </wm-list-item>
@@ -51,33 +51,48 @@
                     <wm-gridrow name="gridrow3">
                         <wm-gridcolumn name="gridcolumn5" class="prodcategory">
                             <wm-picture name="Smart Phones" class="prodCategoryBanner" picturesource="resources/images/imagelists/smartphones_category.png" on-click="onCategoryClick('Smart Phones')" width="100%" cursor="pointer"></wm-picture>
-                            <wm-livelist name="smartphoneslist" dataset="bind:Variables.smartphones_list.dataSet" on-click="categorylistClick($event, $scope)" cursor="pointer">
+                            <wm-livelist name="smartphoneslist" class="products-list" dataset="bind:Variables.smartphones_list.dataSet" on-click="categorylistClick($event, $scope)" cursor="pointer">
                                 <wm-listtemplate name="listtemplate1">
-                                    <wm-picture name="picture5" class="product-thumb" picturesource="bind:Variables.smartphones_list.dataSet.imgUrl"></wm-picture>
-                                    <wm-label name="label3" caption="bind:Variables.smartphones_list.dataSet.name" on-click="smartphones_list"></wm-label>
-                                    <wm-label name="label4" caption="bind:Variables.smartphones_list.dataSet.price"></wm-label>
+                                    <wm-column columnwidth="2" name="column2">
+                                        <wm-picture name="picture5" class="list-product-thumb" picturesource="bind:Variables.smartphones_list.dataSet.imgUrl"></wm-picture>
+                                    </wm-column>
+                                    <wm-column columnwidth="10" name="column3">
+                                        <wm-label name="phone-name" caption="bind:Variables.smartphones_list.dataSet.name" paddingleft="5" width="100%"></wm-label>
+                                        <wm-label name="phone-curr" caption="Rs" fontweight="bold" color="#000000" paddingleft="5" width="8%"></wm-label>
+                                        <wm-label name="phone-price" caption="bind:Variables.smartphones_list.dataSet.price" fontweight="bold" color="#000000"></wm-label>
+                                    </wm-column>
                                 </wm-listtemplate>
                             </wm-livelist>
                         </wm-gridcolumn>
 
                         <wm-gridcolumn name="gridcolumn6" class="prodcategory">
-                            <wm-picture name="Cameras" picturesource="resources/images/imagelists/cameras_category.png" on-click="onCategoryClick('Cameras')" width="100%" cursor="pointer"></wm-picture>
-                            <wm-livelist name="cameraslist" dataset="bind:Variables.cameras_list.dataSet" on-click="categorylistClick($event, $scope)" cursor="pointer">
+                            <wm-picture name="Cameras" class="prodCategoryBanner" picturesource="resources/images/imagelists/cameras_category.png" on-click="onCategoryClick('Cameras')" width="100%" cursor="pointer"></wm-picture>
+                            <wm-livelist name="cameraslist" class="products-list" dataset="bind:Variables.cameras_list.dataSet" on-click="categorylistClick($event, $scope)" cursor="pointer">
                                 <wm-listtemplate name="listtemplate2">
-                                    <wm-picture name="picture6" class="product-thumb" picturesource="bind:Variables.cameras_list.dataSet.imgUrl"></wm-picture>
-                                    <wm-label name="label5" caption="bind:Variables.cameras_list.dataSet.name"></wm-label>
-                                    <wm-label name="label6" caption="bind:Variables.cameras_list.dataSet.price"></wm-label>
+                                    <wm-column columnwidth="2" name="column4">
+                                        <wm-picture name="picture6" class="list-product-thumb" picturesource="bind:Variables.cameras_list.dataSet.imgUrl"></wm-picture>
+                                    </wm-column>
+                                    <wm-column columnwidth="10" name="column5">
+                                        <wm-label name="cameras-name" caption="bind:Variables.cameras_list.dataSet.name" paddingleft="5" width="100%"></wm-label>
+                                        <wm-label name="cameras-curr" caption="Rs" fontweight="bold" color="#000000" paddingleft="5" width="8%"></wm-label>
+                                        <wm-label name="cameras-price" caption="bind:Variables.cameras_list.dataSet.price" fontweight="bold" color="#000000"></wm-label>
+                                    </wm-column>
                                 </wm-listtemplate>
                             </wm-livelist>
                         </wm-gridcolumn>
 
                         <wm-gridcolumn name="gridcolumn7" class="prodcategory">
-                            <wm-picture name="Laptops" picturesource="resources/images/imagelists/laptops_category.png" on-click="onCategoryClick('Laptops')" width="100%" cursor="pointer"></wm-picture>
-                            <wm-livelist name="laptopslist" dataset="bind:Variables.laptops_list.dataSet" on-click="categorylistClick($event, $scope)" cursor="pointer">
+                            <wm-picture name="Laptops" class="prodCategoryBanner" picturesource="resources/images/imagelists/laptops_category.png" on-click="onCategoryClick('Laptops')" width="100%" cursor="pointer"></wm-picture>
+                            <wm-livelist name="laptopslist" class="products-list" dataset="bind:Variables.laptops_list.dataSet" on-click="categorylistClick($event, $scope)" cursor="pointer">
                                 <wm-listtemplate name="listtemplate3">
-                                    <wm-picture name="picture7" class="product-thumb" picturesource="bind:Variables.laptops_list.dataSet.imgUrl"></wm-picture>
-                                    <wm-label name="label7" caption="bind:Variables.laptops_list.dataSet.name"></wm-label>
-                                    <wm-label name="label8" caption="bind:Variables.laptops_list.dataSet.price"></wm-label>
+                                    <wm-column columnwidth="2" name="column6">
+                                        <wm-picture name="picture7" class="list-product-thumb" picturesource="bind:Variables.laptops_list.dataSet.imgUrl"></wm-picture>
+                                    </wm-column>
+                                    <wm-column columnwidth="10" name="column7">
+                                        <wm-label name="laptops-name" caption="bind:Variables.laptops_list.dataSet.name" paddingleft="5" width="100%"></wm-label>
+                                        <wm-label name="laptops-curr" caption="Rs" fontweight="bold" color="#000000" paddingleft="5" width="8%"></wm-label>
+                                        <wm-label name="laptops-price" caption="bind:Variables.laptops_list.dataSet.price" fontweight="bold" color="#000000"></wm-label>
+                                    </wm-column>
                                 </wm-listtemplate>
                             </wm-livelist>
                         </wm-gridcolumn>
@@ -131,7 +146,7 @@
                     <wm-label caption="Powered by WaveMaker" textalign="left" name="poweredby" width="100%"></wm-label>
                 </wm-gridcolumn>
                 <wm-gridcolumn horizontalalign="right" verticalalign="bottom" name="footerright">
-                    <wm-label caption="Copyright 2014 eShopping" textalign="right" name="copyright" width="100%"></wm-label>
+                    <wm-label caption="Copyright 2014 eShop" textalign="right" name="copyright" width="100%"></wm-label>
                 </wm-gridcolumn>
             </wm-gridrow>
         </wm-layoutgrid>

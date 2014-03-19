@@ -98,12 +98,12 @@
         </wm-row>
     </wm-content>
     <wm-view name="loginView" class="dialog-view" on-click="currentUser">
-        <wm-dialog dialogtype="design-dialog" modal="true" name="loginDialog" height="300">
+        <wm-dialog dialogtype="design-dialog" modal="true" name="loginDialog" height="250" title="Login">
             <wm-dialogheader name="dialogheader1"></wm-dialogheader>
             <wm-dialogcontent name="dialogcontent1">
-                <wm-tabs name="tabs1">
+                <wm-tabs name="tabs1" height="150">
                     <wm-tabpane name="tabpane1">
-                        <wm-tabheader name="tabheader1" heading="Login"></wm-tabheader>
+                        <wm-tabheader name="tabheader1" heading="Login" isdefaulttab="false"></wm-tabheader>
                         <wm-tabcontent name="tabcontent1">
                             <wm-composite widget="text" name="composite2">
                                 <wm-label name="label12" caption="Email"></wm-label>
@@ -113,13 +113,27 @@
                                 <wm-label name="label13" caption="Password"></wm-label>
                                 <wm-text name="password_val" type="password"></wm-text>
                             </wm-composite>
-                            <wm-button name="button3" caption="Login" on-click="button3Click($event, $scope)"></wm-button>
+
                         </wm-tabcontent>
                     </wm-tabpane>
 
                 </wm-tabs>
             </wm-dialogcontent>
-            <wm-dialogactions name="dialogactions1"></wm-dialogactions>
+            <wm-dialogactions name="dialogactions1" show="true">
+                <wm-button name="button3" caption="Login" on-click="button3Click($event, $scope)" height="27" width="78"></wm-button>
+            </wm-dialogactions>
         </wm-dialog>
     </wm-view>
+    <wm-footer name="footer">
+        <wm-layoutgrid rows="1" columns="2" height="auto" name="footerlayout">
+            <wm-gridrow name="footerrow">
+                <wm-gridcolumn name="footerleft" verticalalign="bottom">
+                    <wm-label caption="Powered by WaveMaker" textalign="left" name="poweredby" width="100%"></wm-label>
+                </wm-gridcolumn>
+                <wm-gridcolumn horizontalalign="right" verticalalign="bottom" name="footerright">
+                    <wm-label caption="Copyright 2014 eShopping" textalign="right" name="copyright" width="100%"></wm-label>
+                </wm-gridcolumn>
+            </wm-gridrow>
+        </wm-layoutgrid>
+    </wm-footer>
 </wm-page>

@@ -36,7 +36,7 @@
                 <wm-anchor caption="LOGIN" name="loginlink" on-click="loginDialog.show"></wm-anchor>
             </wm-list-item>
             <wm-list-item ng-if="userLoggedin" name="topLink7">
-                <wm-anchor caption="bind:Variables.logoutMenu.dataSet.dataValue" name="logoutlink" hyperlink="#/Logout"></wm-anchor>
+                <wm-anchor caption="bind:Variables.logoutMenu.dataSet.dataValue" name="logoutlink" on-click="logout($event, $scope)"></wm-anchor>
             </wm-list-item>
         </wm-list>
     </wm-top-nav>

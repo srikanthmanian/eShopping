@@ -27,7 +27,7 @@ Application.$controller("MainPageController", ['$rootScope', '$scope', 'Widgets'
 
         };
 
-        $scope.onPageload = function() {
+        $scope.onPageReady = function() {
             displayBannerImage(0);
         }
 
@@ -44,8 +44,9 @@ Application.$controller("MainPageController", ['$rootScope', '$scope', 'Widgets'
     }
 ]);
 
-Application.$controller("loginDialogController", ["$rootScope", "$scope", "Variables", "Widgets",
-    function($rootScope, $scope, Variables, Widgets) {
+Application.$controller("loginDialogController", ["$rootScope", "$scope", "Variables", "Widgets", "DialogService",
+
+    function($rootScope, $scope, Variables, Widgets, DialogService) {
         "use strict";
 
         $scope.button3Click = function($event, $scope) {
@@ -59,15 +60,20 @@ Application.$controller("loginDialogController", ["$rootScope", "$scope", "Varia
                 }
             });
             if ($rootScope.userLoggedin) {
-                // Close  the  dialog
+                /** Close  the  dialog */
+                DialogService.hideDialog('loginDialog');
             }
-
         };
-
     }
 ]);
 
 Application.$controller("grid1Controller", ["$scope",
+    function($scope) {
+        "use strict";
+    }
+]);
+
+Application.$controller("grid2Controller", ["$scope",
     function($scope) {
         "use strict";
     }

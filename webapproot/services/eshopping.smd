@@ -1,13 +1,5 @@
 {
-	"methods": [{
-		"name": "getProductById",
-		"operationType": "hqlquery",
-		"parameters": [{
-			"name": "id",
-			"type": "java.lang.Integer"
-		}],
-		"returnType": "com.eshopping.data.Product"
-	}],
+	"methods": [],
 	"serviceType": "JSON-RPC",
 	"serviceURL": "eshopping.json"
 }

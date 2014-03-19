@@ -8,10 +8,13 @@
         <property name="status" type="string">
             <column name="STATUS" not-null="true"/>
         </property>
-        <many-to-one name="product" class="com.eshopping.data.Product">
+        <property name="quantity" type="integer">
+            <column name="QUANTITY" not-null="true"/>
+        </property>
+        <many-to-one name="product" class="com.eshopping.data.Product" cascade="none">
             <column name="PRODUCT_ID" not-null="true"/>
         </many-to-one>
-        <many-to-one name="user" class="com.eshopping.data.User">
+        <many-to-one name="user" class="com.eshopping.data.User" cascade="none">
             <column name="USER_ID" not-null="true"/>
         </many-to-one>
     </class>

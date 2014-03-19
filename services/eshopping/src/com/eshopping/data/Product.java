@@ -7,7 +7,7 @@ import java.util.Set;
 
 /**
  *  eshopping.Product
- *  03/12/2014 20:26:17
+ *  03/19/2014 11:17:59
  * 
  */
 public class Product {

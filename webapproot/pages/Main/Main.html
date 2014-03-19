@@ -7,7 +7,7 @@
                     <wm-label name="ApplicationName" on-click="appName" caption="bind:Variables.appName.dataSet.dataValue" fontweight="bold" fontsize="24" color="#ffffff"></wm-label>
                 </wm-gridcolumn>
                 <wm-gridcolumn name="gridcolumn70" horizontalalign="right" on-click="username">
-                    <wm-search name="search1" width="353" height="75" dataset="bind:Variables.products.dataSet.data" searchkey="name" displaylabel="name" displayimagesrc="imgUrl"></wm-search>
+                    <wm-search name="search1" width="353" height="75"></wm-search>
                 </wm-gridcolumn>
             </wm-gridrow>
         </wm-layoutgrid>
@@ -46,7 +46,7 @@
                         <wm-gridcolumn name="gridcolumn5" class="prodcategory">
                             <wm-picture name="Smart Phones" class="prodCategoryBanner" picturesource="resources/images/imagelists/smartphones_category.png" on-click="onCategoryClick('Smart Phones')" width="100%" cursor="pointer"></wm-picture>
                             <wm-livelist name="smartphoneslist" dataset="bind:Variables.smartphones_list.dataSet" on-click="categorylistClick($event, $scope)" cursor="pointer">
-                                <wm-listtemplate name="listtemplate1" on-click="cameras_list">
+                                <wm-listtemplate name="listtemplate1">
                                     <wm-picture name="picture5" class="product-thumb" picturesource="bind:Variables.smartphones_list.dataSet.imgUrl"></wm-picture>
                                     <wm-label name="label3" caption="bind:Variables.smartphones_list.dataSet.name" on-click="smartphones_list"></wm-label>
                                     <wm-label name="label4" caption="bind:Variables.smartphones_list.dataSet.price"></wm-label>

@@ -1,4 +1,4 @@
-<wm-page layouttype="one-column" columns="1" data-ng-controller="CartPageController" name="page1" on-click="logout">
+<wm-page layouttype="one-column" columns="1" data-ng-controller="CartPageController" name="page1" on-click="cartOrders">
     <wm-header height="auto" name="header">
         <wm-layoutgrid rows="1" columns="3" name="layoutgrid23" height="70">
             <wm-gridrow name="gridrow28">
@@ -32,7 +32,23 @@
     </wm-top-nav>
     <wm-content name="content1">
         <wm-row name="row1">
-
+            <wm-column name="column1">
+                <wm-label caption="Your Cart" fontsize="20" name="Heading"></wm-label>
+                <wm-panel name="panel1">
+                    <wm-grid name="grid1" dataset="bind:Variables.cartOrders.dataSet">
+                        <wm-grid-column binding="product.imgUrl" caption="product.imgUrl" type="string" pcdisplay="false" mobiledisplay="true"></wm-grid-column>
+                        <wm-grid-column binding="product.id" caption="product.id" type="integer" primary-key="true" generator="identity" pcdisplay="false" mobiledisplay="true"></wm-grid-column>
+                        <wm-grid-column binding="product.category" caption="product.category" type="string" pcdisplay="true" mobiledisplay="true"></wm-grid-column>
+                        <wm-grid-column binding="product.price" caption="product.price" type="double" pcdisplay="true" mobiledisplay="true"></wm-grid-column>
+                        <wm-grid-column binding="product.description" caption="product.description" type="string" pcdisplay="false" mobiledisplay="true"></wm-grid-column>
+                        <wm-grid-column binding="product.name" caption="product.name" type="string" pcdisplay="true" mobiledisplay="true"></wm-grid-column>
+                        <wm-grid-column binding="product.availability" caption="product.availability" type="boolean" pcdisplay="false" mobiledisplay="true"></wm-grid-column>
+                        <wm-grid-column binding="id" caption="id" type="integer" primary-key="true" generator="identity" pcdisplay="false" mobiledisplay="true"></wm-grid-column>
+                        <wm-grid-column binding="status" caption="status" type="string" pcdisplay="false" mobiledisplay="true"></wm-grid-column>
+                        <wm-grid-column binding="quantity" caption="quantity" type="integer" pcdisplay="true" mobiledisplay="true"></wm-grid-column>
+                    </wm-grid>
+                </wm-panel>
+            </wm-column>
         </wm-row>
     </wm-content>
 </wm-page>

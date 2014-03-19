@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <service xmlns="http://www.activegrid.com/namespaces/ServiceDefinitions/1.0" id="eshopping" class="com.eshopping.Eshopping" CRUDService="true" type="DataService" springFile="eshopping.spring.xml">
-    <operation operationType="hqlquery" name="getProductById">
-        <parameter name="id" typeRef="java.lang.Integer" isList="false"/>
-        <return typeRef="com.eshopping.data.Product" isList="false"/>
-    </operation>
     <dataobjects>
         <dataobject javaType="com.eshopping.data.Itemorder" supportsQuickData="true">
             <element name="product" typeRef="com.eshopping.data.Product" isList="false" allowNull="false"/>
@@ -17,6 +13,7 @@
                 <exclude>insert</exclude>
             </element>
             <element name="status" typeRef="java.lang.String" isList="false" allowNull="false"/>
+            <element name="quantity" typeRef="java.lang.Integer" isList="false" allowNull="false"/>
             <element name="user" typeRef="com.eshopping.data.User" isList="false" allowNull="false"/>
         </dataobject>
         <dataobject javaType="com.eshopping.data.Product" supportsQuickData="true">

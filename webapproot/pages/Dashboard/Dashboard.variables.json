@@ -1,1 +1,18 @@
-{}
+
+{
+	"orderHistory": {
+		"name": "orderHistory",
+		"type": "string",
+		"isList": false,
+		"owner": "Page",
+		"dataSet": {
+			"dataValue": "Order History"
+		},
+		"dataBinding": {
+			"dataValue": ""
+		},
+		"saveInPhonegap": false,
+		"category": "wm.Variable",
+		"_id": "wm-wm.Variable1394788109416"
+	}
+}

@@ -34,6 +34,16 @@ wm.types = {
 					"required": true,
 					"type": "com.eshopping.data.Product"
 				},
+				"quantity": {
+					"exclude": [],
+					"fieldOrder": 3,
+					"fieldSubType": null,
+					"include": [],
+					"isList": false,
+					"noChange": [],
+					"required": true,
+					"type": "java.lang.Integer"
+				},
 				"status": {
 					"exclude": [],
 					"fieldOrder": 2,
@@ -46,7 +56,7 @@ wm.types = {
 				},
 				"user": {
 					"exclude": [],
-					"fieldOrder": 3,
+					"fieldOrder": 4,
 					"fieldSubType": null,
 					"include": [],
 					"isList": false,

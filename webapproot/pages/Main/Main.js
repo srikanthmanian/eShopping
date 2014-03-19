@@ -53,6 +53,7 @@ Application.$controller("loginDialogController", ["$rootScope", "$scope", "Varia
             /** Check the live variable if the credentials are right*/
             WM.forEach(Variables.users.dataSet.data, function(userObj) {
                 if (userObj.name === Widgets.username_val.datavalue && userObj.password === Widgets.password_val.datavalue) {
+                    Variables.currentUser.dataSet = {};
                     Variables.currentUser.dataSet = userObj;
                     $rootScope.userLoggedin = true;
                 } else {

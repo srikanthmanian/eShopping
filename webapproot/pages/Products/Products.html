@@ -1,5 +1,5 @@
 <wm-page layouttype="one-column" columns="1" data-ng-controller="ProductsPageController" name="page1" on-click="staticVariable1">
-    <wm-header height="auto" name="header" backgroundcolor="#015b7f">
+    <wm-header height="auto" name="header" backgroundcolor="#015b7f" class="eshop-header">
         <wm-layoutgrid rows="1" columns="2" name="layoutgrid23" height="70">
             <wm-gridrow name="gridrow28">
                 <wm-gridcolumn name="gridcolumn68">
@@ -55,10 +55,10 @@
                                 </wm-html>
                             </wm-gridrow>
                             <wm-gridrow name="gridrow5">
-                                <wm-label name="Availability" caption="Available" show="bind:Variables.selectedItem.dataSet.availability" paddingtop="5" paddingleft="5" paddingbottom="5" paddingright="5" fontsize="18" color="#ffffff" backgroundcolor="#39b54a"></wm-label>
+                                <wm-label name="Availability" class="availability" caption="Available" show="bind:Variables.selectedItem.dataSet.availability" paddingtop="5" paddingleft="5" paddingbottom="5" paddingright="5" fontsize="18" color="#ffffff" backgroundcolor="#39b54a"></wm-label>
                             </wm-gridrow>
                             <wm-gridrow name="gridrow6">
-                                <wm-label name="Unavailable" caption="Out of Stock" show="bind:!Variables.selectedItem.dataSet.availability" paddingtop="5" paddingleft="5" paddingbottom="5" paddingright="5" fontsize="18" color="#ff0000"></wm-label>
+                                <wm-label name="Unavailable" class="availability" caption="Out of Stock" show="bind:!Variables.selectedItem.dataSet.availability" paddingtop="5" paddingleft="5" paddingbottom="5" paddingright="5" fontsize="18" color="#ffffff" backgroundcolor="#ff0000"></wm-label>
                             </wm-gridrow>
                             <wm-gridrow name="gridrow7">
                                 <wm-row name="row2">
@@ -67,7 +67,7 @@
                                 </wm-row>
                             </wm-gridrow>
                             <wm-gridrow name="gridrow8">
-                                <wm-button name="addToCart" caption="Add to Cart" paddingleft="10" paddingright="10" paddingtop="7" paddingbottom="7" margintop="10" marginbottom="10" marginright="5" fontsize="20" width="140" on-click="addToCartClick($event, $scope)"></wm-button>
+                                <wm-button name="addToCart" caption="Add to Cart" paddingleft="10" paddingright="10" paddingtop="7" paddingbottom="7" margintop="10" marginbottom="10" marginright="5" fontsize="20" width="140" on-click="addToCartClick($event, $scope)" backgroundcolor="#015b7f"></wm-button>
                             </wm-gridrow>
                         </wm-gridcolumn>
                     </wm-gridrow>

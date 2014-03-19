@@ -4,11 +4,9 @@
 .products-list .app-list-item {
     background: white;
 }
-
 .products-list .app-list-item:hover {
     border: 2px solid #ffd926;
 }
-
 .list-product-thumb {
     max-width: 8em;
     max-height: 4em;
@@ -34,11 +32,9 @@
 .prodCategoryBanner {
     width: 100%;
 }
-
-.prodCategoryBanner:hover{
+.prodCategoryBanner:hover {
     border: 2px solid #ffd926;
 }
-
 .productCategoryListing .app-list-item {
     border: 1px dotted #e3e3e3;
 }

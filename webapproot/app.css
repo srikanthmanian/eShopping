@@ -1,5 +1,10 @@
 .product-search {
-    margin-top: 40px;
+    margin-top: 3em;
+    margin-right: 1.5em;
+}
+
+.wm-app .eshop-header {
+    border-bottom: none;
 }
 
 .wm-app .app-top-nav ul.app-list li.app-list-item a.app-anchor {
@@ -10,4 +15,26 @@
 .wm-app .app-top-nav ul.app-list li.app-list-item a.app-anchor:hover {
     color: #363636;
     background-color: #d5d23d;
+}
+
+.login-dialog {
+    overflow: hidden;
+}
+
+.login-button {
+    float:right;
+}
+
+.login-dialog-header {
+    background-image: none;
+    background-color: #015b7f;
+    color: #ffffff;
+}
+
+.app-label.availability {
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
 }

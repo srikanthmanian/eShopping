@@ -1,5 +1,5 @@
 <wm-page layouttype="one-column" columns="1" data-ng-controller="MainPageController" name="page1" on-click="liveVariable1">
-    <wm-header height="auto" name="header" backgroundcolor="#015b7f">
+    <wm-header height="auto" name="header" backgroundcolor="#015b7f" class="eshop-header">
         <wm-layoutgrid rows="1" columns="2" name="layoutgrid23" height="70">
             <wm-gridrow name="gridrow28">
                 <wm-gridcolumn name="gridcolumn68">
@@ -113,29 +113,22 @@
         </wm-row>
     </wm-content>
     <wm-view name="loginView" class="dialog-view" on-click="currentUser">
-        <wm-dialog dialogtype="design-dialog" modal="true" name="loginDialog" height="250" title="Login">
-            <wm-dialogheader name="dialogheader1"></wm-dialogheader>
+        <wm-dialog dialogtype="design-dialog" modal="true" name="loginDialog" height="207" title="Login">
+            <wm-dialogheader name="dialogheader1" class="login-dialog-header"></wm-dialogheader>
             <wm-dialogcontent name="dialogcontent1">
-                <wm-tabs name="tabs1" height="150">
-                    <wm-tabpane name="tabpane1">
-                        <wm-tabheader name="tabheader1" heading="Login" isdefaulttab="false"></wm-tabheader>
-                        <wm-tabcontent name="tabcontent1">
-                            <wm-composite widget="text" name="composite2">
-                                <wm-label name="label12" caption="Email"></wm-label>
-                                <wm-text name="email_val"></wm-text>
-                            </wm-composite>
-                            <wm-composite widget="text" name="composite3">
-                                <wm-label name="label13" caption="Password"></wm-label>
-                                <wm-text name="password_val" type="password"></wm-text>
-                            </wm-composite>
-
-                        </wm-tabcontent>
-                    </wm-tabpane>
-
-                </wm-tabs>
+                <wm-panel name="panel2" paddingtop="20" paddingleft="20" paddingright="20" paddingbottom="20">
+                    <wm-composite widget="text" name="composite2">
+                        <wm-label name="label12" caption="Email"></wm-label>
+                        <wm-text name="email_val"></wm-text>
+                    </wm-composite>
+                    <wm-composite widget="text" name="composite3">
+                        <wm-label name="label13" caption="Password"></wm-label>
+                        <wm-text name="password_val" type="password"></wm-text>
+                    </wm-composite>
+                </wm-panel>
             </wm-dialogcontent>
-            <wm-dialogactions name="dialogactions1" show="true">
-                <wm-button name="button3" caption="Login" on-click="button3Click($event, $scope)" height="27" width="78"></wm-button>
+            <wm-dialogactions name="dialogactions1">
+                <wm-button name="button3" caption="Login" on-click="button3Click($event, $scope)" height="27" width="78" backgroundcolor="#015b7f" class="login-button"></wm-button>
             </wm-dialogactions>
         </wm-dialog>
     </wm-view>

@@ -30,6 +30,12 @@ ul.category-menu-list {
 .category-menu-list li {
     padding: 0.25em;
 }
+
+.wm-app .app-left-panel .category-menu-list li a:hover{
+    color: #363636;
+    background-color: #d5d23d;
+}
+
 .product-price .product-name {
     text-align: center;
 }

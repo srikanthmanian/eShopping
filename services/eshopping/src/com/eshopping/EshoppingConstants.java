@@ -5,11 +5,10 @@ package com.eshopping;
 
 /**
  *  Query names for service "eshopping"
- *  03/18/2014 14:53:43
+ *  03/19/2014 11:18:07
  * 
  */
 public class EshoppingConstants {
 
-    public final static String getCartitemByIdQueryName = "getCartitemById";
 
 }

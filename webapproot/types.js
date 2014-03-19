@@ -12,63 +12,6 @@ wm.types = {
 			"internal": true,
 			"primitiveType": "String"
 		},
-		"com.eshopping.data.Cartitem": {
-			"fields": {
-				"id": {
-					"exclude": ["insert"],
-					"fieldOrder": 1,
-					"fieldSubType": null,
-					"include": ["delete", "read", "update"],
-					"isList": false,
-					"noChange": ["delete", "read", "update"],
-					"required": true,
-					"type": "java.lang.Integer"
-				},
-				"product": {
-					"exclude": [],
-					"fieldOrder": 0,
-					"fieldSubType": null,
-					"include": [],
-					"isList": false,
-					"noChange": [],
-					"required": true,
-					"type": "com.eshopping.data.Product"
-				},
-				"quantity": {
-					"exclude": [],
-					"fieldOrder": 3,
-					"fieldSubType": null,
-					"include": [],
-					"isList": false,
-					"noChange": [],
-					"required": true,
-					"type": "java.lang.Integer"
-				},
-				"status": {
-					"exclude": [],
-					"fieldOrder": 2,
-					"fieldSubType": null,
-					"include": [],
-					"isList": false,
-					"noChange": [],
-					"required": true,
-					"type": "java.lang.String"
-				},
-				"user": {
-					"exclude": [],
-					"fieldOrder": 4,
-					"fieldSubType": null,
-					"include": [],
-					"isList": false,
-					"noChange": [],
-					"required": true,
-					"type": "com.eshopping.data.User"
-				}
-			},
-			"internal": false,
-			"liveService": true,
-			"service": "eshopping"
-		},
 		"com.eshopping.data.Itemorder": {
 			"fields": {
 				"id": {
@@ -130,23 +73,13 @@ wm.types = {
 			"fields": {
 				"availability": {
 					"exclude": [],
-					"fieldOrder": 8,
+					"fieldOrder": 7,
 					"fieldSubType": null,
 					"include": [],
 					"isList": false,
 					"noChange": [],
 					"required": true,
 					"type": "java.lang.Boolean"
-				},
-				"cartitems": {
-					"exclude": [],
-					"fieldOrder": 6,
-					"fieldSubType": null,
-					"include": [],
-					"isList": true,
-					"noChange": [],
-					"required": false,
-					"type": "com.eshopping.data.Cartitem"
 				},
 				"category": {
 					"exclude": [],
@@ -190,7 +123,7 @@ wm.types = {
 				},
 				"itemorders": {
 					"exclude": [],
-					"fieldOrder": 7,
+					"fieldOrder": 6,
 					"fieldSubType": null,
 					"include": [],
 					"isList": true,
@@ -225,16 +158,6 @@ wm.types = {
 		},
 		"com.eshopping.data.User": {
 			"fields": {
-				"cartitems": {
-					"exclude": [],
-					"fieldOrder": 14,
-					"fieldSubType": null,
-					"include": [],
-					"isList": true,
-					"noChange": [],
-					"required": false,
-					"type": "com.eshopping.data.Cartitem"
-				},
 				"city": {
 					"exclude": [],
 					"fieldOrder": 6,

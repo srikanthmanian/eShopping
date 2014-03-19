@@ -12,6 +12,7 @@ Application.$controller("CategoryPageController", ['$rootScope', '$scope', 'Widg
             category = Utils.browserStorage.getItem('wm.activeCategory');
             filterVariable(category);
             $scope.productsList = Variables.productCategories.dataSet;
+            delete Variables.currentUser.dataSet.dataValue;
         })();
 
         $scope.navigateCallback = function(category) {

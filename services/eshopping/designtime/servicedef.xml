@@ -1,25 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <service xmlns="http://www.activegrid.com/namespaces/ServiceDefinitions/1.0" id="eshopping" class="com.eshopping.Eshopping" CRUDService="true" type="DataService" springFile="eshopping.spring.xml">
-    <operation operationType="hqlquery" name="getCartitemById">
-        <parameter name="id" typeRef="java.lang.Integer" isList="false"/>
-        <return typeRef="com.eshopping.data.Cartitem" isList="false"/>
-    </operation>
     <dataobjects>
-        <dataobject javaType="com.eshopping.data.Cartitem" supportsQuickData="true">
-            <element name="product" typeRef="com.eshopping.data.Product" isList="false" allowNull="false"/>
-            <element name="id" typeRef="java.lang.Integer" isList="false" allowNull="false">
-                <require>delete</require>
-                <require>read</require>
-                <require>update</require>
-                <noChange>delete</noChange>
-                <noChange>read</noChange>
-                <noChange>update</noChange>
-                <exclude>insert</exclude>
-            </element>
-            <element name="status" typeRef="java.lang.String" isList="false" allowNull="false"/>
-            <element name="quantity" typeRef="java.lang.Integer" isList="false" allowNull="false"/>
-            <element name="user" typeRef="com.eshopping.data.User" isList="false" allowNull="false"/>
-        </dataobject>
         <dataobject javaType="com.eshopping.data.Itemorder" supportsQuickData="true">
             <element name="product" typeRef="com.eshopping.data.Product" isList="false" allowNull="false"/>
             <element name="id" typeRef="java.lang.Integer" isList="false" allowNull="false">
@@ -50,7 +31,6 @@
             <element name="price" typeRef="java.lang.Double" isList="false" allowNull="false"/>
             <element name="description" typeRef="java.lang.String" isList="false" allowNull="false"/>
             <element name="name" typeRef="java.lang.String" isList="false" allowNull="false"/>
-            <element name="cartitems" typeRef="com.eshopping.data.Cartitem" isList="true" allowNull="true"/>
             <element name="itemorders" typeRef="com.eshopping.data.Itemorder" isList="true" allowNull="true"/>
             <element name="availability" typeRef="java.lang.Boolean" isList="false" allowNull="false"/>
         </dataobject>
@@ -77,7 +57,6 @@
             <element name="pin" typeRef="java.lang.String" isList="false" allowNull="false"/>
             <element name="email" typeRef="java.lang.String" isList="false" allowNull="false"/>
             <element name="name" typeRef="java.lang.String" isList="false" allowNull="false"/>
-            <element name="cartitems" typeRef="com.eshopping.data.Cartitem" isList="true" allowNull="true"/>
         </dataobject>
     </dataobjects>
 </service>

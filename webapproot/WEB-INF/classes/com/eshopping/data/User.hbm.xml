@@ -41,12 +41,6 @@
         <property name="name" type="string">
             <column name="NAME" not-null="true"/>
         </property>
-        <set name="cartitems" inverse="true" cascade="">
-            <key>
-                <column name="USER_ID" not-null="true"/>
-            </key>
-            <one-to-many class="com.eshopping.data.Cartitem"/>
-        </set>
         <set name="itemorders" inverse="true" cascade="">
             <key>
                 <column name="USER_ID" not-null="true"/>

@@ -1,7 +1,6 @@
 
 package com.eshopping;
 
-import java.util.List;
 import com.wavemaker.json.type.TypeDefinition;
 import com.wavemaker.runtime.data.DataServiceManager;
 import com.wavemaker.runtime.data.DataServiceManagerAccess;
@@ -14,7 +13,7 @@ import com.wavemaker.runtime.service.TypedServiceReturn;
 
 /**
  *  Operations for service "eshopping"
- *  03/18/2014 14:53:43
+ *  03/19/2014 11:18:07
  * 
  */
 @SuppressWarnings("unchecked")
@@ -24,15 +23,6 @@ public class Eshopping
 
     private DataServiceManager dsMgr;
     private TaskManager taskMgr;
-
-    public com.eshopping.data.Cartitem getCartitemById(Integer id, PagingOptions pagingOptions) {
-        List<com.eshopping.data.Cartitem> rtn = ((List<com.eshopping.data.Cartitem> ) dsMgr.invoke(taskMgr.getQueryTask(), (EshoppingConstants.getCartitemByIdQueryName), id, pagingOptions));
-        if (rtn.isEmpty()) {
-            return null;
-        } else {
-            return rtn.get(0);
-        }
-    }
 
     public Object insert(Object o) {
         return dsMgr.invoke(taskMgr.getInsertTask(), o);

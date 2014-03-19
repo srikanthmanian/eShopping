@@ -7,7 +7,7 @@ import java.util.Set;
 
 /**
  *  eshopping.User
- *  03/18/2014 14:53:16
+ *  03/19/2014 11:17:59
  * 
  */
 public class User {
@@ -26,7 +26,6 @@ public class User {
     private String email;
     private String name;
     private Set<com.eshopping.data.Itemorder> itemorders = new HashSet<com.eshopping.data.Itemorder>();
-    private Set<com.eshopping.data.Cartitem> cartitems = new HashSet<com.eshopping.data.Cartitem>();
 
     public Integer getId() {
         return id;
@@ -138,14 +137,6 @@ public class User {
 
     public void setItemorders(Set<com.eshopping.data.Itemorder> itemorders) {
         this.itemorders = itemorders;
-    }
-
-    public Set<com.eshopping.data.Cartitem> getCartitems() {
-        return cartitems;
-    }
-
-    public void setCartitems(Set<com.eshopping.data.Cartitem> cartitems) {
-        this.cartitems = cartitems;
     }
 
 }

@@ -1,4 +1,4 @@
-<wm-page layouttype="one-column" columns="1" data-ng-controller="CartPageController" name="page1" on-click="logout">
+<wm-page layouttype="one-column" columns="1" data-ng-controller="CartPageController" name="page1" on-click="cartOrders">
     <wm-header height="auto" name="header">
         <wm-layoutgrid rows="1" columns="3" name="layoutgrid23" height="70">
             <wm-gridrow name="gridrow28">
@@ -35,43 +35,19 @@
             <wm-column name="column1">
                 <wm-label caption="Your Cart" fontsize="20" name="Heading"></wm-label>
                 <wm-panel name="panel1">
-                    <wm-grid name="grid1">
+                    <wm-grid name="grid1" dataset="bind:Variables.cartOrders.dataSet">
+                        <wm-grid-column binding="product.imgUrl" caption="product.imgUrl" type="string" pcdisplay="false" mobiledisplay="true"></wm-grid-column>
+                        <wm-grid-column binding="product.id" caption="product.id" type="integer" primary-key="true" generator="identity" pcdisplay="false" mobiledisplay="true"></wm-grid-column>
+                        <wm-grid-column binding="product.category" caption="product.category" type="string" pcdisplay="true" mobiledisplay="true"></wm-grid-column>
+                        <wm-grid-column binding="product.price" caption="product.price" type="double" pcdisplay="true" mobiledisplay="true"></wm-grid-column>
+                        <wm-grid-column binding="product.description" caption="product.description" type="string" pcdisplay="false" mobiledisplay="true"></wm-grid-column>
+                        <wm-grid-column binding="product.name" caption="product.name" type="string" pcdisplay="true" mobiledisplay="true"></wm-grid-column>
+                        <wm-grid-column binding="product.availability" caption="product.availability" type="boolean" pcdisplay="false" mobiledisplay="true"></wm-grid-column>
+                        <wm-grid-column binding="id" caption="id" type="integer" primary-key="true" generator="identity" pcdisplay="false" mobiledisplay="true"></wm-grid-column>
+                        <wm-grid-column binding="status" caption="status" type="string" pcdisplay="false" mobiledisplay="true"></wm-grid-column>
+                        <wm-grid-column binding="quantity" caption="quantity" type="integer" pcdisplay="true" mobiledisplay="true"></wm-grid-column>
                     </wm-grid>
                 </wm-panel>
-                <wm-layoutgrid rows="3" columns="3" name="layoutgrid2" height="100">
-                    <wm-gridrow name="gridrow3">
-                        <wm-gridcolumn name="gridcolumn9" width="30%">
-                            <wm-gridrow name="gridrow5">
-                                <wm-gridcolumn name="gridcolumn13" horizontalalign="left">
-                                    <wm-label paddingtop="5" paddingleft="5" paddingbottom="5" paddingright="5" fontsize="18" name="label3" caption="Total Cost:"></wm-label>
-                                </wm-gridcolumn>
-                                <wm-gridcolumn name="gridcolumn14" horizontalalign="right">
-                                    <wm-label paddingtop="5" paddingleft="5" paddingbottom="5" paddingright="5" fontsize="18" name="costBeforeTax"></wm-label>
-                                </wm-gridcolumn>
-                            </wm-gridrow>
-                            <wm-gridrow name="gridrow6">
-                                <wm-gridcolumn name="gridcolumn16" horizontalalign="left">
-                                    <wm-label paddingtop="5" paddingleft="5" paddingbottom="5" paddingright="5" fontsize="18" caption="Tax (%):" name="label5"></wm-label>
-                                </wm-gridcolumn>
-                                <wm-gridcolumn name="gridcolumn17" horizontalalign="right">
-                                    <wm-label paddingtop="5" paddingleft="5" paddingbottom="5" paddingright="5" fontsize="18" caption="label" name="tax"></wm-label>
-                                </wm-gridcolumn>
-                            </wm-gridrow>
-                            <wm-gridrow name="gridrow7">
-                                <wm-gridcolumn name="gridcolumn19" horizontalalign="left">
-                                    <wm-label paddingtop="5" paddingleft="5" paddingbottom="5" paddingright="5" fontsize="18" caption="Amount Payable:" name="label7" height="24" width="163" fontweight="bold"></wm-label>
-                                </wm-gridcolumn>
-                                <wm-gridcolumn name="gridcolumn20" horizontalalign="right">
-                                    <wm-label paddingtop="5" paddingleft="5" paddingbottom="5" paddingright="5" fontsize="18" caption="Label" name="amountPayable" fontweight="bold"></wm-label>
-                                </wm-gridcolumn>
-                            </wm-gridrow>
-                        </wm-gridcolumn>
-                    </wm-gridrow>
-                    <wm-gridrow name="gridrow4">
-                        <wm-button caption="Proceed to Checkout" paddingleft="10" paddingright="10" paddingtop="7" paddingbottom="7" margintop="10" marginbottom="10" marginright="5" fontsize="20" width="240" name="button1"></wm-button>
-                    </wm-gridrow>
-                </wm-layoutgrid>
-
             </wm-column>
         </wm-row>
     </wm-content>

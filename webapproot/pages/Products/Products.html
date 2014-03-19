@@ -19,12 +19,21 @@
                 <wm-anchor caption="bind:Variables.homeMenu.dataSet.dataValue" name="homelink" hyperlink="#/Main"></wm-anchor>
             </wm-list-item>
             <wm-list-item name="topLink2">
-                <wm-anchor caption="bind:Variables.productsMenu.dataSet.dataValue" name="dashboardlink" hyperlink="#/Category"></wm-anchor>
+                <wm-anchor caption="bind:Variables.productsMenu.dataSet.dataValue" name="productslink" hyperlink="#/Category"></wm-anchor>
             </wm-list-item>
-            <wm-list-item name="topLink3">
-                <wm-anchor caption="bind:Variables.dashboardMenu.dataSet.dataValue" name="dashboardlink" hyperlink="#/Dashboard"></wm-anchor>
+            <wm-list-item ng-if="userLoggedin" name="topLink3">
+                <wm-anchor caption="bind:Variables.cartMenu.dataSet.dataValue" name="cartlink" hyperlink="#/Cart"></wm-anchor>
             </wm-list-item>
-            <wm-list-item name="topLink4">
+            <wm-list-item ng-if="userLoggedin" name="topLink4">
+                <wm-anchor caption="bind:Variables.ordersMenu.dataSet.dataValue" name="orderslink" hyperlink="#/Orders"></wm-anchor>
+            </wm-list-item>
+            <wm-list-item ng-if="userLoggedin" name="topLink5">
+                <wm-anchor caption="bind:Variables.profileMenu.dataSet.dataValue" name="profilelink" hyperlink="#/Profile"></wm-anchor>
+            </wm-list-item>
+            <wm-list-item ng-if="!userLoggedin" name="topLink6">
+                <wm-anchor caption="LOGIN" name="loginlink" on-click="loginDialog.show"></wm-anchor>
+            </wm-list-item>
+            <wm-list-item ng-if="userLoggedin" name="topLink7">
                 <wm-anchor caption="bind:Variables.logoutMenu.dataSet.dataValue" name="logoutlink" hyperlink="#/Logout"></wm-anchor>
             </wm-list-item>
         </wm-list>

@@ -1,8 +1,9 @@
-Application.$controller("ProductsPageController", ["$rootScope", "$scope", "Widgets", "Variables", "$location",
-    function($rootScope, $scope, Widgets, Variables, $location) {
+Application.$controller("ProductsPageController", ["$rootScope", "$scope", "Widgets", "Variables", "$location", "Utils",
+    function($rootScope, $scope, Widgets, Variables, $location, Utils) {
         "use strict";
         (function() {
             Variables.selectedItem.dataSet = $rootScope.selectedItem;
+            $rootScope.userLoggedin = Utils.browserStorage.getItem('wm.isUserLoggedIn');
             delete Variables.currentUser.dataSet.dataValue;
         })();
 

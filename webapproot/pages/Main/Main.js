@@ -28,6 +28,9 @@ Application.$controller("MainPageController", ['$rootScope', '$scope', 'Widgets'
         };
 
         $scope.onPageReady = function() {
+            debugger;
+            console.log(Utils.browserStorage.getItem('wm.isUserLoggedIn'));
+            $rootScope.userLoggedin = Utils.browserStorage.getItem('wm.isUserLoggedIn') + "";
             displayBannerImage(0);
         }
 
@@ -44,18 +47,19 @@ Application.$controller("MainPageController", ['$rootScope', '$scope', 'Widgets'
     }
 ]);
 
-Application.$controller("loginDialogController", ["$rootScope", "$scope", "Variables", "Widgets", "DialogService",
+Application.$controller("loginDialogController", ["$rootScope", "$scope", "Variables", "Widgets", "DialogService", "Utils",
 
-    function($rootScope, $scope, Variables, Widgets, DialogService) {
+    function($rootScope, $scope, Variables, Widgets, DialogService, Utils) {
         "use strict";
 
         $scope.button3Click = function($event, $scope) {
             /** Check the live variable if the credentials are right*/
             WM.forEach(Variables.users.dataSet.data, function(userObj) {
-                if (userObj.name === Widgets.username_val.datavalue && userObj.password === Widgets.password_val.datavalue) {
+                if (userObj.email === Widgets.email_val.datavalue && userObj.password === Widgets.password_val.datavalue) {
                     Variables.currentUser.dataSet = {};
                     Variables.currentUser.dataSet = userObj;
                     $rootScope.userLoggedin = true;
+                    Utils.browserStorage.storeItem('wm.isUserLoggedIn', $rootScope.userLoggedin);
                 } else {
 
                 }

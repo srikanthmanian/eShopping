@@ -1,7 +1,9 @@
-Application.$controller("CartPageController", ["$scope", "Widgets", "Variables", "Utils",
-    function($scope, Widgets, Variables, Utils) {
+Application.$controller("CartPageController", ["$scope", "$rootScope", "Widgets", "Variables", "Utils",
+    function($scope, $rootScope, Widgets, Variables, Utils) {
         "use strict";
-
+        (function () {
+            $rootScope.userLoggedin = Utils.browserStorage.getItem('wm.isUserLoggedIn');
+        })();
     }
 ]);
 

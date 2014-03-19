@@ -1,6 +1,22 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<beans xsi:schemaLocation="http://schema.cloudfoundry.org/spring http://schema.cloudfoundry.org/spring/cloudfoundry-spring-0.8.xsd http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd" xmlns="http://www.springframework.org/schema/beans" xmlns:cloud="http://schema.cloudfoundry.org/spring" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <bean class="com.eshopping.Eshopping" scope="singleton" lazy-init="true" id="eshopping">
+<?xml version="1.0"?>
+
+<!-- Generated 03/19/2014 14:42:58
+
+Configuration for 'eshopping' database service
+
+-->
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.0.xsd">
+
+
+    <bean 
+        id="eshopping"
+        class="com.eshopping.Eshopping"
+        scope="singleton"
+        lazy-init="true">
         <property name="dataServiceManager">
             <ref bean="eshoppingDataService"/>
         </property>
@@ -8,7 +24,10 @@
             <ref bean="eshoppingTaskMgr"/>
         </property>
     </bean>
-    <bean class="com.wavemaker.runtime.data.spring.WMPropertyPlaceholderConfigurer">
+
+
+    <bean 
+        class="com.wavemaker.runtime.data.spring.WMPropertyPlaceholderConfigurer">
         <property name="ignoreUnresolvablePlaceholders" value="true"/>
         <property name="locations">
             <list>
@@ -16,25 +35,47 @@
             </list>
         </property>
     </bean>
-    <bean class="org.springframework.jdbc.datasource.DriverManagerDataSource" lazy-init="true" id="eshoppingDataSource">
+
+    <bean 
+        id="eshoppingDataSource"
+        class="org.springframework.jdbc.datasource.DriverManagerDataSource" 
+        lazy-init="true">
         <property name="driverClassName" value="${eshopping.driverClassName}"/>
         <property name="url" value="${eshopping.connectionUrl}"/>
         <property name="username" value="${eshopping.username}"/>
         <property name="password" value="${eshopping.password}"/>
     </bean>
-    <bean class="org.springframework.orm.hibernate3.HibernateTransactionManager" lazy-init="true" id="eshoppingTxMgr">
+
+
+    <bean 
+        id="eshoppingTxMgr" 
+        class="org.springframework.orm.hibernate3.HibernateTransactionManager"
+        lazy-init="true">
         <property name="sessionFactory">
             <ref bean="eshoppingSessionFactory"/>
         </property>
     </bean>
-    <bean class="org.springframework.orm.hibernate3.HibernateTemplate" lazy-init="true" id="eshoppingHibernateTemplate">
-        <property name="sessionFactory">
+
+
+    <bean 
+        id="eshoppingHibernateTemplate"
+        class="org.springframework.orm.hibernate3.HibernateTemplate"
+        lazy-init="true">
+        <property name="sessionFactory"> 
             <ref bean="eshoppingSessionFactory"/>
         </property>
-    </bean>
-    <bean class="com.wavemaker.runtime.data.spring.ConfigurationAndSessionFactoryBean" lazy-init="true" id="eshoppingSessionFactory">
+    </bean>  
+
+
+    <bean 
+        id="eshoppingSessionFactory" 
+        class="com.wavemaker.runtime.data.spring.ConfigurationAndSessionFactoryBean"
+        lazy-init="true">
+
+        <!-- A unique name for this SessionFactory's configuration -->
         <property name="name" value="eshopping"/>
         <property name="dataSource" ref="eshoppingDataSource"/>
+
         <property name="hibernateProperties">
             <props>
                 <prop key="hibernate.dialect">${eshopping.dialect}</prop>
@@ -43,19 +84,32 @@
                 </prop>
                 <prop key="hibernate.current_session_context_class">thread</prop>
                 <prop key="hibernate.jdbc.batch_size">0</prop>
-            </props>
+            </props> 
         </property>
+
         <property name="mappingResources">
             <list>
-                <value>com/eshopping/data/Itemorder.hbm.xml</value>
-                <value>com/eshopping/data/Product.hbm.xml</value>
-                <value>com/eshopping/data/User.hbm.xml</value>
-                <value>com/eshopping/data/app-queries.ql.xml</value>
+
+<value>com/eshopping/data/Product.hbm.xml</value>
+<value>com/eshopping/data/User.hbm.xml</value>
+<value>com/eshopping/data/Itemorder.hbm.xml</value>
+
+<value>com/eshopping/data/Product.ql.xml</value>
+<value>com/eshopping/data/app-queries.ql.xml</value>
+
             </list>
         </property>
+
     </bean>
-    <bean class="com.wavemaker.runtime.data.spring.SpringDataServiceManager" lazy-init="true" id="eshoppingDataService">
+
+
+    <!-- the data service bean instance is injected into the service bean -->
+    <bean 
+        id="eshoppingDataService" 
+        class="com.wavemaker.runtime.data.spring.SpringDataServiceManager"
+        lazy-init="true">
         <constructor-arg>
+            <!-- the value of the "name" property of the SessionFactory -->
             <value>eshopping</value>
         </constructor-arg>
         <constructor-arg>
@@ -70,19 +124,30 @@
         <constructor-arg>
             <map>
                 <entry key="useIndividualCRUDOperations" value="false"/>
-                <entry key="refreshEntities" value=""/>
+                <entry key="refreshEntities" value=""/> 
             </map>
         </constructor-arg>
     </bean>
-    <bean class="com.wavemaker.runtime.data.DefaultTaskManager" lazy-init="true" id="eshoppingTaskMgr"/>
-    <bean class="com.wavemaker.runtime.service.events.EventWire" lazy-init="false">
+
+
+    <bean 
+        id="eshoppingTaskMgr"
+        class="com.wavemaker.runtime.data.DefaultTaskManager"
+        lazy-init="true"/>
+
+    <bean class="com.wavemaker.runtime.service.events.EventWire"
+        lazy-init="false">
         <property name="serviceWire" ref="eshoppingServiceWire"/>
         <property name="eventListener">
             <bean class="com.wavemaker.runtime.data.DataServiceEventListener"/>
         </property>
     </bean>
-    <bean class="com.wavemaker.runtime.service.reflect.ReflectServiceWire" scope="singleton" lazy-init="false" id="eshoppingServiceWire">
+
+    <bean id="eshoppingServiceWire"
+        class="com.wavemaker.runtime.service.reflect.ReflectServiceWire"
+        lazy-init="false" scope="singleton">
         <property name="serviceId" value="eshopping"/>
         <property name="serviceType" ref="DataService"/>
     </bean>
+
 </beans>

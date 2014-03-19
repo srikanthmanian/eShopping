@@ -18,16 +18,22 @@
                 <wm-anchor caption="bind:Variables.homeMenu.dataSet.dataValue" name="homelink" hyperlink="#/Main"></wm-anchor>
             </wm-list-item>
             <wm-list-item name="topLink2">
-                <wm-anchor caption="bind:Variables.productsMenu.dataSet.dataValue" name="dashboardlink" hyperlink="#/Category"></wm-anchor>
+                <wm-anchor caption="bind:Variables.productsMenu.dataSet.dataValue" name="productslink" hyperlink="#/Category"></wm-anchor>
             </wm-list-item>
             <wm-list-item ng-if="userLoggedin" name="topLink3">
-                <wm-anchor caption="bind:Variables.dashboardMenu.dataSet.dataValue" name="dashboardlink" hyperlink="#/Dashboard"></wm-anchor>
+                <wm-anchor caption="bind:Variables.cartMenu.dataSet.dataValue" name="cartlink" hyperlink="#/Cart"></wm-anchor>
             </wm-list-item>
-            <wm-list-item ng-if="!userLoggedin" name="topLink4">
-                <wm-anchor caption="LOGIN" name="loginlink" on-click="loginDialog.show"></wm-anchor>
+            <wm-list-item ng-if="userLoggedin" name="topLink4">
+                <wm-anchor caption="bind:Variables.ordersMenu.dataSet.dataValue" name="orderslink" hyperlink="#/Orders"></wm-anchor>
             </wm-list-item>
             <wm-list-item ng-if="userLoggedin" name="topLink5">
-                <wm-anchor caption="bind:Variables.logoutMenu.dataSet.dataValue" name="logoutlink" hyperlink="#/Logout"></wm-anchor>
+                <wm-anchor caption="bind:Variables.profileMenu.dataSet.dataValue" name="profilelink" hyperlink="#/Profile"></wm-anchor>
+            </wm-list-item>
+            <wm-list-item ng-if="!userLoggedin" name="topLink6">
+                <wm-anchor caption="LOGIN" name="loginlink" on-click="loginDialog.show"></wm-anchor>
+            </wm-list-item>
+            <wm-list-item ng-if="userLoggedin" name="topLink7">
+                <wm-anchor caption="bind:Variables.logoutMenu.dataSet.dataValue" name="logoutlink" on-click="logout($event, $scope)"></wm-anchor>
             </wm-list-item>
         </wm-list>
     </wm-top-nav>
@@ -100,34 +106,17 @@
                         <wm-tabheader name="tabheader1" heading="Login"></wm-tabheader>
                         <wm-tabcontent name="tabcontent1">
                             <wm-composite widget="text" name="composite2">
-                                <wm-label name="label12" caption="Username"></wm-label>
-                                <wm-text name="username_val"></wm-text>
+                                <wm-label name="label12" caption="Email"></wm-label>
+                                <wm-text name="email_val"></wm-text>
                             </wm-composite>
                             <wm-composite widget="text" name="composite3">
                                 <wm-label name="label13" caption="Password"></wm-label>
-                                <wm-text name="password_val"></wm-text>
+                                <wm-text name="password_val" type="password"></wm-text>
                             </wm-composite>
                             <wm-button name="button3" caption="Login" on-click="button3Click($event, $scope)"></wm-button>
                         </wm-tabcontent>
                     </wm-tabpane>
-                    <wm-tabpane name="tabpane2">
-                        <wm-tabheader name="tabheader2" heading="Signup"></wm-tabheader>
-                        <wm-tabcontent name="tabcontent2">
-                            <wm-composite widget="text" name="composite4">
-                                <wm-label name="label14" caption="Email Address"></wm-label>
-                                <wm-text name="text4"></wm-text>
-                            </wm-composite>
-                            <wm-composite widget="text" name="composite5">
-                                <wm-label name="label15" caption="Password"></wm-label>
-                                <wm-text name="text5"></wm-text>
-                            </wm-composite>
-                            <wm-composite widget="text" name="composite6">
-                                <wm-label name="label16" caption="Confirm Password"></wm-label>
-                                <wm-text name="text6"></wm-text>
-                            </wm-composite>
-                            <wm-button name="button4" caption="SIGN UP NOW!"></wm-button>
-                        </wm-tabcontent>
-                    </wm-tabpane>
+
                 </wm-tabs>
             </wm-dialogcontent>
             <wm-dialogactions name="dialogactions1"></wm-dialogactions>

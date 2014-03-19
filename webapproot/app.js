@@ -5,4 +5,9 @@ Application.run(function ($rootScope) {
     }
 
     $rootScope.selectedItem = {};
+
+    $rootScope.logout = function () {
+        debugger;
+        localStorage.setItem("wm.isUserLoggedIn", "");
+    };
 });

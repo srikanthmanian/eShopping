@@ -1,6 +1,9 @@
-Application.$controller("DashboardPageController", ["$scope", "Widgets",
-    function($scope, Widgets) {
+Application.$controller("DashboardPageController", ["$scope", "$rootScope", "Widgets", "Utils",
+    function($scope, $rootScope, Widgets, Utils) {
         "use strict";
+        (function () {
+            $rootScope.userLoggedin = Utils.browserStorage.getItem('wm.isUserLoggedIn');
+        })();
 
     }
 ]);

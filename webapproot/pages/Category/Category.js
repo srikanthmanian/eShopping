@@ -10,6 +10,7 @@ Application.$controller("CategoryPageController", ['$rootScope', '$scope', 'Widg
 
         (function() {
             category = Utils.browserStorage.getItem('wm.activeCategory');
+            $rootScope.userLoggedin = Utils.browserStorage.getItem('wm.isUserLoggedIn');
             filterVariable(category);
             $scope.productsList = Variables.productCategories.dataSet;
             delete Variables.currentUser.dataSet.dataValue;

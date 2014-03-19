@@ -11,10 +11,10 @@
         <property name="quantity" type="integer">
             <column name="QUANTITY" not-null="true"/>
         </property>
-        <many-to-one name="product" class="com.eshopping.data.Product" cascade="none">
+        <many-to-one name="product" class="com.eshopping.data.Product">
             <column name="PRODUCT_ID" not-null="true"/>
         </many-to-one>
-        <many-to-one name="user" class="com.eshopping.data.User" cascade="none">
+        <many-to-one name="user" class="com.eshopping.data.User">
             <column name="USER_ID" not-null="true"/>
         </many-to-one>
     </class>

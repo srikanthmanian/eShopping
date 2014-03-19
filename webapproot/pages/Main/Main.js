@@ -27,7 +27,7 @@ Application.$controller("MainPageController", ['$rootScope', '$scope', 'Widgets'
 
         };
 
-        $scope.onPageload = function() {
+        $scope.onPageReady = function() {
             displayBannerImage(0);
         }
 
@@ -44,15 +44,15 @@ Application.$controller("MainPageController", ['$rootScope', '$scope', 'Widgets'
     }
 ]);
 
-Application.$controller("loginDialogController", ["$rootScope", "$scope", "Variables", "Widgets",
-    function($rootScope, $scope, Variables, Widgets) {
+Application.$controller("loginDialogController", ["$rootScope", "$scope", "Variables", "Widgets", "DialogService",
+
+    function($rootScope, $scope, Variables, Widgets, DialogService) {
         "use strict";
 
         $scope.button3Click = function($event, $scope) {
             /** Check the live variable if the credentials are right*/
             WM.forEach(Variables.users.dataSet.data, function(userObj) {
                 if (userObj.name === Widgets.username_val.datavalue && userObj.password === Widgets.password_val.datavalue) {
-                    debugger;
                     Variables.currentUser.dataSet = {};
                     Variables.currentUser.dataSet = userObj;
                     $rootScope.userLoggedin = true;
@@ -61,15 +61,20 @@ Application.$controller("loginDialogController", ["$rootScope", "$scope", "Varia
                 }
             });
             if ($rootScope.userLoggedin) {
-                // Close  the  dialog
+                /** Close  the  dialog */
+                DialogService.hideDialog('loginDialog');
             }
-
         };
-
     }
 ]);
 
 Application.$controller("grid1Controller", ["$scope",
+    function($scope) {
+        "use strict";
+    }
+]);
+
+Application.$controller("grid2Controller", ["$scope",
     function($scope) {
         "use strict";
     }

@@ -1,4 +1,4 @@
-<wm-page layouttype="one-column" columns="1" data-ng-controller="DashboardPageController" name="page1">
+<wm-page layouttype="one-column" columns="1" data-ng-controller="DashboardPageController" name="page1" on-click="userAddress">
     <wm-header name="header1">
         <wm-layoutgrid rows="1" columns="3" name="layoutgrid23" height="70">
             <wm-gridrow name="gridrow28">
@@ -38,7 +38,7 @@
                         <wm-tabheader name="orderhistory" on-click="orders" heading="bind:Variables.orderHistory.dataSet.dataValue"></wm-tabheader>
                         <wm-tabcontent name="tabcontent1">
 
-                            <wm-grid name="grid1" dataset="bind:Variables.orders.dataSet" on-click="orders">
+                            <wm-grid name="grid1" dataset="bind:Variables.orders.dataSet" on-click="userAddress">
                                 <wm-grid-column binding="product.imgUrl" caption="product.imgUrl" type="string" pcdisplay="true" mobiledisplay="true"></wm-grid-column>
                                 <wm-grid-column binding="product.id" caption="product.id" type="integer" primary-key="true" generator="identity" pcdisplay="true" mobiledisplay="true"></wm-grid-column>
                                 <wm-grid-column binding="product.category" caption="product.category" type="string" pcdisplay="true" mobiledisplay="true"></wm-grid-column>
@@ -57,16 +57,14 @@
                         <wm-tabcontent name="tabcontent2">
 
 
-                            <wm-form name="form1">
-                                <wm-composite widget="textarea" name="composite5" class="address">
-                                    <wm-label caption="Billing Address" fontweight="bold" width="150" name="label6"></wm-label>
-                                    <wm-textarea name="textarea2" height="60" width="175" placeholder="where you want the invoice to be sent"></wm-textarea>
-                                </wm-composite>
-                                <wm-composite widget="textarea" name="composite6">
-                                    <wm-label name="label7" caption="Shipping Address" fontweight="bold" width="150"></wm-label>
-                                    <wm-textarea name="textarea3" width="175" height="60" placeholder="where you want to recieve the order"></wm-textarea>
-                                </wm-composite>
-                            </wm-form>
+                            <wm-grid name="grid2" dataset="bind:Variables.userAddress.dataSet" enablepaging="false">
+                                <wm-grid-column binding="phone" caption="phone" type="integer" pcdisplay="true" mobiledisplay="true"></wm-grid-column>
+                                <wm-grid-column binding="street" caption="street" type="string" pcdisplay="true" mobiledisplay="true"></wm-grid-column>
+                                <wm-grid-column binding="state" caption="state" type="string" pcdisplay="true" mobiledisplay="true"></wm-grid-column>
+                                <wm-grid-column binding="city" caption="city" type="string" pcdisplay="true" mobiledisplay="true"></wm-grid-column>
+                                <wm-grid-column binding="country" caption="country" type="string" pcdisplay="true" mobiledisplay="true"></wm-grid-column>
+                                <wm-grid-column binding="houseNo" caption="houseNo" type="string" pcdisplay="true" mobiledisplay="true"></wm-grid-column>
+                            </wm-grid>
                         </wm-tabcontent>
                     </wm-tabpane>
                     <wm-tabpane name="tabpane3">

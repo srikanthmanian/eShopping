@@ -2,13 +2,11 @@ Application.$controller("ProductsPageController", ["$rootScope", "$scope", "Widg
     function($rootScope, $scope, Widgets, Variables, $location) {
         "use strict";
         (function() {
-            debugger;
             Variables.selectedItem.dataSet = $rootScope.selectedItem;
             delete Variables.currentUser.dataSet.dataValue;
         })();
 
         $scope.addToCartClick = function($event, $scope) {
-            debugger;
             WM.forEach(Variables.products.dataSet.data, function(product) {
                 if ($rootScope.selectedItem.name === product.name) {
                     Variables.currentProduct.dataSet = product;
@@ -24,11 +22,9 @@ Application.$controller("ProductsPageController", ["$rootScope", "$scope", "Widg
                 "status": "In Cart",
                 "user": Variables.currentUser.dataSet
             };
-            debugger;
             Variables.call("insertRow", "ordersInsert", {
                 "row": item
             }, function(response) {
-                debugger;
                 console.log("response", response);
             });
 

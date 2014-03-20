@@ -50,7 +50,7 @@ Application.$controller("loginDialogController", ["$rootScope", "$scope", "Varia
     function($rootScope, $scope, Variables, Widgets, DialogService, Utils) {
         "use strict";
 
-        $scope.button3Click = function($event, $scope) {
+        $scope.loginButtonClick = function($event, $scope) {
             /** Check the live variable if the credentials are right*/
             WM.forEach(Variables.users.dataSet.data, function(userObj) {
                 if (userObj.email === Widgets.email_val.datavalue && userObj.password === Widgets.password_val.datavalue) {

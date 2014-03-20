@@ -13,9 +13,7 @@ Application.$controller("ProductsPageController", ["$rootScope", "$scope", "Widg
                     Variables.currentProduct.dataSet = product;
                 }
             });
-
-            console.log("currentUser", Variables.currentUser.dataSet);
-            console.log("currentProduct", Variables.currentProduct.dataSet);
+            debugger;
 
             var item = {
                 "product": Variables.currentProduct.dataSet,

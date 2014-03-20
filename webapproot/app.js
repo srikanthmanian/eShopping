@@ -1,4 +1,4 @@
-Application.run(function ($rootScope) {
+Application.run(function ($rootScope, Widgets, Variables) {
     "use strict";
 	$rootScope.navigateToCategory = function (category) {
         localStorage.setItem("wm.activeCategory", category);
@@ -7,7 +7,7 @@ Application.run(function ($rootScope) {
     $rootScope.selectedItem = {};
 
     $rootScope.logout = function () {
-        debugger;
         localStorage.setItem("wm.isUserLoggedIn", "");
     };
+
 });

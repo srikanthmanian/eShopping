@@ -113,7 +113,7 @@
         </wm-row>
     </wm-content>
     <wm-view name="loginView" class="dialog-view" on-click="currentUser">
-        <wm-dialog dialogtype="design-dialog" modal="true" name="loginDialog" height="207" title="Login">
+        <wm-dialog dialogtype="design-dialog" modal="true" name="loginDialog" height="207" title="Login" iconname="_none_">
             <wm-dialogheader name="dialogheader1" class="login-dialog-header"></wm-dialogheader>
             <wm-dialogcontent name="dialogcontent1">
                 <wm-panel name="panel2" paddingtop="20" paddingleft="20" paddingright="20" paddingbottom="20">
@@ -128,7 +128,7 @@
                 </wm-panel>
             </wm-dialogcontent>
             <wm-dialogactions name="dialogactions1">
-                <wm-button name="button3" caption="Login" on-click="button3Click($event, $scope)" height="27" width="78" backgroundcolor="#015b7f" class="login-button"></wm-button>
+                <wm-button name="loginButton" caption="Login" on-click="loginButtonClick($event, $scope)" height="27" width="78" backgroundcolor="#015b7f" class="login-button"></wm-button>
             </wm-dialogactions>
         </wm-dialog>
     </wm-view>

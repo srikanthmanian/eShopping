@@ -4,7 +4,7 @@
             <wm-gridrow name="gridrow28">
                 <wm-gridcolumn name="gridcolumn68">
                     <wm-picture name="picture1" picturesource="bind:Variables.eshopIcon.dataSet.dataValue"></wm-picture>
-                    <wm-label name="ApplicationName" on-click="appName" caption="bind:Variables.appName.dataSet.dataValue" fontweight="bold" fontsize="24" color="#d1d039" class="app-name"></wm-label>
+                    <wm-label name="ApplicationName" on-click="appName" caption="bind:Variables.appName.dataSet.dataValue" fontweight="bold" fontsize="24" color="#d1d039" class="application-name"></wm-label>
                 </wm-gridcolumn>
                 <wm-gridcolumn name="gridcolumn70" horizontalalign="right" on-click="username">
                     <wm-search name="search1" width="353" height="75" class="product-search"></wm-search>
@@ -48,7 +48,7 @@
             </wm-left-panel>
             <wm-column class="app-content-column" columnwidth="10" paddingleft="15" paddingright="15" name="mainContent">
                 <wm-label name="label5" caption="bind:Variables.selectedCategory.dataSet.dataValue" fontsize="1.3" fontunit="em"></wm-label>
-                <wm-livelist name="productList" dataset="bind:Variables.products.dataSet" class="products" on-click="productListClick($event, $scope)">
+                <wm-livelist name="productList" dataset="bind:Variables.products.dataSet" class="products" itemclass="col-md-2" on-click="productListClick($event, $scope)">
                     <wm-listtemplate name="productsTemplate">
                         <wm-picture name="product_thumb" picturesource="bind:Variables.products.dataSet.imgUrl" pictureaspect="None" class="product-thumb"></wm-picture>
                         <wm-row name="row2">
@@ -56,7 +56,6 @@
                             <wm-label name="product_price" caption="bind:Variables.products.dataSet.price" fontweight="bold" width="4.5em" color="#000000" margintop="10"></wm-label>
                         </wm-row>
                         <wm-label name="product_name" class="product-name" marginright="15" caption="bind:Variables.products.dataSet.name" width="100%" fontsize="0.8" hint="{{item.name}}" fontunit="em" color="#464646"></wm-label>
-
                     </wm-listtemplate>
                 </wm-livelist>
             </wm-column>
@@ -69,7 +68,7 @@
                     <wm-label caption="Powered by WaveMaker" textalign="left" name="poweredby" width="100%"></wm-label>
                 </wm-gridcolumn>
                 <wm-gridcolumn horizontalalign="right" verticalalign="bottom" name="footerright">
-                    <wm-label caption="Copyright 2014 eShopping" textalign="right" name="copyright" width="100%"></wm-label>
+                    <wm-label caption="Copyright 2014 eShop" textalign="right" name="copyright" width="100%"></wm-label>
                 </wm-gridcolumn>
             </wm-gridrow>
         </wm-layoutgrid>

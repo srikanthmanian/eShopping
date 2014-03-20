@@ -38,3 +38,24 @@
     border-radius: 5px;
     text-align: center;
 }
+
+.products-list .app-list-item:hover {
+    border: 2px solid #ffd926;
+}
+
+.prodCategoryBanner:hover {
+    border: 1px solid #ffd926;
+}
+
+.product-name:hover {
+    text-decoration: underline;
+}
+
+.products .app-list-item:hover {
+    border: 2px solid #ffd926;
+}
+
+.app-left-panel .category-menu-list li a:hover {
+    color: #363636;
+    background-color: #d5d23d;
+}

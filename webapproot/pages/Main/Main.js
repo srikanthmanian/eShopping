@@ -1,5 +1,5 @@
-Application.$controller("MainPageController", ['$rootScope', '$scope', 'Widgets', 'Variables', '$timeout', 'Utils', '$location',
-    function($rootScope, $scope, Widgets, Variables, $timeout, Utils, $location) {
+Application.$controller("MainPageController", ['$rootScope', '$scope', 'Widgets', 'Variables', '$timeout', 'Utils', '$location', 'ViewService',
+    function($rootScope, $scope, Widgets, Variables, $timeout, Utils, $location, ViewService) {
         "use strict";
 
         var views = ['promo-camera', 'promo-mobile', 'promo-peripheral'],
@@ -11,9 +11,7 @@ Application.$controller("MainPageController", ['$rootScope', '$scope', 'Widgets'
             for (var i = 0; i < views.length; i++) {
                 var viewName = views[i];
                 if (index == i) {
-                    Widgets[viewName].show = true;
-                } else {
-                    Widgets[viewName].show = false;
+                    ViewService.showView(viewName);
                 }
             }
 

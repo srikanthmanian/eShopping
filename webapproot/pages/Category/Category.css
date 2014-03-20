@@ -3,39 +3,20 @@
     max-height: 6em;
     padding: 0.25em;
 }
-
-.product-name:hover {
-    text-decoration: underline;
-}
-
 .products {
     cursor: pointer;
 }
 .products .app-list-item {
-    float: left;
-    width: 12em;
-    height: 12em;
     border: 1px #eee solid;
     margin: 0.25em;
     padding: 0.25em;
 }
-
-.products .app-list-item:hover {
-    border: 2px solid #ffd926;
-}
-
 ul.category-menu-list {
     padding: 0.5em;
 }
 .category-menu-list li {
     padding: 0.25em;
 }
-
-.wm-app .app-left-panel .category-menu-list li a:hover{
-    color: #363636;
-    background-color: #d5d23d;
-}
-
 .product-price .product-name {
     text-align: center;
 }

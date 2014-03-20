@@ -6,8 +6,8 @@
                     <wm-picture name="picture1" picturesource="bind:Variables.eshopIcon.dataSet.dataValue"></wm-picture>
                     <wm-label name="ApplicationName" on-click="appName" caption="bind:Variables.appName.dataSet.dataValue" fontweight="bold" fontsize="24" color="#d1d039" class="application-name appName"></wm-label>
                 </wm-gridcolumn>
-                <wm-gridcolumn name="gridcolumn70" horizontalalign="right" on-click="username">
-                    <wm-search name="search1" class="product-search" width="353" height="75" dataset="bind:Variables.products.dataSet.data" searchkey="name" displaylabel="name" displayimagesrc="imgUrl" data-ng-click="activateProductSearch($event)" on-submit="search1Submit($event, $scope)"></wm-search>
+                <wm-gridcolumn name="gridcolumn70" horizontalalign="right">
+                    <wm-search name="search1" class="product-search" width="353" height="75" dataset="bind:Variables.products.dataSet.data" searchkey="name" displaylabel="name" displayimagesrc="imgUrl" data-ng-click="activateProductSearch($event, $scope, true)" on-submit="search1Submit($event, $scope)"></wm-search>
                 </wm-gridcolumn>
             </wm-gridrow>
         </wm-layoutgrid>

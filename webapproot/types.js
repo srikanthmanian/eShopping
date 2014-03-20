@@ -160,7 +160,7 @@ wm.types = {
 			"fields": {
 				"city": {
 					"exclude": [],
-					"fieldOrder": 6,
+					"fieldOrder": 11,
 					"fieldSubType": null,
 					"include": [],
 					"isList": false,
@@ -170,7 +170,7 @@ wm.types = {
 				},
 				"country": {
 					"exclude": [],
-					"fieldOrder": 7,
+					"fieldOrder": 10,
 					"fieldSubType": null,
 					"include": [],
 					"isList": false,
@@ -180,17 +180,7 @@ wm.types = {
 				},
 				"email": {
 					"exclude": [],
-					"fieldOrder": 12,
-					"fieldSubType": null,
-					"include": [],
-					"isList": false,
-					"noChange": [],
-					"required": true,
-					"type": "java.lang.String"
-				},
-				"houseNo": {
-					"exclude": [],
-					"fieldOrder": 9,
+					"fieldOrder": 4,
 					"fieldSubType": null,
 					"include": [],
 					"isList": false,
@@ -200,7 +190,7 @@ wm.types = {
 				},
 				"id": {
 					"exclude": ["insert"],
-					"fieldOrder": 8,
+					"fieldOrder": 0,
 					"fieldSubType": null,
 					"include": ["delete", "read", "update"],
 					"isList": false,
@@ -210,7 +200,7 @@ wm.types = {
 				},
 				"itemorders": {
 					"exclude": [],
-					"fieldOrder": 5,
+					"fieldOrder": 9,
 					"fieldSubType": null,
 					"include": [],
 					"isList": true,
@@ -220,7 +210,7 @@ wm.types = {
 				},
 				"landmark": {
 					"exclude": [],
-					"fieldOrder": 10,
+					"fieldOrder": 1,
 					"fieldSubType": null,
 					"include": [],
 					"isList": false,
@@ -230,7 +220,7 @@ wm.types = {
 				},
 				"name": {
 					"exclude": [],
-					"fieldOrder": 13,
+					"fieldOrder": 6,
 					"fieldSubType": null,
 					"include": [],
 					"isList": false,
@@ -240,7 +230,7 @@ wm.types = {
 				},
 				"password": {
 					"exclude": [],
-					"fieldOrder": 4,
+					"fieldOrder": 8,
 					"fieldSubType": null,
 					"include": [],
 					"isList": false,
@@ -250,7 +240,7 @@ wm.types = {
 				},
 				"phone": {
 					"exclude": [],
-					"fieldOrder": 0,
+					"fieldOrder": 2,
 					"fieldSubType": null,
 					"include": [],
 					"isList": false,
@@ -260,7 +250,7 @@ wm.types = {
 				},
 				"pin": {
 					"exclude": [],
-					"fieldOrder": 11,
+					"fieldOrder": 3,
 					"fieldSubType": null,
 					"include": [],
 					"isList": false,
@@ -270,17 +260,7 @@ wm.types = {
 				},
 				"productBought": {
 					"exclude": [],
-					"fieldOrder": 3,
-					"fieldSubType": null,
-					"include": [],
-					"isList": false,
-					"noChange": [],
-					"required": true,
-					"type": "java.lang.String"
-				},
-				"state": {
-					"exclude": [],
-					"fieldOrder": 2,
+					"fieldOrder": 7,
 					"fieldSubType": null,
 					"include": [],
 					"isList": false,
@@ -290,7 +270,7 @@ wm.types = {
 				},
 				"street": {
 					"exclude": [],
-					"fieldOrder": 1,
+					"fieldOrder": 5,
 					"fieldSubType": null,
 					"include": [],
 					"isList": false,

@@ -1,4 +1,4 @@
-Application.run(function ($rootScope, Widgets, Variables) {
+Application.run(function ($rootScope, Widgets, Variables, $location, $route) {
     "use strict";
 	$rootScope.navigateToCategory = function (category) {
         localStorage.setItem("wm.activeCategory", category);
@@ -27,5 +27,15 @@ Application.run(function ($rootScope, Widgets, Variables) {
     $rootScope.activateProductSearch = function ($event) {
         WM.element($event.currentTarget).css("width", "60%");
     }
+
+    $rootScope.search1Submit = function($event, $scope) {
+        $rootScope.selectedItem = $event.data.item;
+        if($location.$$path === "/Products") {
+            $route.reload();
+        } else {
+            $location.path("Products");
+        }
+        $rootScope.pageLoading = true;
+    };
 
 });

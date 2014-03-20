@@ -7,24 +7,22 @@ import java.util.Set;
 
 /**
  *  eshopping.User
- *  03/19/2014 14:42:59
+ *  03/20/2014 19:14:32
  * 
  */
 public class User {
 
     private Integer id;
+    private String landmark;
     private Integer phone;
+    private String email;
+    private String pin;
+    private String name;
     private String street;
-    private String state;
-    private String productBought;
     private String password;
+    private String productBought;
     private String city;
     private String country;
-    private String houseNo;
-    private String landmark;
-    private String pin;
-    private String email;
-    private String name;
     private Set<com.eshopping.data.Itemorder> itemorders = new HashSet<com.eshopping.data.Itemorder>();
 
     public Integer getId() {
@@ -35,12 +33,44 @@ public class User {
         this.id = id;
     }
 
+    public String getLandmark() {
+        return landmark;
+    }
+
+    public void setLandmark(String landmark) {
+        this.landmark = landmark;
+    }
+
     public Integer getPhone() {
         return phone;
     }
 
     public void setPhone(Integer phone) {
         this.phone = phone;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getPin() {
+        return pin;
+    }
+
+    public void setPin(String pin) {
+        this.pin = pin;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getStreet() {
@@ -51,12 +81,12 @@ public class User {
         this.street = street;
     }
 
-    public String getState() {
-        return state;
+    public String getPassword() {
+        return password;
     }
 
-    public void setState(String state) {
-        this.state = state;
+    public void setPassword(String password) {
+        this.password = password;
     }
 
     public String getProductBought() {
@@ -65,14 +95,6 @@ public class User {
 
     public void setProductBought(String productBought) {
         this.productBought = productBought;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
     }
 
     public String getCity() {
@@ -89,46 +111,6 @@ public class User {
 
     public void setCountry(String country) {
         this.country = country;
-    }
-
-    public String getHouseNo() {
-        return houseNo;
-    }
-
-    public void setHouseNo(String houseNo) {
-        this.houseNo = houseNo;
-    }
-
-    public String getLandmark() {
-        return landmark;
-    }
-
-    public void setLandmark(String landmark) {
-        this.landmark = landmark;
-    }
-
-    public String getPin() {
-        return pin;
-    }
-
-    public void setPin(String pin) {
-        this.pin = pin;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 
     public Set<com.eshopping.data.Itemorder> getItemorders() {

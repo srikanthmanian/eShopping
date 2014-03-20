@@ -39,14 +39,6 @@
             <element name="availability" typeRef="java.lang.Boolean" isList="false" allowNull="false"/>
         </dataobject>
         <dataobject javaType="com.eshopping.data.User" supportsQuickData="true">
-            <element name="phone" typeRef="java.lang.Integer" isList="false" allowNull="false"/>
-            <element name="street" typeRef="java.lang.String" isList="false" allowNull="false"/>
-            <element name="state" typeRef="java.lang.String" isList="false" allowNull="false"/>
-            <element name="productBought" typeRef="java.lang.String" isList="false" allowNull="false"/>
-            <element name="password" typeRef="java.lang.String" isList="false" allowNull="false"/>
-            <element name="itemorders" typeRef="com.eshopping.data.Itemorder" isList="true" allowNull="true"/>
-            <element name="city" typeRef="java.lang.String" isList="false" allowNull="false"/>
-            <element name="country" typeRef="java.lang.String" isList="false" allowNull="false"/>
             <element name="id" typeRef="java.lang.Integer" isList="false" allowNull="false">
                 <require>delete</require>
                 <require>read</require>
@@ -56,11 +48,17 @@
                 <noChange>update</noChange>
                 <exclude>insert</exclude>
             </element>
-            <element name="houseNo" typeRef="java.lang.String" isList="false" allowNull="false"/>
             <element name="landmark" typeRef="java.lang.String" isList="false" allowNull="false"/>
+            <element name="phone" typeRef="java.lang.Integer" isList="false" allowNull="false"/>
             <element name="pin" typeRef="java.lang.String" isList="false" allowNull="false"/>
             <element name="email" typeRef="java.lang.String" isList="false" allowNull="false"/>
+            <element name="street" typeRef="java.lang.String" isList="false" allowNull="false"/>
             <element name="name" typeRef="java.lang.String" isList="false" allowNull="false"/>
+            <element name="productBought" typeRef="java.lang.String" isList="false" allowNull="false"/>
+            <element name="password" typeRef="java.lang.String" isList="false" allowNull="false"/>
+            <element name="itemorders" typeRef="com.eshopping.data.Itemorder" isList="true" allowNull="true"/>
+            <element name="country" typeRef="java.lang.String" isList="false" allowNull="false"/>
+            <element name="city" typeRef="java.lang.String" isList="false" allowNull="false"/>
         </dataobject>
     </dataobjects>
 </service>

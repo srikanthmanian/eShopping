@@ -56,13 +56,6 @@ Application.$controller("MainPageController", ['$rootScope', '$scope', 'Widgets'
         $scope.$root.$on("on-variables-ready", function() {
 
         });
-
-        $scope.search1Submit = function($event, $scope) {
-            $rootScope.selectedItem = $event.data.item;
-            $location.path("Products");
-            $rootScope.pageLoading = true;
-        };
-
     }
 ]);
 

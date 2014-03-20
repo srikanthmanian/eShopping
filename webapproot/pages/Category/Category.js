@@ -6,6 +6,7 @@ Application.$controller("CategoryPageController", ['$rootScope', '$scope', 'Widg
 
         function filterVariable(category) {
             Variables.selectedCategory.dataSet.dataValue = category;
+            Utils.browserStorage.storeItem("wm.selectedCategory", JSON.stringify(Variables.selectedCategory.dataSet.dataValue));
         }
 
         (function() {
@@ -13,7 +14,6 @@ Application.$controller("CategoryPageController", ['$rootScope', '$scope', 'Widg
             $rootScope.userLoggedin = Utils.browserStorage.getItem('wm.isUserLoggedIn');
             filterVariable(category);
             $scope.productsList = Variables.productCategories.dataSet;
-            delete Variables.currentUser.dataSet.dataValue;
         })();
 
         $scope.navigateCallback = function(category) {
@@ -21,11 +21,15 @@ Application.$controller("CategoryPageController", ['$rootScope', '$scope', 'Widg
             filterVariable(category);
         }
 
-
         $scope.productListClick = function($event, $scope) {
             $rootScope.selectedItem = $scope.$parent.item;
             $location.path("Products");
         };
+
+        /* perform any action with the variables inside this block(on-page-load) */
+        $scope.$root.$on('on-variables-ready', function() {
+
+        });
 
     }
 ]);

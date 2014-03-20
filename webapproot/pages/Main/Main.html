@@ -42,9 +42,9 @@
             <wm-column class="app-content-column" columnwidth="12" paddingleft="15" paddingright="15" name="mainContent">
                 <wm-label caption="Deals of the Day" fontsize="20" name="Heading" width="100%"></wm-label>
                 <wm-panel name="dealsBanner" class="dealsBanner" marginbottom="0.5" marginunit="em">
-                    <wm-view id="view1" name="promo-camera" backgroundimage="resources/images/imagelists/cameras_banner.png" backgroundrepeat="no-repeat" show="true"></wm-view>
-                    <wm-view id="view2" name="promo-mobile" backgroundimage="resources/images/imagelists/phones_banner.png" backgroundrepeat="no-repeat" show="false"></wm-view>
-                    <wm-view id="view3" name="promo-peripheral" backgroundimage="resources/images/imagelists/peripherals_banner.png" backgroundrepeat="no-repeat" horizontalalign="center" show="false"></wm-view>
+                    <wm-view id="view1" name="promo-camera" backgroundimage="resources/images/imagelists/cameras_banner.png" backgroundrepeat="no-repeat" show="true" viewgroup="promos"></wm-view>
+                    <wm-view id="view2" name="promo-mobile" backgroundimage="resources/images/imagelists/phones_banner.png" backgroundrepeat="no-repeat" show="false" viewgroup="promos"></wm-view>
+                    <wm-view id="view3" name="promo-peripheral" backgroundimage="resources/images/imagelists/peripherals_banner.png" backgroundrepeat="no-repeat" horizontalalign="center" show="false" viewgroup="promos"></wm-view>
                 </wm-panel>
                 <wm-label caption="Hot Picks" fontsize="20" name="Heading" width="100%"></wm-label>
                 <wm-layoutgrid columns="3" class="productCategoryListing" name="productCategoryListing" rows="1" height="300">
@@ -112,7 +112,7 @@
             </wm-column>
         </wm-row>
     </wm-content>
-    <wm-view name="loginView" class="dialog-view" on-click="currentUser">
+    <wm-view name="loginView" class="dialog-view" on-click="currentUser" show="false">
         <wm-dialog dialogtype="design-dialog" modal="true" name="loginDialog" height="207" title="Login" iconname="_none_">
             <wm-dialogheader name="dialogheader1" class="login-dialog-header"></wm-dialogheader>
             <wm-dialogcontent name="dialogcontent1">

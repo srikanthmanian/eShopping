@@ -7,6 +7,14 @@ Application.$controller("MainPageController", ['$rootScope', '$scope', 'Widgets'
             index,
             bannerTimeout = 3000;
 
+        /* perform any action with the variables inside this block(on-page-load) */
+        $scope.$root.$on('on-variables-ready', function() {
+            /*
+             * variables can be accessed through 'Variables' service here
+             * e.g. Variables.staticVariable1.getData()
+             */
+        });
+
         var displayBannerImage = function(index) {
             for (var i = 0; i < views.length; i++) {
                 var viewName = views[i];
@@ -26,6 +34,7 @@ Application.$controller("MainPageController", ['$rootScope', '$scope', 'Widgets'
         };
 
         $scope.onPageReady = function() {
+            debugger;
             $rootScope.userLoggedin = Utils.browserStorage.getItem('wm.isUserLoggedIn') + "";
             displayBannerImage(0);
         }
@@ -39,6 +48,10 @@ Application.$controller("MainPageController", ['$rootScope', '$scope', 'Widgets'
             $rootScope.selectedItem = $scope.$parent.item;
             $location.path("Products");
         };
+
+        $scope.$root.$on("on-variables-ready", function() {
+            debugger;
+        });
 
     }
 ]);

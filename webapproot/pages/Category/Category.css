@@ -20,3 +20,6 @@ ul.category-menu-list {
 .product-price .product-name {
     text-align: center;
 }
+.prodCategoryBanner: hover {
+    border: 1px solid #ffd926;
+}

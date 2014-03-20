@@ -2,8 +2,8 @@ Application.$controller("ProductsPageController", ["$rootScope", "$scope", "Widg
     function($rootScope, $scope, Widgets, Variables, $location, Utils) {
         "use strict";
         (function() {
-            Variables.selectedItem.dataSet = $rootScope.selectedItem;
             $rootScope.userLoggedin = Utils.browserStorage.getItem('wm.isUserLoggedIn');
+            Variables.selectedItem.dataSet = $rootScope.selectedItem;
             delete Variables.currentUser.dataSet.dataValue;
         })();
 
@@ -29,6 +29,11 @@ Application.$controller("ProductsPageController", ["$rootScope", "$scope", "Widg
 
             $location.path("Cart");
         };
+
+        /* perform any action with the variables inside this block(on-page-load) */
+        $scope.$root.$on('on-variables-ready', function() {
+
+        });
 
     }
 ]);

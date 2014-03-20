@@ -1,5 +1,5 @@
-Application.$controller("MainPageController", ['$rootScope', '$scope', 'Widgets', 'Variables', '$timeout', 'Utils', '$location', 'ViewService',
-    function($rootScope, $scope, Widgets, Variables, $timeout, Utils, $location, ViewService) {
+Application.$controller("MainPageController", ['$rootScope', '$scope', 'Widgets', 'Variables', '$timeout', 'Utils', '$location',
+    function($rootScope, $scope, Widgets, Variables, $timeout, Utils, $location) {
         "use strict";
 
         var views = ['promo-camera', 'promo-mobile', 'promo-peripheral'],
@@ -19,7 +19,9 @@ Application.$controller("MainPageController", ['$rootScope', '$scope', 'Widgets'
             for (var i = 0; i < views.length; i++) {
                 var viewName = views[i];
                 if (index == i) {
-                    ViewService.showView(viewName);
+                    Widgets[viewName].show = true;
+                } else {
+                    Widgets[viewName].show = false;
                 }
             }
 
@@ -34,6 +36,7 @@ Application.$controller("MainPageController", ['$rootScope', '$scope', 'Widgets'
         };
 
         $scope.onPageReady = function() {
+            $rootScope.pageLoading = false;
             $rootScope.userLoggedin = Utils.browserStorage.getItem('wm.isUserLoggedIn') + "";
             displayBannerImage(0);
         }
@@ -41,16 +44,24 @@ Application.$controller("MainPageController", ['$rootScope', '$scope', 'Widgets'
         $scope.onCategoryClick = function(category) {
             Utils.browserStorage.storeItem('wm.activeCategory', category);
             $location.path('Category');
+            $rootScope.pageLoading = true;
         }
 
         $scope.categorylistClick = function($event, $scope) {
             $rootScope.selectedItem = $scope.$parent.item;
             $location.path("Products");
+            $rootScope.pageLoading = true;
         };
 
         $scope.$root.$on("on-variables-ready", function() {
 
         });
+
+        $scope.search1Submit = function($event, $scope) {
+            $rootScope.selectedItem = $event.data.item;
+            $location.path("Products");
+            $rootScope.pageLoading = true;
+        };
 
     }
 ]);

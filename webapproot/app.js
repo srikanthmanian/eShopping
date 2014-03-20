@@ -10,6 +10,8 @@ Application.run(function ($rootScope, Widgets, Variables) {
         localStorage.setItem("wm.isUserLoggedIn", "");
     };
 
+    $rootScope.pageLoading = false;
+
     /* perform any action with the variables inside this block(on-page-load) */
     $rootScope.$on('on-variables-ready', function() {
         /*
@@ -18,5 +20,12 @@ Application.run(function ($rootScope, Widgets, Variables) {
          */
     });
 
+    $rootScope.navigateToPage = function ($event, $scope) {
+        $rootScope.pageLoading = true;
+    }
+
+    $rootScope.activateProductSearch = function ($event) {
+        WM.element($event.currentTarget).css("width", "60%");
+    }
 
 });

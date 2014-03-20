@@ -1,6 +1,15 @@
+.appName {
+    vertical-align: bottom;
+    text-shadow: 0.1em 0.1em #000000 ;
+}
+
 .product-search {
-    margin-top: 3em;
+    margin-top: 2.5em;
     margin-right: 1.5em;
+}
+
+.product-search .dropdown-menu {
+    z-index: 9999;
 }
 
 .wm-app .eshop-header {

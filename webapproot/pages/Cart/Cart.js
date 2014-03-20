@@ -6,6 +6,7 @@ Application.$controller("CartPageController", ["$scope", "$rootScope", "Widgets"
         })();
 
         $scope.onPageReady = function() {
+            $rootScope.pageLoading = false;
             Variables.currentUser.dataSet = JSON.parse(Utils.browserStorage.getItem('wm.currentUserObj'));
         }
     }

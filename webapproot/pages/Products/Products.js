@@ -2,6 +2,7 @@ Application.$controller("ProductsPageController", ["$rootScope", "$scope", "Widg
     function($rootScope, $scope, Widgets, Variables, $location, Utils) {
         "use strict";
         (function() {
+            $rootScope.pageLoading = false;
             $rootScope.userLoggedin = Utils.browserStorage.getItem('wm.isUserLoggedIn');
             Variables.selectedItem.dataSet = $rootScope.selectedItem;
             delete Variables.currentUser.dataSet.dataValue;

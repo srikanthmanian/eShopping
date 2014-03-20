@@ -10,6 +10,7 @@ Application.$controller("CategoryPageController", ['$rootScope', '$scope', 'Widg
         }
 
         (function() {
+            $rootScope.pageLoading = false;
             category = Utils.browserStorage.getItem('wm.activeCategory');
             $rootScope.userLoggedin = Utils.browserStorage.getItem('wm.isUserLoggedIn');
             filterVariable(category);
@@ -24,6 +25,7 @@ Application.$controller("CategoryPageController", ['$rootScope', '$scope', 'Widg
         $scope.productListClick = function($event, $scope) {
             $rootScope.selectedItem = $scope.$parent.item;
             $location.path("Products");
+            $rootScope.pageLoading = true;
         };
 
         /* perform any action with the variables inside this block(on-page-load) */

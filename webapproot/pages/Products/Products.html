@@ -1,32 +1,32 @@
 <wm-page layouttype="one-column" columns="1" data-ng-controller="ProductsPageController" name="page1" on-click="staticVariable1">
-    <wm-header height="auto" name="header" backgroundcolor="#015b7f" class="eshop-header">
+    <wm-header height="auto" name="header" backgroundcolor="#005387" class="eshop-header">
         <wm-layoutgrid rows="1" columns="2" name="layoutgrid23" height="70">
             <wm-gridrow name="gridrow28">
                 <wm-gridcolumn name="gridcolumn68">
                     <wm-picture name="picture1" picturesource="bind:Variables.eshopIcon.dataSet.dataValue"></wm-picture>
-                    <wm-label name="ApplicationName" on-click="appName" caption="bind:Variables.appName.dataSet.dataValue" fontweight="bold" fontsize="24" color="#d1d039" class="application-name"></wm-label>
+                    <wm-label name="ApplicationName" on-click="appName" caption="bind:Variables.appName.dataSet.dataValue" fontweight="bold" fontsize="24" color="#d1d039" class="application-name appName"></wm-label>
                 </wm-gridcolumn>
                 <wm-gridcolumn name="gridcolumn70" horizontalalign="right" on-click="username">
-                    <wm-search name="search1" width="353" height="75" class="product-search"></wm-search>
+                    <wm-search name="search1" class="product-search" width="353" height="75" dataset="bind:Variables.products.dataSet.data" searchkey="name" displaylabel="name" displayimagesrc="imgUrl" data-ng-click="activateProductSearch($event)" on-submit="search1Submit($event, $scope)"></wm-search>
                 </wm-gridcolumn>
             </wm-gridrow>
         </wm-layoutgrid>
     </wm-header>
-    <wm-top-nav name="top-nav" backgroundcolor="#015b7f">
-        <wm-list name="topLinks" horizontalalign="left">
-            <wm-list-item name="topLink1">
+    <wm-top-nav name="top-nav" backgroundcolor="#0a3151">
+        <wm-list name="topLinks" horizontalalign="left" class="top-nav">
+            <wm-list-item name="topLink1" data-ng-click="navigateToPage($event, $scope)">
                 <wm-anchor caption="bind:Variables.homeMenu.dataSet.dataValue" name="homelink" hyperlink="#/Main"></wm-anchor>
             </wm-list-item>
-            <wm-list-item name="topLink2">
+            <wm-list-item name="topLink2" data-ng-click="navigateToPage($event, $scope)">
                 <wm-anchor caption="bind:Variables.productsMenu.dataSet.dataValue" name="productslink" hyperlink="#/Category"></wm-anchor>
             </wm-list-item>
-            <wm-list-item ng-if="userLoggedin" name="topLink3">
+            <wm-list-item ng-if="userLoggedin" name="topLink3" data-ng-click="navigateToPage($event, $scope)">
                 <wm-anchor caption="bind:Variables.cartMenu.dataSet.dataValue" name="cartlink" hyperlink="#/Cart"></wm-anchor>
             </wm-list-item>
-            <wm-list-item ng-if="userLoggedin" name="topLink4">
+            <wm-list-item ng-if="userLoggedin" name="topLink4" data-ng-click="navigateToPage($event, $scope)">
                 <wm-anchor caption="bind:Variables.ordersMenu.dataSet.dataValue" name="orderslink" hyperlink="#/Orders"></wm-anchor>
             </wm-list-item>
-            <wm-list-item ng-if="userLoggedin" name="topLink5">
+            <wm-list-item ng-if="userLoggedin" name="topLink5" data-ng-click="navigateToPage($event, $scope)">
                 <wm-anchor caption="bind:Variables.profileMenu.dataSet.dataValue" name="profilelink" hyperlink="#/Profile"></wm-anchor>
             </wm-list-item>
             <wm-list-item ng-if="!userLoggedin" name="topLink6">

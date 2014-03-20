@@ -5,7 +5,7 @@ Application.$controller("OrdersPageController", ["$scope", "$rootScope", "Widget
             $rootScope.userLoggedin = Utils.browserStorage.getItem('wm.isUserLoggedIn');
         })();
         $scope.onPageReady = function() {
-            debugger;
+            $rootScope.pageLoading = false;
             Variables.currentUser.dataSet = JSON.parse(Utils.browserStorage.getItem('wm.currentUserObj'));
         }
 

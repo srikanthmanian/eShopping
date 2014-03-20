@@ -34,7 +34,6 @@ Application.$controller("MainPageController", ['$rootScope', '$scope', 'Widgets'
         };
 
         $scope.onPageReady = function() {
-            debugger;
             $rootScope.userLoggedin = Utils.browserStorage.getItem('wm.isUserLoggedIn') + "";
             displayBannerImage(0);
         }
@@ -50,7 +49,7 @@ Application.$controller("MainPageController", ['$rootScope', '$scope', 'Widgets'
         };
 
         $scope.$root.$on("on-variables-ready", function() {
-            debugger;
+
         });
 
     }

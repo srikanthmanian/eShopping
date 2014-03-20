@@ -13,7 +13,6 @@ Application.$controller("ProductsPageController", ["$rootScope", "$scope", "Widg
                     Variables.currentProduct.dataSet = product;
                 }
             });
-            debugger;
 
             var item = {
                 "product": Variables.currentProduct.dataSet,
@@ -24,7 +23,6 @@ Application.$controller("ProductsPageController", ["$rootScope", "$scope", "Widg
             Variables.call("insertRow", "ordersInsert", {
                 "row": item
             }, function(response) {
-                console.log("response", response);
             });
 
             $location.path("Cart");

@@ -46,29 +46,29 @@
                         <wm-label name="Name" caption="Name"></wm-label>
                         <wm-text name="NameVal" datavalue="bind:Variables.currentUser.dataSet.name"></wm-text>
                     </wm-composite>
-                    <wm-composite widget="text" name="landmark">
-                        <wm-label name="Landmark" caption="Landmark"></wm-label>
-                        <wm-text name="LandmarkVal" datavalue="bind:Variables.currentUser.dataSet.landmark"></wm-text>
-                    </wm-composite>
-                    <wm-composite widget="text" name="country">
-                        <wm-label name="Country" caption="Country"></wm-label>
-                        <wm-text name="CountryVal" datavalue="bind:Variables.currentUser.dataSet.country"></wm-text>
+                    <wm-composite widget="text" name="Phone">
+                        <wm-label name="Phone Number" caption="Phone Number"></wm-label>
+                        <wm-text name="PhoneVal" datavalue="bind:Variables.currentUser.dataSet.phone" type="number"></wm-text>
                     </wm-composite>
                     <wm-composite widget="text" name="street">
                         <wm-label name="Street Address" caption="Street Address"></wm-label>
                         <wm-text name="StreetVal" datavalue="bind:Variables.currentUser.dataSet.street"></wm-text>
                     </wm-composite>
-                    <wm-composite widget="text" name="Phone">
-                        <wm-label name="Phone Number" caption="Phone Number"></wm-label>
-                        <wm-text name="PhoneVal" datavalue="bind:Variables.currentUser.dataSet.phone" type="number"></wm-text>
+                    <wm-composite widget="text" name="landmark">
+                        <wm-label name="Landmark" caption="Landmark"></wm-label>
+                        <wm-text name="LandmarkVal" datavalue="bind:Variables.currentUser.dataSet.landmark"></wm-text>
+                    </wm-composite>
+                    <wm-composite widget="text" name="city">
+                        <wm-label name="City" caption="City"></wm-label>
+                        <wm-text name="CityVal" datavalue="bind:Variables.currentUser.dataSet.city"></wm-text>
                     </wm-composite>
                     <wm-composite widget="text" name="pin">
                         <wm-label name="Pin" caption="Pin"></wm-label>
                         <wm-text name="PinVal" datavalue="bind:Variables.currentUser.dataSet.pin"></wm-text>
                     </wm-composite>
-                    <wm-composite widget="text" name="city">
-                        <wm-label name="City" caption="City"></wm-label>
-                        <wm-text name="CityVal" datavalue="bind:Variables.currentUser.dataSet.city"></wm-text>
+                    <wm-composite widget="text" name="country">
+                        <wm-label name="Country" caption="Country"></wm-label>
+                        <wm-text name="CountryVal" datavalue="bind:Variables.currentUser.dataSet.country"></wm-text>
                     </wm-composite>
 
                     <wm-button name="save" textalign="center" caption="SAVE CHANGES" backgroundcolor="#007fb8" color="#f9f9f9" on-click="saveClick($event, $scope)" paddingtop="" paddingunit="em" margintop="2" marginunit="em"></wm-button>

@@ -2,14 +2,12 @@ Application.$controller("ProductsPageController", ["$rootScope", "$scope", "Widg
     function($rootScope, $scope, Widgets, Variables, $location, Utils) {
         "use strict";
         (function() {
+            debugger;
             $rootScope.pageLoading = false;
             $rootScope.userLoggedin = Utils.browserStorage.getItem('wm.isUserLoggedIn');
-            $rootScope.selectedItem = JSON.parse(Utils.browserStorage.getItem('wm.activeProduct'));
-        })();
-        $scope.onPageVariablesReady = function() {
-            Variables.selectedItem.dataSet = $rootScope.selectedItem;
+            Variables.selectedItem.dataSet = $rootScope.selectedItem = JSON.parse(Utils.browserStorage.getItem('wm.activeProduct'));
             delete Variables.currentUser.dataSet.dataValue;
-        }
+        })();
 
         $scope.addToCartClick = function($event, $scope) {
             WM.forEach(Variables.products.dataSet.data, function(product) {
@@ -31,6 +29,5 @@ Application.$controller("ProductsPageController", ["$rootScope", "$scope", "Widg
 
             $location.path("Cart");
         };
-
     }
 ]);

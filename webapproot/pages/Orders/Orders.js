@@ -6,8 +6,6 @@ Application.$controller("OrdersPageController", ["$scope", "$rootScope", "Widget
         })();
         $scope.onPageReady = function() {
             $rootScope.pageLoading = false;
-        }
-        $scope.onPageVariablesReady = function() {
             Variables.currentUser.dataSet = JSON.parse(Utils.browserStorage.getItem('wm.currentUserObj'));
         }
     }

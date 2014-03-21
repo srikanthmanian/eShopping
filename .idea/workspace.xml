@@ -2,23 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f190069a-e832-4a68-a3fe-735282d8a856" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Users\srikanths\AppData\WaveMaker\projects\eShopping\webapproot\data\eshopping.log" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapproot/pages/Cart/Cart.js" afterPath="$PROJECT_DIR$/webapproot/pages/Cart/Cart.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapproot/pages/Category/Category.js" afterPath="$PROJECT_DIR$/webapproot/pages/Category/Category.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/eShopping.war" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapproot/services/runtimeService.smd" afterPath="$PROJECT_DIR$/webapproot/services/runtimeService.smd" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.wmproject.properties" afterPath="$PROJECT_DIR$/.wmproject.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/services/eshopping/src/com/eshopping/Eshopping.java" afterPath="$PROJECT_DIR$/services/eshopping/src/com/eshopping/Eshopping.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/services/eshopping/src/com/eshopping/EshoppingConstants.java" afterPath="$PROJECT_DIR$/services/eshopping/src/com/eshopping/EshoppingConstants.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapproot/WEB-INF/application.xml" afterPath="$PROJECT_DIR$/webapproot/WEB-INF/application.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapproot/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/webapproot/WEB-INF/web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapproot/app.js" afterPath="$PROJECT_DIR$/webapproot/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapproot/app.variables.json" afterPath="$PROJECT_DIR$/webapproot/app.variables.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapproot/data/eshopping.properties" afterPath="$PROJECT_DIR$/webapproot/data/eshopping.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapproot/pages/Cart/Cart.js" afterPath="$PROJECT_DIR$/webapproot/pages/Cart/Cart.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapproot/pages/Category/Category.js" afterPath="$PROJECT_DIR$/webapproot/pages/Category/Category.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapproot/pages/Main/Main.js" afterPath="$PROJECT_DIR$/webapproot/pages/Main/Main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapproot/pages/Main/Main.variables.json" afterPath="$PROJECT_DIR$/webapproot/pages/Main/Main.variables.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapproot/pages/Orders/Orders.js" afterPath="$PROJECT_DIR$/webapproot/pages/Orders/Orders.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapproot/pages/Products/Products.js" afterPath="$PROJECT_DIR$/webapproot/pages/Products/Products.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapproot/pages/Profile/Profile.js" afterPath="$PROJECT_DIR$/webapproot/pages/Profile/Profile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapproot/app.variables.json" afterPath="$PROJECT_DIR$/webapproot/app.variables.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapproot/WEB-INF/application.xml" afterPath="$PROJECT_DIR$/webapproot/WEB-INF/application.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapproot/data/eshopping.properties" afterPath="$PROJECT_DIR$/webapproot/data/eshopping.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapproot/services/runtimeService.smd" afterPath="$PROJECT_DIR$/webapproot/services/runtimeService.smd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapproot/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/webapproot/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="eShopping.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,7 +32,7 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CreatePatchCommitExecutor">
-    <option name="PATCH_PATH" value="" />
+    <option name="PATCH_PATH" value="C:\Users\jananij\AppData\WaveMaker\projects\eShopping" />
   </component>
   <component name="DaemonCodeAnalyzer">
     <disable_hints />
@@ -80,8 +82,26 @@
       <file leaf-file-name="Main.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webapproot/pages/Main/Main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="84" column="3" selection-start="3057" selection-end="3057" vertical-scroll-proportion="0.0" vertical-offset="644" max-vertical-offset="1530">
-              <folding />
+            <state line="27" column="43" selection-start="963" selection-end="963" vertical-scroll-proportion="-6.68">
+              <folding>
+                <marker date="1395405339702" expanded="true" signature="625:766" placeholder="{...}" />
+                <marker date="1395405339702" expanded="true" signature="683:700" placeholder="{...}" />
+                <marker date="1395405339702" expanded="true" signature="706:735" placeholder="{...}" />
+                <marker date="1395405339702" expanded="true" signature="918:938" placeholder="{...}" />
+                <marker date="1395405339702" expanded="true" signature="2647:2667" placeholder="/**...*/" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Category.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webapproot/pages/Category/Category.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="20" selection-start="881" selection-end="881" vertical-scroll-proportion="-8.2">
+              <folding>
+                <marker date="1395405339698" expanded="true" signature="791:941" placeholder="{...}" />
+                <marker date="1395405339698" expanded="true" signature="1224:1401" placeholder="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -89,7 +109,7 @@
       <file leaf-file-name="Products.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webapproot/pages/Products/Products.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="0" selection-start="1313" selection-end="1313" vertical-scroll-proportion="0.0" vertical-offset="96" max-vertical-offset="646">
+            <state line="4" column="38" selection-start="259" selection-end="259" vertical-scroll-proportion="-2.72">
               <folding />
             </state>
           </provider>
@@ -98,8 +118,10 @@
       <file leaf-file-name="Cart.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webapproot/pages/Cart/Cart.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="5" selection-start="522" selection-end="522" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="408">
-              <folding />
+            <state line="8" column="50" selection-start="399" selection-end="399" vertical-scroll-proportion="-5.44">
+              <folding>
+                <marker date="1395405339693" expanded="true" signature="363:516" placeholder="/*...*/" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -107,25 +129,37 @@
       <file leaf-file-name="Orders.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webapproot/pages/Orders/Orders.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="5" selection-start="523" selection-end="523" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
-              <folding />
+            <state line="0" column="21" selection-start="21" selection-end="21" vertical-scroll-proportion="-0.0">
+              <folding>
+                <marker date="1395405339707" expanded="true" signature="230:310" placeholder="{...}" />
+                <marker date="1395405339707" expanded="true" signature="323:410" placeholder="/*...*/" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Profile.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Profile.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webapproot/pages/Profile/Profile.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="0" selection-start="520" selection-end="520" vertical-scroll-proportion="0.3321492" vertical-offset="0" max-vertical-offset="563">
+            <state line="22" column="39" selection-start="1095" selection-end="1095" vertical-scroll-proportion="-14.96">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Category.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webapproot/pages/Category/Category.js">
+      <file leaf-file-name="Profile.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/webapproot/pages/Profile/Profile.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="0" selection-start="1403" selection-end="1403" vertical-scroll-proportion="0.0" vertical-offset="202" max-vertical-offset="765">
+            <state line="60" column="92" selection-start="4593" selection-end="4593" vertical-scroll-proportion="4.6285715">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webapproot/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="33" column="67" selection-start="1121" selection-end="1121" vertical-scroll-proportion="-14.64">
               <folding />
             </state>
           </provider>
@@ -139,32 +173,28 @@
     </FindUsagesManager>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="GitLogSettings">
-    <option name="myDateState">
-      <MyDateState />
-    </option>
+    <option name="CHECKOUT_INCLUDE_TAGS" value="false" />
+    <option name="UPDATE_CHANGES_POLICY" value="STASH" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/webapproot/pages/Category/Category.css" />
-        <option value="$PROJECT_DIR$/webapproot/index.html" />
-        <option value="$PROJECT_DIR$/webapproot/app.css" />
-        <option value="$PROJECT_DIR$/webapproot/pages/Main/Main.html" />
+        <option value="$PROJECT_DIR$/webapproot/pages/Dashboard/Dashboard.html" />
+        <option value="$PROJECT_DIR$/webapproot/pages/Main/Main.css" />
         <option value="$PROJECT_DIR$/webapproot/pages/Category/Category.html" />
         <option value="$PROJECT_DIR$/webapproot/pages/Cart/Cart.html" />
-        <option value="$PROJECT_DIR$/webapproot/pages/Orders/Orders.html" />
-        <option value="$PROJECT_DIR$/webapproot/pages/Profile/Profile.html" />
-        <option value="$PROJECT_DIR$/webapproot/pages/Products/Products.html" />
+        <option value="$PROJECT_DIR$/webapproot/pages/Category/Category.css" />
+        <option value="$PROJECT_DIR$/webapproot/app.css" />
+        <option value="$PROJECT_DIR$/../eshop_db/webapproot/data/eshopping.script" />
+        <option value="$PROJECT_DIR$/../testdb/webapproot/data/eshopping.script" />
         <option value="$PROJECT_DIR$/webapproot/app.js" />
-        <option value="$PROJECT_DIR$/webapproot/pages/Main/Main.js" />
-        <option value="$PROJECT_DIR$/webapproot/pages/Category/Category.js" />
-        <option value="$PROJECT_DIR$/webapproot/pages/Products/Products.js" />
         <option value="$PROJECT_DIR$/webapproot/pages/Cart/Cart.js" />
         <option value="$PROJECT_DIR$/webapproot/pages/Orders/Orders.js" />
         <option value="$PROJECT_DIR$/webapproot/pages/Profile/Profile.js" />
+        <option value="$PROJECT_DIR$/webapproot/pages/Products/Products.js" />
+        <option value="$PROJECT_DIR$/webapproot/pages/Main/Main.js" />
+        <option value="$PROJECT_DIR$/webapproot/pages/Category/Category.js" />
+        <option value="$PROJECT_DIR$/webapproot/pages/Profile/Profile.html" />
       </list>
     </option>
   </component>
@@ -198,7 +228,7 @@
       <hideEmptyPackages />
       <abbreviatePackageNames />
       <autoscrollToSource />
-      <autoscrollFromSource ProjectPane="true" />
+      <autoscrollFromSource />
       <sortByType />
     </navigator>
     <panes>
@@ -426,74 +456,27 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
     <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="156" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="156" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="160" />
-    <property name="MemberChooser.sorted" value="false" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="157" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="835" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="831" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="156" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="149" />
-    <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
+    <property name="GoToClass.includeJavaFiles" value="false" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
   </component>
   <component name="RunManager">
-    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
-      <option name="VMOptions" />
-      <option name="arguments" />
-      <option name="filePath" />
-      <option name="name" value="Dart" />
-      <option name="saveOutputToFile" value="false" />
-      <option name="showConsoleOnStdErr" value="false" />
-      <option name="showConsoleOnStdOut" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
-      <option name="VMOptions" />
-      <option name="arguments" />
-      <option name="filePath" />
-      <option name="scope" value="ALL" />
-      <option name="testName" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
-      <setting name="configLocationType" value="CONFIG_FILE" />
-      <setting name="settingsFile" value="" />
-      <setting name="serverType" value="INTERNAL" />
-      <setting name="preferredDebugBrowser" value="CHROME" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
-      <method />
-    </configuration>
+    <list size="0" />
     <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
       <browser start="false" url="" with-js-debugger="false" />
       <method />
     </configuration>
-    <list size="0" />
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
       <Port>5050</Port>
@@ -510,173 +493,206 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5263158" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24869695" sideWeight="0.47368422" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.831058" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3293718" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32993197" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-    </layout>
-    <layout-to-restore>
-      <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5263158" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935154" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24869695" sideWeight="0.47368422" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14795144" sideWeight="0.16894197" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-    </layout-to-restore>
+    </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="CHECK_NEW_TODO" value="true" />
     <option name="myTodoPanelSettings">
-      <TodoPanelSettings />
+      <value>
+        <are-packages-shown value="false" />
+        <are-modules-shown value="false" />
+        <flatten-packages value="false" />
+        <is-autoscroll-to-source value="false" />
+      </value>
     </option>
+    <option name="PERFORM_UPDATE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_COMMIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_EDIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_CHECKOUT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ROLLBACK_IN_BACKGROUND" value="true" />
+    <option name="CHECK_LOCALLY_CHANGED_CONFLICTS_IN_BACKGROUND" value="false" />
+    <option name="ENABLE_BACKGROUND_PROCESSES" value="false" />
+    <option name="CHANGED_ON_SERVER_INTERVAL" value="60" />
+    <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
+    <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
+    <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
+    <option name="SHORT_DIFF_HORISONTALLY" value="true" />
+    <option name="SHORT_DIFF_EXTRA_LINES" value="2" />
+    <option name="SOFT_WRAPS_IN_SHORT_DIFF" value="true" />
+    <option name="INCLUDE_TEXT_INTO_PATCH" value="false" />
+    <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
+    <option name="CREATE_PATCH_EXPAND_DETAILS_DEFAULT" value="true" />
+    <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
+    <option name="LAST_COMMIT_MESSAGE" value="eShop application_eshop service added" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_FILE_COMMIT" value="false" />
+    <option name="FILE_HISTORY_DIALOG_COMMENTS_SPLITTER_PROPORTION" value="0.8" />
+    <option name="FILE_HISTORY_DIALOG_SPLITTER_PROPORTION" value="0.5" />
+    <option name="ACTIVE_VCS_NAME" />
+    <option name="UPDATE_GROUP_BY_PACKAGES" value="false" />
+    <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
+    <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
+    <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
+    <MESSAGE value="eShop application_eshop service added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/webapproot/index.html">
+    <entry file="file://$PROJECT_DIR$/webapproot/pages/Category/Category.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="70" selection-start="1124" selection-end="1124" vertical-scroll-proportion="0.82462686" vertical-offset="0" max-vertical-offset="629" />
+        <state line="24" column="1" selection-start="427" selection-end="427" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webapproot/data/eshopping.script">
+    <entry file="file://$PROJECT_DIR$/../eshop_db/webapproot/data/eshopping.script">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-3.0655737" vertical-offset="1683" max-vertical-offset="2771" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapproot/app.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="17" selection-start="200" selection-end="200" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1275">
+        <state line="8" column="281" selection-start="1343" selection-end="1343" vertical-scroll-proportion="0.26003823">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webapproot/pages/Main/Main.html">
+    <entry file="file://$PROJECT_DIR$/../testdb/webapproot/data/eshopping.script">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="74" selection-start="830" selection-end="830" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="2584">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapproot/pages/Category/Category.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="74" selection-start="809" selection-end="809" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="1377">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapproot/pages/Cart/Cart.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="74" selection-start="828" selection-end="828" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="1309">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapproot/pages/Orders/Orders.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="74" selection-start="807" selection-end="807" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="1207">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webapproot/pages/Profile/Profile.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="74" selection-start="808" selection-end="808" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="1207">
+        <state line="120" column="87" selection-start="34822" selection-end="34822" vertical-scroll-proportion="0.5277247">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/webapproot/pages/Products/Products.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="255" selection-start="1093" selection-end="1093" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="1632">
+        <state line="15" column="84" selection-start="1386" selection-end="1386" vertical-scroll-proportion="9.115385">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webapproot/app.js">
+    <entry file="file://$PROJECT_DIR$/webapproot/pages/Orders/Orders.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="5" selection-start="728" selection-end="728" vertical-scroll-proportion="0.0" vertical-offset="138" max-vertical-offset="799">
+        <state line="38" column="65" selection-start="3080" selection-end="3080" vertical-scroll-proportion="-1.9019607">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webapproot/pages/Main/Main.js">
+    <entry file="file://$PROJECT_DIR$/webapproot/app.variables.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="84" column="3" selection-start="3057" selection-end="3057" vertical-scroll-proportion="0.0" vertical-offset="644" max-vertical-offset="1530">
+        <state line="0" column="2441" selection-start="2441" selection-end="2441" vertical-scroll-proportion="-0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webapproot/pages/Category/Category.js">
+    <entry file="file://$PROJECT_DIR$/webapproot/pages/Main/Main.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="0" selection-start="1403" selection-end="1403" vertical-scroll-proportion="0.0" vertical-offset="202" max-vertical-offset="765">
+        <state line="52" column="164" selection-start="4661" selection-end="4666" vertical-scroll-proportion="25.039215">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webapproot/pages/Products/Products.js">
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="0" selection-start="1313" selection-end="1313" vertical-scroll-proportion="0.0" vertical-offset="96" max-vertical-offset="646">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/webapproot/pages/Cart/Cart.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="5" selection-start="522" selection-end="522" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="408">
-          <folding />
+        <state line="8" column="50" selection-start="399" selection-end="399" vertical-scroll-proportion="-5.44">
+          <folding>
+            <marker date="1395405339693" expanded="true" signature="363:516" placeholder="/*...*/" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/webapproot/pages/Orders/Orders.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="5" selection-start="523" selection-end="523" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
+        <state line="0" column="21" selection-start="21" selection-end="21" vertical-scroll-proportion="-0.0">
+          <folding>
+            <marker date="1395405339707" expanded="true" signature="230:310" placeholder="{...}" />
+            <marker date="1395405339707" expanded="true" signature="323:410" placeholder="/*...*/" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapproot/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="67" selection-start="1121" selection-end="1121" vertical-scroll-proportion="-14.64">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapproot/pages/Products/Products.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="38" selection-start="259" selection-end="259" vertical-scroll-proportion="-2.72">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapproot/pages/Main/Main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="43" selection-start="963" selection-end="963" vertical-scroll-proportion="-6.68">
+          <folding>
+            <marker date="1395405339702" expanded="true" signature="625:766" placeholder="{...}" />
+            <marker date="1395405339702" expanded="true" signature="683:700" placeholder="{...}" />
+            <marker date="1395405339702" expanded="true" signature="706:735" placeholder="{...}" />
+            <marker date="1395405339702" expanded="true" signature="918:938" placeholder="{...}" />
+            <marker date="1395405339702" expanded="true" signature="2647:2667" placeholder="/**...*/" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapproot/pages/Category/Category.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="20" selection-start="881" selection-end="881" vertical-scroll-proportion="-8.2">
+          <folding>
+            <marker date="1395405339698" expanded="true" signature="791:941" placeholder="{...}" />
+            <marker date="1395405339698" expanded="true" signature="1224:1401" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/webapproot/pages/Profile/Profile.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="520" selection-end="520" vertical-scroll-proportion="0.3321492" vertical-offset="0" max-vertical-offset="563">
+        <state line="22" column="39" selection-start="1095" selection-end="1095" vertical-scroll-proportion="-14.96">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapproot/pages/Profile/Profile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="92" selection-start="4593" selection-end="4593" vertical-scroll-proportion="4.6285715">
           <folding />
         </state>
       </provider>

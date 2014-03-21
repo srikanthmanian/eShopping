@@ -2,18 +2,12 @@ Application.$controller("MainPageController", ['$rootScope', '$scope', 'Widgets'
     function($rootScope, $scope, Widgets, Variables, $timeout, Utils, $location) {
         "use strict";
 
-        var views = ['promo-camera', 'promo-mobile', 'promo-peripheral'],
-            viewName,
-            index,
-            bannerTimeout = 3000;
+        $scope.onPageVariablesReady = function() {
 
-        /* perform any action with the variables inside this block(on-page-load) */
-        $scope.$root.$on('on-variables-ready', function() {
-            /*
-             * variables can be accessed through 'Variables' service here
-             * e.g. Variables.staticVariable1.getData()
-             */
-        });
+        };
+
+        var views = ['promo-camera', 'promo-mobile', 'promo-peripheral'],
+            bannerTimeout = 3000;
 
         var displayBannerImage = function(index) {
             for (var i = 0; i < views.length; i++) {
@@ -32,7 +26,6 @@ Application.$controller("MainPageController", ['$rootScope', '$scope', 'Widgets'
                 }
                 displayBannerImage(n);
             }, bannerTimeout);
-
         };
 
         $scope.onPageReady = function() {
@@ -48,14 +41,12 @@ Application.$controller("MainPageController", ['$rootScope', '$scope', 'Widgets'
         }
 
         $scope.categorylistClick = function($event, $scope) {
-            $rootScope.selectedItem = $scope.$parent.item;
+            Utils.browserStorage.storeItem('wm.activeProduct', JSON.stringify($scope.item));
+            //$rootScope.selectedItem = $scope.item;
             $location.path("Products");
             $rootScope.pageLoading = true;
         };
 
-        $scope.$root.$on("on-variables-ready", function() {
-
-        });
     }
 ]);
 
@@ -74,7 +65,7 @@ Application.$controller("loginDialogController", ["$rootScope", "$scope", "Varia
                     Utils.browserStorage.storeItem('wm.isUserLoggedIn', $rootScope.userLoggedin);
                     Utils.browserStorage.storeItem('wm.currentUserObj', JSON.stringify(userObj));
                 } else {
-
+                    /** Show a message*/
                 }
             });
             if ($rootScope.userLoggedin) {

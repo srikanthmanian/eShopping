@@ -2,10 +2,6 @@ Application.$controller("MainPageController", ['$rootScope', '$scope', 'Widgets'
     function($rootScope, $scope, Widgets, Variables, $timeout, Utils, $location) {
         "use strict";
 
-        $scope.onPageVariablesReady = function() {
-
-        };
-
         var views = ['promo-camera', 'promo-mobile', 'promo-peripheral'],
             bannerTimeout = 3000;
 
@@ -26,6 +22,7 @@ Application.$controller("MainPageController", ['$rootScope', '$scope', 'Widgets'
                 }
                 displayBannerImage(n);
             }, bannerTimeout);
+
         };
 
         $scope.onPageReady = function() {
@@ -41,12 +38,11 @@ Application.$controller("MainPageController", ['$rootScope', '$scope', 'Widgets'
         }
 
         $scope.categorylistClick = function($event, $scope) {
+            $rootScope.selectedItem = $scope.item;
             Utils.browserStorage.storeItem('wm.activeProduct', JSON.stringify($scope.item));
-            //$rootScope.selectedItem = $scope.item;
             $location.path("Products");
             $rootScope.pageLoading = true;
         };
-
     }
 ]);
 
@@ -65,7 +61,7 @@ Application.$controller("loginDialogController", ["$rootScope", "$scope", "Varia
                     Utils.browserStorage.storeItem('wm.isUserLoggedIn', $rootScope.userLoggedin);
                     Utils.browserStorage.storeItem('wm.currentUserObj', JSON.stringify(userObj));
                 } else {
-                    /** Show a message*/
+
                 }
             });
             if ($rootScope.userLoggedin) {

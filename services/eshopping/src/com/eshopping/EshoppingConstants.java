@@ -5,7 +5,7 @@ package com.eshopping;
 
 /**
  *  Query names for service "eshopping"
- *  03/20/2014 21:25:37
+ *  03/21/2014 15:38:49
  * 
  */
 public class EshoppingConstants {

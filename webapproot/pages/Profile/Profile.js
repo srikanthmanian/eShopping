@@ -10,17 +10,23 @@ Application.$controller("ProfilePageController", ["$scope", "$rootScope", "Widge
         $scope.onPageVariablesReady = function() {
             Variables.currentUser.dataSet = JSON.parse(Utils.browserStorage.getItem('wm.currentUserObj'));
         }
-    }
-]);
 
-Application.$controller("grid2Controller", ["$scope",
-    function($scope) {
-        "use strict";
-    }
-]);
+        $scope.saveClick = function($event, $scope) {
+            var data = Variables.currentUser.dataSet;
+            data.name =  Widgets.NameVal.datavalue;
+            data.landmark =  Widgets.LandmarkVal.datavalue;
+            data.country = Widgets.CountryVal.datavalue;
+            data.street = Widgets.StreetVal.datavalue;
+            data.phone = Widgets.PhoneVal.datavalue;
+            data.pin = Widgets.PinVal.datavalue;
+            data.city = Widgets.CityVal.datavalue;
+            Variables.currentUser.dataSet = data;
+            Utils.browserStorage.storeItem('wm.currentUserObj', JSON.stringify(data));
 
-Application.$controller("grid1Controller", ["$scope",
-    function($scope) {
-        "use strict";
+            Variables.call("updateRow", "users", {
+                "row": data
+            }, function(response) {});
+
+        };
     }
 ]);

@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f190069a-e832-4a68-a3fe-735282d8a856" name="Default" comment="">
       <change type="DELETED" beforePath="C:\Users\jananij\AppData\WaveMaker\projects\eShopping\webapproot\data\eshopping.log" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapproot/data/eshopping.properties" afterPath="$PROJECT_DIR$/webapproot/data/eshopping.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webapproot/pages/Profile/Profile.html" afterPath="$PROJECT_DIR$/webapproot/pages/Profile/Profile.html" />
     </list>
     <ignored path="eShopping.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -130,7 +127,7 @@
       <file leaf-file-name="Profile.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/webapproot/pages/Profile/Profile.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="72" column="20" selection-start="5386" selection-end="5386" vertical-scroll-proportion="1.5">
+            <state line="60" column="92" selection-start="4593" selection-end="4593" vertical-scroll-proportion="0.6639344">
               <folding />
             </state>
           </provider>
@@ -473,10 +470,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.47440273" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.47440273" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -667,7 +664,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/webapproot/pages/Profile/Profile.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="20" selection-start="5386" selection-end="5386" vertical-scroll-proportion="1.5">
+        <state line="60" column="92" selection-start="4593" selection-end="4593" vertical-scroll-proportion="0.6639344">
           <folding />
         </state>
       </provider>

@@ -8,6 +8,7 @@ Application.run(function ($rootScope, Widgets, Variables, $location, $route) {
 
     $rootScope.logout = function () {
         localStorage.setItem("wm.isUserLoggedIn", "");
+        localStorage.setItem("wm.currentUserObj", "");
     };
 
     $rootScope.pageLoading = false;

@@ -13,12 +13,12 @@ Application.run(function ($rootScope, Widgets, Variables, $location, $route) {
     $rootScope.pageLoading = false;
 
     /* perform any action with the variables inside this block(on-page-load) */
-    $rootScope.$on('on-variables-ready', function() {
+    $rootScope.onAppVariablesReady = function() {
         /*
          * variables can be accessed through 'Variables' service here
          * e.g. Variables.staticVariable1.getData()
          */
-    });
+    };
 
     $rootScope.navigateToPage = function ($event, $scope) {
         $rootScope.pageLoading = true;

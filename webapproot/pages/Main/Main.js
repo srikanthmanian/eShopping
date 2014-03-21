@@ -53,9 +53,9 @@ Application.$controller("MainPageController", ['$rootScope', '$scope', 'Widgets'
             $rootScope.pageLoading = true;
         };
 
-        $scope.$root.$on("on-variables-ready", function() {
+        $scope.onPageVariablesReady = function() {
 
-        });
+        };
     }
 ]);
 
